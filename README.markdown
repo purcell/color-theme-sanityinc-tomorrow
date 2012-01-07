@@ -1,6 +1,15 @@
 An Emacs color-theme version of Chris Kempson's "Tomorrow" themes.
 
-Usage:
+## Installation ##
+
+If you're all set up to use [marmalade-repo.org](http://marmalade-repo.org)
+(highly recommended!), simply
+
+    M-x package-install RET color-theme-sanityinc-tomorrow RET
+
+Otherwise, ensure sure a directory containing these files is on your `load-path`.
+
+## Usage ##
 
     (require 'color-theme-sanityinc-tomorrow)
 

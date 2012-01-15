@@ -210,7 +210,7 @@ names to which it refers are bound."
      (ido-only-match ((,class (:foreground ,green))))
 
      ;; Emacs interface
-     (cursor ((,class (:inverse-video t))))
+     (cursor ((,class (:background ,red))))
      (fringe ((,class (:background ,current-line))))
      (border ((,class (:background ,current-line))))
      (border-glyph ((,class (nil))))

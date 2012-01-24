@@ -310,24 +310,27 @@ names to which it refers are bound."
      (grep-hit-face ((,class (:foreground ,blue))))
      (grep-match-face ((,class (:foreground nil :background nil :inherit match))))
 
-     ;; Stop outline-3 from inheriting font-lock-keyword-face, which we've made bold
-     (outline-3 ((,class (:inherit nil :foreground ,green))))
-
-     (org-link ((,class (:foreground ,blue :underline t))))
      (org-date ((,class (:foreground ,blue :underline t))))
      (org-agenda-structure ((,class (:foreground ,purple))))
      (org-agenda-date ((,class (:foreground ,blue :underline nil))))
+     (org-agenda-dimmed-todo-face ((,class (:foreground ,comment))))
+     (org-block ((,class (:foreground ,orange))))
+     (org-code ((,class (:foreground ,yellow))))
+     (org-column ((,class (:background ,current-line))))
+     (org-document-info ((,class (:foreground ,aqua))))
+     (org-document-info-keyword ((,class (:foreground ,green))))
+     (org-document-title ((,class (:weight bold :foreground ,orange :height 1.44))))
      (org-done ((,class (:foreground ,green))))
-     (org-todo ((,class (:foreground ,red))))
+     (org-formula ((,class (:foreground ,red))))
+     (org-link ((,class (:foreground ,blue :underline t))))
+     (org-scheduled ((,class (:foreground ,green))))
+     (org-scheduled-previously ((,class (:foreground ,orange))))
+     (org-scheduled-today ((,class (:foreground ,green))))
      (org-special-keyword ((,class (:foreground ,orange))))
      (org-table ((,class (:foreground ,purple))))
-
-     (org-document-title ((,class (:weight bold))))
-     (org-document-info ((,class (:foreground ,aqua))))
-     (org-column ((,class (:background ,current-line))))
+     (org-todo ((,class (:foreground ,red))))
+     (org-upcoming-deadline ((,class (:foreground ,orange))))
      (org-warning ((,class (:weight bold :foreground ,red))))
-
-     (org-scheduled-previously ((,class (:foreground ,orange))))
 
      (markdown-header-face ((,class (:inherit header-line))))
      (markdown-url-face ((,class (:inherit link))))

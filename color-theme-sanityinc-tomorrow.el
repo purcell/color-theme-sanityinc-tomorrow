@@ -206,7 +206,7 @@ names to which it refers are bound."
 
      ;; IDO
      (ido-subdir ((,class (:foreground ,purple))))
-     (ido-first-match ((,class (:foreground ,yellow))))
+     (ido-first-match ((,class (:foreground ,orange))))
      (ido-only-match ((,class (:foreground ,green))))
 
      ;; Emacs interface

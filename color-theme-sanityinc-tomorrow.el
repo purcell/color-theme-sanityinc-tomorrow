@@ -347,6 +347,19 @@ names to which it refers are bound."
      (js2-error ((,class (:underline ,red))))
      (js2-external-variable ((,class (:foreground ,purple))))
 
+     ;; js3-mode
+     (js3-warning-face ((,class (:underline ,yellow))))
+     (js3-error-face ((,class (:underline ,red))))
+     (js3-external-variable-face ((,class (:foreground ,purple))))
+     (js3-function-param-face ((,class (:foreground ,blue))))
+     (js3-jsdoc-tag-face ((,class (:foreground ,orange))))
+     (js3-jsdoc-type-face ((,class (:foreground ,aqua))))
+     (js3-jsdoc-value-face ((,class (:foreground ,yellow))))
+     (js3-jsdoc-html-tag-name-face ((,class (:foreground ,blue))))
+     (js3-jsdoc-html-tag-delimiter-face ((,class (:foreground ,green))))
+     (js3-instance-member-face ((,class (:foreground ,blue))))
+     (js3-private-function-call-face ((,class (:foreground ,red))))
+
      ;; nxml
      (nxml-name-face ((,class (:foreground unspecified :inherit font-lock-constant-face))))
      (nxml-attribute-local-name-face ((,class (:foreground unspecified :inherit font-lock-variable-name-face))))

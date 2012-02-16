@@ -46,66 +46,66 @@
 ;;; Code:
 
 (defconst color-theme-sanityinc-tomorrow-colors
-      '(night (background   "#1d1f21"
-                            current-line "#282a2e"
-                            selection    "#373b41"
-                            foreground   "#c5c8c6"
-                            comment      "#969896"
-                            red          "#cc6666"
-                            orange       "#de935f"
-                            yellow       "#f0c674"
-                            green        "#b5bd68"
-                            aqua         "#8abeb7"
-                            blue         "#81a2be"
-                            purple       "#b294bb")
-              day (background   "#ffffff"
-                                current-line "#efefef"
-                                selection    "#d6d6d6"
-                                foreground   "#4d4d4c"
-                                comment      "#8e908c"
-                                red          "#c82829"
-                                orange       "#f5871f"
-                                yellow       "#eab700"
-                                green        "#718c00"
-                                aqua         "#3e999f"
-                                blue         "#4271ae"
-                                purple       "#8959a8")
-              eighties (background   "#2d2d2d"
-                                     current-line "#393939"
-                                     selection    "#515151"
-                                     foreground   "#cccccc"
-                                     comment      "#999999"
-                                     red          "#f2777a"
-                                     orange       "#f99157"
-                                     yellow       "#ffcc66"
-                                     green        "#99cc99"
-                                     aqua         "#66cccc"
-                                     blue         "#6699cc"
-                                     purple       "#cc99cc")
-              blue (background   "#002451"
-                                 current-line "#00346e"
-                                 selection    "#003f8e"
-                                 foreground   "#ffffff"
-                                 comment      "#7285b7"
-                                 red          "#ff9da4"
-                                 orange       "#ffc58f"
-                                 yellow       "#ffeead"
-                                 green        "#d1f1a9"
-                                 aqua         "#99ffff"
-                                 blue         "#bbdaff"
-                                 purple       "#ebbbff")
-              bright (background   "#000000"
-                                   current-line "#2a2a2a"
-                                   selection    "#424242"
-                                   foreground   "#eaeaea"
-                                   comment      "#969896"
-                                   red          "#d54e53"
-                                   orange       "#e78c45"
-                                   yellow       "#e7c547"
-                                   green        "#b9ca4a"
-                                   aqua         "#70c0b1"
-                                   blue         "#7aa6da"
-                                   purple       "#c397d8")))
+  '((night . ((background . "#1d1f21")
+              (current-line . "#282a2e")
+              (selection . "#373b41")
+              (foreground . "#c5c8c6")
+              (comment . "#969896")
+              (red . "#cc6666")
+              (orange . "#de935f")
+              (yellow . "#f0c674")
+              (green . "#b5bd68")
+              (aqua . "#8abeb7")
+              (blue . "#81a2be")
+              (purple . "#b294bb")))
+    (day . ((background . "#ffffff")
+            (current-line . "#efefef")
+            (selection . "#d6d6d6")
+            (foreground . "#4d4d4c")
+            (comment . "#8e908c")
+            (red . "#c82829")
+            (orange . "#f5871f")
+            (yellow . "#eab700")
+            (green . "#718c00")
+            (aqua . "#3e999f")
+            (blue . "#4271ae")
+            (purple . "#8959a8")))
+    (eighties . ((background . "#2d2d2d")
+                 (current-line . "#393939")
+                 (selection . "#515151")
+                 (foreground . "#cccccc")
+                 (comment . "#999999")
+                 (red . "#f2777a")
+                 (orange . "#f99157")
+                 (yellow . "#ffcc66")
+                 (green . "#99cc99")
+                 (aqua . "#66cccc")
+                 (blue . "#6699cc")
+                 (purple . "#cc99cc")))
+    (blue . ((background . "#002451")
+             (current-line . "#00346e")
+             (selection . "#003f8e")
+             (foreground . "#ffffff")
+             (comment . "#7285b7")
+             (red . "#ff9da4")
+             (orange . "#ffc58f")
+             (yellow . "#ffeead")
+             (green . "#d1f1a9")
+             (aqua . "#99ffff")
+             (blue . "#bbdaff")
+             (purple . "#ebbbff")))
+    (bright . ((background . "#000000")
+               (current-line . "#2a2a2a")
+               (selection . "#424242")
+               (foreground . "#eaeaea")
+               (comment . "#969896")
+               (red . "#d54e53")
+               (orange . "#e78c45")
+               (yellow . "#e7c547")
+               (green . "#b9ca4a")
+               (aqua . "#70c0b1")
+               (blue . "#7aa6da")
+               (purple . "#c397d8")))))
 
 
 
@@ -113,20 +113,20 @@
   "Execute `BODY' in a scope with variables bound to the various tomorrow colors.
 
 `MODE' should be set to either 'day, 'night, 'eighties, 'blue or 'bright."
-  `(let* ((colors (or (plist-get color-theme-sanityinc-tomorrow-colors ,mode)
+  `(let* ((colors (or (cdr (assoc ,mode color-theme-sanityinc-tomorrow-colors))
                       (error "no such theme flavor")))
-          (background   (plist-get colors 'background))
-          (current-line (plist-get colors 'current-line))
-          (selection    (plist-get colors 'selection))
-          (foreground   (plist-get colors 'foreground))
-          (comment      (plist-get colors 'comment))
-          (red          (plist-get colors 'red))
-          (orange       (plist-get colors 'orange))
-          (yellow       (plist-get colors 'yellow))
-          (green        (plist-get colors 'green))
-          (aqua         (plist-get colors 'aqua))
-          (blue         (plist-get colors 'blue))
-          (purple       (plist-get colors 'purple))
+          (background   (cdr (assoc 'background colors)))
+          (current-line (cdr (assoc 'current-line colors)))
+          (selection    (cdr (assoc 'selection colors)))
+          (foreground   (cdr (assoc 'foreground colors)))
+          (comment      (cdr (assoc 'comment colors)))
+          (red          (cdr (assoc 'red colors)))
+          (orange       (cdr (assoc 'orange colors)))
+          (yellow       (cdr (assoc 'yellow colors)))
+          (green        (cdr (assoc 'green colors)))
+          (aqua         (cdr (assoc 'aqua colors)))
+          (blue         (cdr (assoc 'blue colors)))
+          (purple       (cdr (assoc 'purple colors)))
           (class '((class color) (min-colors 89))))
      ,@body))
 

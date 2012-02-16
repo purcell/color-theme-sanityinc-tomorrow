@@ -343,12 +343,12 @@ names to which it refers are bound."
      (py-builtins-face ((,class (:foreground ,orange :weight normal))))
 
      ;; js2-mode
-     (js2-warning ((,class (:underline ,yellow))))
+     (js2-warning ((,class (:underline ,orange))))
      (js2-error ((,class (:underline ,red))))
      (js2-external-variable ((,class (:foreground ,purple))))
 
      ;; js3-mode
-     (js3-warning-face ((,class (:underline ,yellow))))
+     (js3-warning-face ((,class (:underline ,orange))))
      (js3-error-face ((,class (:underline ,red))))
      (js3-external-variable-face ((,class (:foreground ,purple))))
      (js3-function-param-face ((,class (:foreground ,blue))))

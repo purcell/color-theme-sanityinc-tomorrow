@@ -155,7 +155,7 @@ names to which it refers are bound."
      (font-lock-regexp-grouping-backslash ((,class (:foreground ,yellow))))
      (font-lock-regexp-grouping-construct ((,class (:foreground ,purple))))
      (font-lock-string-face ((,class (:foreground ,aqua))))
-     (font-lock-type-face ((,class (:foreground ,orange))))
+     (font-lock-type-face ((,class (:foreground ,blue))))
      (font-lock-variable-name-face ((,class (:foreground ,yellow))))
      (font-lock-warning-face ((,class (:weight bold :foreground ,red))))
      (shadow ((,class (:foreground ,comment))))

@@ -155,7 +155,7 @@ names to which it refers are bound."
      (font-lock-regexp-grouping-backslash ((,class (:foreground ,yellow))))
      (font-lock-regexp-grouping-construct ((,class (:foreground ,purple))))
      (font-lock-string-face ((,class (:foreground ,aqua))))
-     (font-lock-type-face ((,class (:foreground ,blue))))
+     (font-lock-type-face ((,class (:foreground ,orange))))
      (font-lock-variable-name-face ((,class (:foreground ,yellow))))
      (font-lock-warning-face ((,class (:weight bold :foreground ,red))))
      (shadow ((,class (:foreground ,comment))))
@@ -343,9 +343,12 @@ names to which it refers are bound."
      (py-builtins-face ((,class (:foreground ,orange :weight normal))))
 
      ;; js2-mode
-     (js2-warning ((,class (:underline ,orange))))
-     (js2-error ((,class (:underline ,red))))
-     (js2-external-variable ((,class (:foreground ,purple))))
+     (js2-warning-face ((,class (:underline ,orange))))
+     (js2-error-face ((,class (:underline ,red))))
+     (js2-external-variable-face ((,class (:foreground ,purple))))
+     (js2-function-param-face ((,class (:foreground ,blue))))
+     (js2-instance-member-face ((,class (:foreground ,blue))))
+     (js2-private-function-call-face ((,class (:foreground ,red))))
 
      ;; js3-mode
      (js3-warning-face ((,class (:underline ,orange))))

@@ -253,6 +253,8 @@ names to which it refers are bound."
      (slime-repl-result-face ((,class (:foreground ,green))))
      (slime-repl-output-face ((,class (:foreground ,blue :background ,background))))
 
+     (csv-separator-face ((,class (:foreground ,orange))))
+
      (diff-added ((,class (:foreground ,green))))
      (diff-changed ((,class (:foreground ,purple))))
      (diff-removed ((,class (:foreground ,orange))))

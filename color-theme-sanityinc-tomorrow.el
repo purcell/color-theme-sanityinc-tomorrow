@@ -208,6 +208,8 @@ names to which it refers are bound."
      (ido-subdir ((,class (:foreground ,purple))))
      (ido-first-match ((,class (:foreground ,orange))))
      (ido-only-match ((,class (:foreground ,green))))
+     (ido-indicator ((,class (:foreground ,red :background ,background))))
+     (ido-virtual ((,class (:foreground ,comment))))
 
      ;; Emacs interface
      (cursor ((,class (:background ,red))))

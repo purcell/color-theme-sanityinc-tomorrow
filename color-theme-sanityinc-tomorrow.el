@@ -233,7 +233,18 @@ names to which it refers are bound."
      (secondary-selection ((,class (:background ,current-line))))
 
      (header-line ((,class (:background nil :foreground ,foreground :weight bold :inherit nil))))
-     (trailing-whitespace ((,class (:background ,red :underline nil))))
+
+     (trailing-whitespace ((,class (:foreground ,red :inverse-video t :underline nil))))
+     (whitespace-trailing ((,class (:foreground ,red :inverse-video t :underline nil))))
+     (whitespace-space-after-tab ((,class (:foreground ,red :inverse-video t :underline nil))))
+     (whitespace-space-before-tab ((,class (:foreground ,red :inverse-video t :underline nil))))
+     (whitespace-empty ((,class (:foreground ,red :inverse-video t :underline nil))))
+     (whitespace-line ((,class (:background nil :foreground ,red))))
+     (whitespace-indentation ((,class (:background nil :foreground ,aqua))))
+     (whitespace-space ((,class (:background nil :foreground ,selection))))
+     (whitespace-newline ((,class (:background nil :foreground ,selection))))
+     (whitespace-tab ((,class (:background nil :foreground ,selection))))
+     (whitespace-hspace ((,class (:background nil :foreground ,selection))))
 
      ;; Parenthesis matching (built-in)
      (show-paren-match ((,class (:background nil :foreground nil :inverse-video t))))

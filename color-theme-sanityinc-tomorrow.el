@@ -326,6 +326,8 @@ names to which it refers are bound."
      (grep-hit-face ((,class (:foreground ,blue))))
      (grep-match-face ((,class (:foreground nil :background nil :inherit match))))
 
+     (regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
+
      (org-date ((,class (:foreground ,blue :underline t))))
      (org-agenda-structure ((,class (:foreground ,purple))))
      (org-agenda-date ((,class (:foreground ,blue :underline nil))))

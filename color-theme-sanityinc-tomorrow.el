@@ -331,6 +331,7 @@ names to which it refers are bound."
      (org-date ((,class (:foreground ,blue :underline t))))
      (org-agenda-structure ((,class (:foreground ,purple))))
      (org-agenda-date ((,class (:foreground ,blue :underline nil))))
+     (org-agenda-done ((,class (:foreground ,green))))
      (org-agenda-dimmed-todo-face ((,class (:foreground ,comment))))
      (org-block ((,class (:foreground ,orange))))
      (org-code ((,class (:foreground ,yellow))))

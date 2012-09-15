@@ -328,6 +328,10 @@ names to which it refers are bound."
 
      (regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
 
+     ;; mark-multiple
+     (mm/master-face ((,class (:foreground ,yellow :inverse-video t))))
+     (mm/mirror-face ((,class (:foreground ,yellow :inverse-video t))))
+
      (org-date ((,class (:foreground ,blue :underline t))))
      (org-agenda-structure ((,class (:foreground ,purple))))
      (org-agenda-date ((,class (:foreground ,blue :underline nil))))

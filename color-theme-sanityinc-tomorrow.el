@@ -232,7 +232,7 @@ names to which it refers are bound."
      (region ((,class (:background ,selection))))
      (secondary-selection ((,class (:background ,current-line))))
 
-     (header-line ((,class (:inherit mode-line :foreground ,purple))))
+     (header-line ((,class (:inherit mode-line :foreground ,purple :background nil))))
 
      (trailing-whitespace ((,class (:foreground ,red :inverse-video t :underline nil))))
      (whitespace-trailing ((,class (:foreground ,red :inverse-video t :underline nil))))

@@ -565,4 +565,8 @@ are bound."
 
 (provide 'color-theme-sanityinc-tomorrow)
 
+;; Local Variables:
+;; byte-compile-warnings: (not cl-functions)
+;; End:
+
 ;;; color-theme-sanityinc-tomorrow.el ends here

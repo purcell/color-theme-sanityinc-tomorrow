@@ -368,7 +368,7 @@ names to which it refers are bound."
 
      ;; js2-mode
      (js2-warning-face ((,class (:underline ,orange))))
-     (js2-error-face ((,class (:underline ,red))))
+     (js2-error-face ((,class (:foreground nil :underline ,red))))
      (js2-external-variable-face ((,class (:foreground ,purple))))
      (js2-function-param-face ((,class (:foreground ,blue))))
      (js2-instance-member-face ((,class (:foreground ,blue))))
@@ -376,7 +376,7 @@ names to which it refers are bound."
 
      ;; js3-mode
      (js3-warning-face ((,class (:underline ,orange))))
-     (js3-error-face ((,class (:underline ,red))))
+     (js3-error-face ((,class (:foreground nil :underline ,red))))
      (js3-external-variable-face ((,class (:foreground ,purple))))
      (js3-function-param-face ((,class (:foreground ,blue))))
      (js3-jsdoc-tag-face ((,class (:foreground ,orange))))

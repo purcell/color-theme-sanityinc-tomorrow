@@ -32,3 +32,9 @@ In newer Emacs versions, just require the library as above, then
 
 See https://github.com/ChrisKempson/Tomorrow-Theme for more info.
 
+
+<hr>
+
+[![](http://api.coderwall.com/purcell/endorsecount.png)](http://coderwall.com/purcell)
+
+[![](http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png)](http://uk.linkedin.com/in/stevepurcell)

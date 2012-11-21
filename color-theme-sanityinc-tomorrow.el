@@ -287,9 +287,11 @@ names to which it refers are bound."
      (undo-tree-visualizer-register-face ((,class (:foreground ,yellow))))
 
      ;; dired+
+     (diredp-compressed-file-suffix ((,class (:foreground ,blue))))
      (diredp-dir-heading ((,class (:foreground nil :background nil :inherit heading))))
      (diredp-dir-priv ((,class (:foreground ,aqua :background nil))))
      (diredp-exec-priv ((,class (:foreground ,blue :background nil))))
+     (diredp-executable-tag ((,class (:foreground ,red :background nil))))
      (diredp-file-name ((,class (:foreground ,yellow))))
      (diredp-file-suffix ((,class (:foreground ,green))))
      (diredp-flag-mark-line ((,class (:background nil :inherit highlight))))

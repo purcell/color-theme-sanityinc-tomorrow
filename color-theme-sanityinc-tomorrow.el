@@ -328,6 +328,9 @@ names to which it refers are bound."
      (compilation-column-number ((,class (:foreground ,yellow))))
      (compilation-line-number ((,class (:foreground ,yellow))))
      (compilation-message-face ((,class (:foreground ,blue))))
+     (compilation-mode-line-exit ((,class (:foreground ,green))))
+     (compilation-mode-line-fail ((,class (:foreground ,red))))
+     (compilation-mode-line-run ((,class (:foreground ,blue))))
 
      ;; Grep
      (grep-context-face ((,class (:foreground ,comment))))

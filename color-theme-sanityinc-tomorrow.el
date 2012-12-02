@@ -372,7 +372,6 @@ names to which it refers are bound."
      (org-upcoming-deadline ((,class (:foreground ,orange))))
      (org-warning ((,class (:weight bold :foreground ,red))))
 
-     (markdown-header-face ((,class (:inherit header-line))))
      (markdown-url-face ((,class (:inherit link))))
      (markdown-link-face ((,class (:foreground ,blue :underline t))))
 
@@ -421,11 +420,11 @@ names to which it refers are bound."
      (erb-comment-delim-face ((,class (:background ,current-line))))
 
      ;; Message-mode
-     (message-header-other ((,class (:inherit header-line :foreground nil :background nil :weight normal))))
+     (message-header-other ((,class (:foreground nil :background nil :weight normal))))
      (message-header-subject ((,class (:inherit message-header-other :weight bold :foreground ,yellow))))
      (message-header-to ((,class (:inherit message-header-other :weight bold :foreground ,orange))))
      (message-header-cc ((,class (:inherit message-header-to :foreground nil))))
-     (message-header-name ((,class (:inherit header-line :foreground ,green :background nil))))
+     (message-header-name ((,class (:foreground ,blue :background nil))))
      (message-header-newsgroups ((,class (:foreground ,aqua :background nil :slant normal))))
      (message-separator ((,class (:foreground ,purple))))
 
@@ -459,10 +458,10 @@ names to which it refers are bound."
      (gnus-cite-7 ((,class (:inherit outline-7 :foreground nil))))
      (gnus-cite-8 ((,class (:inherit outline-8 :foreground nil))))
      ;; there are several more -cite- faces...
-     (gnus-header-content ((,class (:inherit header-line :foreground nil :background nil :weight normal))))
-     (gnus-header-subject ((,class (:inherit gnus-header-content :weight bold :foreground ,yellow))))
-     (gnus-header-from ((,class (:inherit gnus-header-content :weight bold :foreground ,orange))))
-     (gnus-header-name ((,class (:inherit header-line :foreground ,green :background nil))))
+     (gnus-header-content ((,class (:inherit message-header-other))))
+     (gnus-header-subject ((,class (:inherit message-header-subject))))
+     (gnus-header-from ((,class (:inherit message-header-other-face :weight bold :foreground ,orange))))
+     (gnus-header-name ((,class (:inherit message-header-name))))
      (gnus-button ((,class (:inherit link :foreground nil))))
      (gnus-signature ((,class (:inherit font-lock-comment-face))))
 

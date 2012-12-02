@@ -162,6 +162,7 @@ names to which it refers are bound."
      (success ((,class (:foreground ,green))))
      (error ((,class (:foreground ,red))))
      (warning ((,class (:foreground ,orange))))
+     (outline-4 ((,class (:slant normal :foreground ,comment))))
 
      ;; Flymake
      (flymake-warnline ((,class (:underline ,orange :background ,background))))
@@ -492,6 +493,18 @@ names to which it refers are bound."
      (gnus-group-mail-4-empty ((,class (:inherit gnus-group-mail-4 :foreground ,comment))))
      (gnus-group-mail-5-empty ((,class (:inherit gnus-group-mail-5 :foreground ,comment))))
      (gnus-group-mail-6-empty ((,class (:inherit gnus-group-mail-6 :foreground ,comment))))
+     (gnus-group-news-1 ((,class (:foreground nil :weight normal :inherit outline-5))))
+     (gnus-group-news-2 ((,class (:foreground nil :weight normal :inherit outline-6))))
+     (gnus-group-news-3 ((,class (:foreground nil :weight normal :inherit outline-7))))
+     (gnus-group-news-4 ((,class (:foreground nil :weight normal :inherit outline-8))))
+     (gnus-group-news-5 ((,class (:foreground nil :weight normal :inherit outline-1))))
+     (gnus-group-news-6 ((,class (:foreground nil :weight normal :inherit outline-2))))
+     (gnus-group-news-1-empty ((,class (:inherit gnus-group-news-1 :foreground ,comment))))
+     (gnus-group-news-2-empty ((,class (:inherit gnus-group-news-2 :foreground ,comment))))
+     (gnus-group-news-3-empty ((,class (:inherit gnus-group-news-3 :foreground ,comment))))
+     (gnus-group-news-4-empty ((,class (:inherit gnus-group-news-4 :foreground ,comment))))
+     (gnus-group-news-5-empty ((,class (:inherit gnus-group-news-5 :foreground ,comment))))
+     (gnus-group-news-6-empty ((,class (:inherit gnus-group-news-6 :foreground ,comment))))
 
      (erc-direct-msg-face ((,class (:foreground ,orange))))
      (erc-error-face ((,class (:foreground ,red))))

@@ -299,6 +299,7 @@ names to which it refers are bound."
      (diredp-ignored-file-name ((,class (:foreground ,comment))))
      (diredp-link-priv ((,class (:background nil :foreground ,purple))))
      (diredp-mode-line-flagged ((,class (:foreground ,red))))
+     (diredp-mode-line-marked ((,class (:foreground ,green))))
      (diredp-no-priv ((,class (:background nil))))
      (diredp-number ((,class (:foreground ,yellow))))
      (diredp-other-priv ((,class (:background nil :foreground ,purple))))

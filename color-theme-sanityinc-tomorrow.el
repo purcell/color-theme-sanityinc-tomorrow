@@ -212,6 +212,9 @@ names to which it refers are bound."
      (ido-indicator ((,class (:foreground ,red :background ,background))))
      (ido-virtual ((,class (:foreground ,comment))))
 
+     ;; which-function
+     (which-func ((,class (:foreground ,blue :background nil :weight bold))))
+
      ;; Emacs interface
      (cursor ((,class (:background ,red))))
      (fringe ((,class (:background ,current-line))))

@@ -327,6 +327,17 @@ names to which it refers are bound."
      (magit-log-head-label-tags ((,class (:foreground ,aqua :box nil :weight bold))))
      (magit-section-title ((,class (:foreground ,blue :weight bold))))
 
+     ;; git-gutter
+     (git-gutter:modified ((,class (:foreground ,purple :weight bold))))
+     (git-gutter:added ((,class (:foreground ,green :weight bold))))
+     (git-gutter:deleted ((,class (:foreground ,red :weight bold))))
+     (git-gutter:unchanged ((,class (:background ,yellow))))
+
+     ;; git-gutter-fringe
+     (git-gutter-fr:modified ((,class (:foreground ,purple :weight bold))))
+     (git-gutter-fr:added ((,class (:foreground ,green :weight bold))))
+     (git-gutter-fr:deleted ((,class (:foreground ,red :weight bold))))
+
      (link ((,class (:foreground nil :underline t))))
      (widget-button ((,class (:underline t))))
      (widget-field ((,class (:background ,current-line :box (:line-width 1 :color ,foreground)))))

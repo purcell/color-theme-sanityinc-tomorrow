@@ -278,6 +278,8 @@ names to which it refers are bound."
      (diff-header ((,class (:foreground ,aqua :background nil))))
      (diff-file-header ((,class (:foreground ,blue :background nil))))
      (diff-hunk-header ((,class (:foreground ,purple))))
+     (diff-refine-added ((,class (:inherit diff-added :inverse-video t))))
+     (diff-refine-removed ((,class (:inherit diff-removed :inverse-video t))))
 
      (ediff-even-diff-A ((,class (:foreground nil :background nil :inverse-video t))))
      (ediff-even-diff-B ((,class (:foreground nil :background nil :inverse-video t))))

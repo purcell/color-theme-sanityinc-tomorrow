@@ -319,6 +319,7 @@ names to which it refers are bound."
      (magit-branch ((,class (:foreground ,green))))
      (magit-header ((,class (:inherit nil :weight bold))))
      (magit-item-highlight ((,class (:inherit highlight :background nil))))
+     (magit-log-author ((,class (:foreground ,aqua))))
      (magit-log-graph ((,class (:foreground ,comment))))
      (magit-log-sha1 ((,class (:foreground ,yellow))))
      (magit-log-head-label-bisect-bad ((,class (:foreground ,red))))
@@ -420,6 +421,10 @@ names to which it refers are bound."
      (js3-jsdoc-html-tag-delimiter-face ((,class (:foreground ,green))))
      (js3-instance-member-face ((,class (:foreground ,blue))))
      (js3-private-function-call-face ((,class (:foreground ,red))))
+
+     ;; coffee-mode
+     (coffee-mode-class-name ((,class (:foreground ,orange :weight bold))))
+     (coffee-mode-function-param ((,class (:foreground ,purple))))
 
      ;; nxml
      (nxml-name-face ((,class (:foreground unspecified :inherit font-lock-constant-face))))

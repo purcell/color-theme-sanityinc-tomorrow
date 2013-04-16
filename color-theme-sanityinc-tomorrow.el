@@ -476,6 +476,17 @@ names to which it refers are bound."
      (powerline-active1 ((t (:foreground ,foreground :background ,selection))))
      (powerline-active2 ((t (:foreground ,foreground :background ,current-line))))
 
+     ;; Outline
+     (outline-1 ((,class (:inherit nil :foreground ,blue))))
+     (outline-2 ((,class (:inherit nil :foreground ,yellow))))
+     (outline-3 ((,class (:inherit nil :foreground ,purple))))
+     (outline-4 ((,class (:inherit nil :foreground ,aqua))))
+     (outline-5 ((,class (:inherit nil :foreground ,orange))))
+     (outline-6 ((,class (:inherit nil :foreground ,blue))))
+     (outline-7 ((,class (:inherit nil :foreground ,yellow))))
+     (outline-8 ((,class (:inherit nil :foreground ,purple))))
+     (outline-9 ((,class (:inherit nil :foreground ,aqua))))
+
      ;; Gnus
      (gnus-cite-1 ((,class (:inherit outline-1 :foreground nil))))
      (gnus-cite-2 ((,class (:inherit outline-2 :foreground nil))))

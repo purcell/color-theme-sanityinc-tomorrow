@@ -402,12 +402,12 @@ names to which it refers are bound."
      (py-builtins-face ((,class (:foreground ,orange :weight normal))))
 
      ;; js2-mode
-     (js2-warning-face ((,class (:underline ,orange))))
-     (js2-error-face ((,class (:foreground nil :underline ,red))))
-     (js2-external-variable-face ((,class (:foreground ,purple))))
-     (js2-function-param-face ((,class (:foreground ,blue))))
-     (js2-instance-member-face ((,class (:foreground ,blue))))
-     (js2-private-function-call-face ((,class (:foreground ,red))))
+     (js2-warning ((,class (:underline ,orange))))
+     (js2-error ((,class (:foreground nil :underline ,red))))
+     (js2-external-variable ((,class (:foreground ,purple))))
+     (js2-function-param ((,class (:foreground ,blue))))
+     (js2-instance-member ((,class (:foreground ,blue))))
+     (js2-private-function-call ((,class (:foreground ,red))))
 
      ;; js3-mode
      (js3-warning-face ((,class (:underline ,orange))))

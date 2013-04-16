@@ -593,9 +593,11 @@ are bound."
   "Apply the tomorrow variant theme."
   (if (fboundp 'load-theme)
       (let ((name (color-theme-sanityinc-tomorrow--theme-name mode)))
-        (if (> emacs-major-version 23)
-            (load-theme name t)
-          (load-theme name)))
+        (if (boundp 'custom-enabled-themes)
+            (custom-set-variables `(custom-enabled-themes '(,name)))
+          (if (> emacs-major-version 23)
+              (load-theme name t)
+            (load-theme name))))
     (progn
       (require 'color-theme)
       (color-theme-sanityinc-tomorrow--with-colors

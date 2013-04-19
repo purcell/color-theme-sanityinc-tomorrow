@@ -173,6 +173,12 @@ names to which it refers are bound."
      (clojure-test-error-face ((,class (:background nil :inherit flymake-errline))))
      (clojure-test-success-face ((,class (:background nil :foreground nil :underline ,green))))
 
+     ;; EDTS errors
+     (edts-face-warning-line ((t (:background nil :inherit flymake-warnline))))
+     (edts-face-warning-mode-line ((,class (:background nil :foreground ,orange :weight bold))))
+     (edts-face-error-line ((t (:background nil :inherit flymake-errline))))
+     (edts-face-error-mode-line ((,class (:background nil :foreground ,red :weight bold))))
+
      ;; For Brian Carper's extended clojure syntax table
      (clojure-keyword ((,class (:foreground ,yellow))))
      (clojure-parens ((,class (:foreground ,foreground))))

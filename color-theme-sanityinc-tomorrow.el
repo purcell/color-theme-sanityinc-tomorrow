@@ -571,6 +571,17 @@ names to which it refers are bound."
      (custom-variable-tag ((,class (:foreground ,blue))))
      (custom-group-tag ((,class (:foreground ,blue))))
      (custom-state ((,class (:foreground ,green))))
+
+     ;; ansi-term
+     (term ((,class (:foreground nil :background nil :inherit default))))
+     (term-color-black   ((,class (:foreground ,foreground :background ,foreground))))
+     (term-color-red     ((,class (:foreground ,red :background ,red))))
+     (term-color-green   ((,class (:foreground ,green :background ,green))))
+     (term-color-yellow  ((,class (:foreground ,yellow :background ,yellow))))
+     (term-color-blue    ((,class (:foreground ,blue :background ,blue))))
+     (term-color-magenta ((,class (:foreground ,purple :background ,purple))))
+     (term-color-cyan    ((,class (:foreground ,aqua :background ,aqua))))
+     (term-color-white   ((,class (:foreground ,background :background ,background))))
      )))
 
 (defmacro color-theme-sanityinc-tomorrow--frame-parameter-specs ()
@@ -627,7 +638,6 @@ are bound."
          `(vc-annotate-background nil)
          `(ansi-color-names-vector (vector ,foreground ,red ,green ,yellow ,blue ,purple ,aqua ,background))
          '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
-         '(ansi-term-color-vector ansi-color-names-vector)
          ))
        (provide-theme ',name))))
 

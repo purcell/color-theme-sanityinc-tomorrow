@@ -496,6 +496,12 @@ names to which it refers are bound."
      (outline-8 ((,class (:inherit nil :foreground ,purple))))
      (outline-9 ((,class (:inherit nil :foreground ,aqua))))
 
+     ;; mu4e
+     (mu4e-header-highlight-face ((,class (:underline nil))))
+     (mu4e-flagged-face ((,class (:foreground ,orange :inherit nil))))
+     (mu4e-replied-face ((,class (:foreground ,blue :inherit nil))))
+     (mu4e-unread-face ((,class (:foreground ,yellow :inherit nil))))
+
      ;; Gnus
      (gnus-cite-1 ((,class (:inherit outline-1 :foreground nil))))
      (gnus-cite-2 ((,class (:inherit outline-2 :foreground nil))))

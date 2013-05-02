@@ -162,7 +162,6 @@ names to which it refers are bound."
      (success ((,class (:foreground ,green))))
      (error ((,class (:foreground ,red))))
      (warning ((,class (:foreground ,orange))))
-     (outline-4 ((,class (:slant normal :foreground ,comment))))
 
      ;; Flymake
      (flymake-warnline ((,class (:underline ,orange :background ,background))))

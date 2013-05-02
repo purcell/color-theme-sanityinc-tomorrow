@@ -613,6 +613,7 @@ are bound."
         (doc (format "A version of Chris Kempson's 'Tomorrow' theme (%s version)" mode)))
     `(progn
        (deftheme ,name ,doc)
+       (put ',name 'theme-immediate t)
        (color-theme-sanityinc-tomorrow--with-colors
         ',mode
         (apply 'custom-theme-set-faces ',name

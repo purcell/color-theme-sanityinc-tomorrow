@@ -496,10 +496,25 @@ names to which it refers are bound."
      (outline-9 ((,class (:inherit nil :foreground ,aqua))))
 
      ;; mu4e
-     (mu4e-header-highlight-face ((,class (:underline nil))))
+     (mu4e-header-highlight-face ((,class (:underline nil :background ,current-line))))
+     (mu4e-header-marks-face ((,class (:underline nil :foreground ,yellow))))
      (mu4e-flagged-face ((,class (:foreground ,orange :inherit nil))))
      (mu4e-replied-face ((,class (:foreground ,blue :inherit nil))))
      (mu4e-unread-face ((,class (:foreground ,yellow :inherit nil))))
+     (mu4e-cited-1-face ((,class (:inherit outline-1 :slant normal))))
+     (mu4e-cited-2-face ((,class (:inherit outline-2 :slant normal))))
+     (mu4e-cited-3-face ((,class (:inherit outline-3 :slant normal))))
+     (mu4e-cited-4-face ((,class (:inherit outline-4 :slant normal))))
+     (mu4e-cited-5-face ((,class (:inherit outline-5 :slant normal))))
+     (mu4e-cited-6-face ((,class (:inherit outline-6 :slant normal))))
+     (mu4e-cited-7-face ((,class (:inherit outline-7 :slant normal))))
+     (mu4e-ok-face ((,class (:foreground ,green))))
+     (mu4e-view-contact-face ((,class (:inherit nil :foreground ,yellow))))
+     (mu4e-view-link-face ((,class (:inherit link :foreground ,blue))))
+     (mu4e-view-url-number-face ((,class (:inherit nil :foreground ,aqua))))
+     (mu4e-view-attach-number-face ((,class (:inherit nil :foreground ,orange))))
+     (mu4e-highlight-face ((,class (:inherit highlight))))
+     (mu4e-title-face ((,class (:inherit nil :foreground ,green))))
 
      ;; Gnus
      (gnus-cite-1 ((,class (:inherit outline-1 :foreground nil))))

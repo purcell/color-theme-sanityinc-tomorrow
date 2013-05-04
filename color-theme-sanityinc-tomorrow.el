@@ -496,7 +496,7 @@ names to which it refers are bound."
      (outline-9 ((,class (:inherit nil :foreground ,aqua))))
 
      ;; mu4e
-     (mu4e-header-highlight-face ((,class (:underline nil :inherit highlight))))
+     (mu4e-header-highlight-face ((,class (:underline nil :inherit region))))
      (mu4e-header-marks-face ((,class (:underline nil :foreground ,yellow))))
      (mu4e-flagged-face ((,class (:foreground ,orange :inherit nil))))
      (mu4e-replied-face ((,class (:foreground ,blue :inherit nil))))

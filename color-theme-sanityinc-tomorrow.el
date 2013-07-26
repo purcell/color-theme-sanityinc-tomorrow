@@ -221,7 +221,8 @@ names to which it refers are bound."
      (ido-indicator ((,class (:foreground ,red :background ,background))))
      (ido-virtual ((,class (:foreground ,comment))))
 
-     (flx-highlight-face ((,class (:inherit nil :foreground ,aqua :weight normal :underline nil))))
+     ;; flx-ido
+     (flx-highlight-face ((,class (:inherit nil :foreground ,yellow :weight bold :underline nil))))
 
      ;; which-function
      (which-func ((,class (:foreground ,blue :background nil :weight bold))))

@@ -222,7 +222,7 @@ names to which it refers are bound."
      (ido-virtual ((,class (:foreground ,comment))))
 
      ;; flx-ido
-     (flx-highlight-face ((,class (:inherit nil :foreground ,orange :weight bold :underline nil))))
+     (flx-highlight-face ((,class (:inherit nil :foreground ,yellow :weight bold :underline nil))))
 
      ;; which-function
      (which-func ((,class (:foreground ,blue :background nil :weight bold))))

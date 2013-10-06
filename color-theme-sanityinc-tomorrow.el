@@ -726,6 +726,7 @@ are bound."
 
 ;; Local Variables:
 ;; byte-compile-warnings: (not cl-functions)
+;; rainbow-mode: t
 ;; End:
 
 ;;; color-theme-sanityinc-tomorrow.el ends here

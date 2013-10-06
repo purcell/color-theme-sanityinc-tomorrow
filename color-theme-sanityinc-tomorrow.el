@@ -228,7 +228,7 @@ names to which it refers are bound."
      (which-func ((,class (:foreground ,blue :background nil :weight bold))))
 
      ;; Emacs interface
-     (cursor ((,class (:background ,red))))
+     (cursor ((,class (:background ,orange))))
      (fringe ((,class (:background ,current-line))))
      (linum ((,class (:background ,current-line))))
      (border ((,class (:background ,current-line))))

@@ -323,6 +323,7 @@ names to which it refers are bound."
      (diredp-executable-tag ((,class (:foreground ,red :background nil))))
      (diredp-file-name ((,class (:foreground ,yellow))))
      (diredp-file-suffix ((,class (:foreground ,green))))
+     (diredp-flag-mark ((,class (:foreground ,green :inverse-video t))))
      (diredp-flag-mark-line ((,class (:background nil :inherit highlight))))
      (diredp-ignored-file-name ((,class (:foreground ,comment))))
      (diredp-link-priv ((,class (:background nil :foreground ,purple))))
@@ -379,6 +380,8 @@ names to which it refers are bound."
      (grep-error-face ((,class (:foreground ,red :weight bold :underline t))))
      (grep-hit-face ((,class (:foreground ,blue))))
      (grep-match-face ((,class (:foreground nil :background nil :inherit match))))
+
+     ;;; TODO: wgrep faces
 
      (regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
 

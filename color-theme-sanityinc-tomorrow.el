@@ -717,26 +717,31 @@ are bound."
 
 ;;;###autoload
 (defun color-theme-sanityinc-tomorrow-night ()
+  "Apply the tomorrow night theme."
   (interactive)
   (color-theme-sanityinc-tomorrow 'night))
 
 ;;;###autoload
 (defun color-theme-sanityinc-tomorrow-day ()
+  "Apply the tomorrow day theme."
   (interactive)
   (color-theme-sanityinc-tomorrow 'day))
 
 ;;;###autoload
 (defun color-theme-sanityinc-tomorrow-bright ()
+  "Apply the tomorrow bright theme."
   (interactive)
   (color-theme-sanityinc-tomorrow 'bright))
 
 ;;;###autoload
 (defun color-theme-sanityinc-tomorrow-eighties ()
+  "Apply the tomorrow eighties theme."
   (interactive)
   (color-theme-sanityinc-tomorrow 'eighties))
 
 ;;;###autoload
 (defun color-theme-sanityinc-tomorrow-blue ()
+  "Apply the tomorrow blue theme."
   (interactive)
   (color-theme-sanityinc-tomorrow 'blue))
 

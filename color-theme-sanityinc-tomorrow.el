@@ -214,6 +214,11 @@ names to which it refers are bound."
      (isearch-lazy-highlight-face ((,class (:foreground ,aqua :background ,background :inverse-video t))))
      (isearch-fail ((,class (:background ,background :inherit font-lock-warning-face :inverse-video t))))
 
+     ;; Anzu
+     (anzu-mode-line ((,class (:foreground ,orange))))
+     (anzu-replace-highlight ((,class (:inherit isearch-lazy-highlight-face))))
+     (anzu-replace-to ((,class (:inherit isearch))))
+
      ;; IDO
      (ido-subdir ((,class (:foreground ,purple))))
      (ido-first-match ((,class (:foreground ,orange))))

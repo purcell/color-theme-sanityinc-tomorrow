@@ -23,20 +23,24 @@
 
 ;;; Commentary:
 
-;; In Emacs versions without built-in theme support, ie. < 24,
-;; color-theme.el is required.
+;; These five color themes are designed for use with Emacs' built-in
+;; theme support in Emacs 24. However, they also work with older Emacs
+;; versions, in which case color-theme.el is required.
 
-;; Use:
+;; Usage:
 
-;;   M-x color-theme-tomorrow-day
+;; If your Emacs has the `load-theme' command, you can use it to
+;; activate one of these themes programatically, or use
+;; `customize-themes' to select a theme interactively.
 
-;;   M-x color-theme-tomorrow-night
+;; Alternatively, or in older Emacs versions, use one of the provided
+;; wrapper commands to activate a theme:
 
-;;   M-x color-theme-tomorrow-blue
-
-;;   M-x color-theme-tomorrow-bright
-
-;;   M-x color-theme-tomorrow-eighties
+;;     M-x color-theme-tomorrow-day
+;;     M-x color-theme-tomorrow-night
+;;     M-x color-theme-tomorrow-blue
+;;     M-x color-theme-tomorrow-bright
+;;     M-x color-theme-tomorrow-eighties
 ;;
 ;;; Credit:
 

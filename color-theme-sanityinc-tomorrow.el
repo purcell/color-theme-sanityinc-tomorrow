@@ -326,7 +326,7 @@ names to which it refers are bound."
      (diredp-compressed-file-suffix ((,class (:foreground ,blue))))
      (diredp-deletion ((,class (:inherit error :inverse-video t))))
      (diredp-deletion-file-name ((,class (:inherit error))))
-     (diredp-dir-heading ((,class (:foreground nil :background nil :inherit heading))))
+     (diredp-dir-heading ((,class (:foreground ,green :weight bold))))
      (diredp-dir-priv ((,class (:foreground ,aqua :background nil))))
      (diredp-exec-priv ((,class (:foreground ,blue :background nil))))
      (diredp-executable-tag ((,class (:foreground ,red :background nil))))

@@ -614,6 +614,12 @@ names to which it refers are bound."
      (erc-timestamp-face ((,class (:foreground ,aqua))))
      (erc-keyword-face ((,class (:foreground ,green))))
 
+     ;; twittering-mode
+     (twittering-username-face ((,class (:inherit erc-pal-face))))
+     (twittering-uri-face ((,class (:inherit link))))
+     (twittering-timeline-header-face ((,class (:foreground ,green :weight bold))))
+     (twittering-timeline-footer-face ((,class (:inherit twittering-timeline-header-face))))
+
      (custom-variable-tag ((,class (:foreground ,blue))))
      (custom-group-tag ((,class (:foreground ,blue))))
      (custom-state ((,class (:foreground ,green))))

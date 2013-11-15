@@ -616,7 +616,7 @@ names to which it refers are bound."
 
      ;; twittering-mode
      (twittering-username-face ((,class (:inherit erc-pal-face))))
-     (twittering-uri-face ((,class (:inherit link))))
+     (twittering-uri-face ((,class (:foreground ,blue :inherit link))))
      (twittering-timeline-header-face ((,class (:foreground ,green :weight bold))))
      (twittering-timeline-footer-face ((,class (:inherit twittering-timeline-header-face))))
 

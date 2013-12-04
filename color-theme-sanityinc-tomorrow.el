@@ -522,8 +522,8 @@ names to which it refers are bound."
      (outline-9 ((,class (:inherit nil :foreground ,aqua))))
 
      ;; Ledger-mode
-     (ledger-font-comment-face ((,class (:inherit comment))))
-     (ledger-font-occur-narrowed-face ((,class (:inherit comment :invisible t))))
+     (ledger-font-comment-face ((,class (:inherit font-lock-comment-face))))
+     (ledger-font-occur-narrowed-face ((,class (:inherit font-lock-comment-face :invisible t))))
      (ledger-font-occur-xact-face ((,class (:inherit highlight))))
      (ledger-font-payee-cleared-face ((,class (:foreground ,green))))
      (ledger-font-payee-uncleared-face ((,class (:foreground ,aqua))))
@@ -531,7 +531,7 @@ names to which it refers are bound."
      (ledger-font-posting-account-face ((,class (:foreground ,purple))))
      (ledger-font-posting-account-pending-face ((,class (:foreground ,yellow))))
      (ledger-font-xact-highlight-face ((,class (:inherit highlight))))
-     (ledger-occur-narrowed-face ((,class (:inherit comment :invisible t))))
+     (ledger-occur-narrowed-face ((,class (:inherit font-lock-comment-face :invisible t))))
      (ledger-occur-xact-face ((,class (:inherit highlight))))
 
      ;; mu4e

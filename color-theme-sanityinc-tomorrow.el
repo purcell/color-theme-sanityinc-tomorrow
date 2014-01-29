@@ -244,7 +244,7 @@ names to which it refers are bound."
      (border-glyph ((,class (nil))))
      (highlight ((,class (:inverse-video nil :background ,current-line))))
      (gui-element ((,class (:background ,current-line :foreground ,foreground))))
-     (mode-line ((,class (:foreground nil :background ,current-line
+     (mode-line ((,class (:foreground nil :background ,current-line :weight normal
                                       :box (:line-width 1 :color ,foreground)))))
      (mode-line-buffer-id ((,class (:foreground ,purple :background nil))))
      (mode-line-inactive ((,class (:inherit mode-line

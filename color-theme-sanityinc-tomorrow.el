@@ -402,6 +402,17 @@ names to which it refers are bound."
      (mm/master-face ((,class (:inherit region :foreground nil :background nil))))
      (mm/mirror-face ((,class (:inherit region :foreground nil :background nil))))
 
+     ;; helm
+     (helm-buffer-saved-out ((,class (:inherit warning))))
+     (helm-buffer-size ((,class (:foreground ,yellow))))
+     (helm-buffer-not-saved ((,class (:foreground ,orange))))
+     (helm-buffer-process ((,class (:foreground ,aqua))))
+     (helm-ff-directory ((,class (:foreground ,aqua))))
+     (helm-candidate-number ((,class (:foreground ,red))))
+     (helm-selection ((,class (:inherit highlight))))
+     (helm-separator ((,class (:foreground ,purple))))
+     (helm-source-header ((,class (:inherit org-document-title))))
+
      (org-agenda-structure ((,class (:foreground ,purple))))
      (org-agenda-date ((,class (:foreground ,blue :underline nil))))
      (org-agenda-done ((,class (:foreground ,green))))

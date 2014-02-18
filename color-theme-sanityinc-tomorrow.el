@@ -1,6 +1,6 @@
 ;;; color-theme-sanityinc-tomorrow.el --- A version of Chris Kempson's "tomorrow" themes
 
-;; Copyright (C) 2012 Steve Purcell
+;; Copyright (C) 2012-2014 Steve Purcell
 
 ;; Author: Steve Purcell <steve@sanityinc.com>
 ;; Keywords: themes

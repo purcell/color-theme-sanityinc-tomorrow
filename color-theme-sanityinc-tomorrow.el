@@ -557,6 +557,7 @@ names to which it refers are bound."
       (emms-browser-album-face (:inherit outline-2))
       (emms-browser-track-face (:inherit outline-3))
       (emms-playlist-selected-face (:inverse-video t))
+      (emms-playlist-track-face (:inherit outline-3))
 
       ;; mu4e
       (mu4e-header-highlight-face (:underline nil :inherit region))

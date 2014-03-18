@@ -553,11 +553,12 @@ names to which it refers are bound."
       (ledger-occur-xact-face (:inherit highlight))
 
       ;; EMMS
-      (emms-browser-artist-face (:inherit outline-1))
-      (emms-browser-album-face (:inherit outline-2))
-      (emms-browser-track-face (:inherit outline-3))
+      (emms-browser-artist-face (:inherit outline-2))
+      (emms-browser-album-face (:inherit outline-3))
+      (emms-browser-track-face (:inherit outline-4))
+      (emms-browser-year/genre-face (:inherit outline-1))
       (emms-playlist-selected-face (:inverse-video t))
-      (emms-playlist-track-face (:inherit outline-3))
+      (emms-playlist-track-face (:inherit outline-4))
 
       ;; mu4e
       (mu4e-header-highlight-face (:underline nil :inherit region))

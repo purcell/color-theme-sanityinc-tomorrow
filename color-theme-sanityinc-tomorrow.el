@@ -309,6 +309,11 @@ names to which it refers are bound."
       (diff-refine-added (:inherit diff-added :inverse-video t))
       (diff-refine-removed (:inherit diff-removed :inverse-video t))
 
+      (diff-hl-insert (:background ,green))
+      (diff-hl-change (:background ,blue))
+      (diff-hl-delete (:background ,orange))
+      (diff-hl-unknown :background ,purple)
+
       (ediff-even-diff-A (:foreground nil :background nil :inverse-video t))
       (ediff-even-diff-B (:foreground nil :background nil :inverse-video t))
       (ediff-odd-diff-A  (:foreground ,comment :background nil :inverse-video t))

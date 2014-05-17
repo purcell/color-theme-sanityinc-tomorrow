@@ -184,9 +184,9 @@ names to which it refers are bound."
       (clojure-test-success-face (:background nil :foreground nil :underline ,green))
 
       ;; EDTS errors
-      (edts-face-warning-line ((t (:background nil :inherit flymake-warnline))))
+      (edts-face-warning-line (:background nil :inherit flymake-warnline))
       (edts-face-warning-mode-line (:background nil :foreground ,orange :weight bold))
-      (edts-face-error-line ((t (:background nil :inherit flymake-errline))))
+      (edts-face-error-line (:background nil :inherit flymake-errline))
       (edts-face-error-mode-line (:background nil :foreground ,red :weight bold))
 
       ;; For Brian Carper's extended clojure syntax table
@@ -530,8 +530,8 @@ names to which it refers are bound."
       (jabber-activity-personal-face (:foreground ,aqua))
 
       ;; Powerline
-      (powerline-active1 ((t (:foreground ,foreground :background ,selection))))
-      (powerline-active2 ((t (:foreground ,foreground :background ,current-line))))
+      (powerline-active1 (:foreground ,foreground :background ,selection))
+      (powerline-active2 (:foreground ,foreground :background ,current-line))
 
       ;; Outline
       (outline-1 (:inherit nil :foreground ,blue))

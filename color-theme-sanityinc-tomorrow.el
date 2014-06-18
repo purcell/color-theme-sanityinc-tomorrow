@@ -173,6 +173,9 @@ names to which it refers are bound."
       ;; Flycheck
       (flycheck-error (:underline (:style wave :color ,red)))
       (flycheck-warning (:underline (:style wave :color ,orange)))
+      (flycheck-fringe-error (:foreground ,red :inverse-video t))
+      (flycheck-fringe-info (:foreground ,yellow :inverse-video t))
+      (flycheck-fringe-warning (:foreground ,orange :inverse-video t))
 
       ;; Flymake
       (flymake-warnline (:underline (:style wave :color ,orange) :background ,background))

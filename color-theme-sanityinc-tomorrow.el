@@ -278,8 +278,8 @@ names to which it refers are bound."
       (whitespace-trailing (:background ,current-line :foreground ,red))
 
       ;; Parenthesis matching (built-in)
-      (show-paren-match (:background nil :foreground nil :inverse-video t))
-      (show-paren-mismatch (:background ,purple :foreground ,background))
+      (show-paren-match (:background ,purple :foreground ,background))
+      (show-paren-mismatch (:background ,red :foreground ,background))
 
       ;; Smartparens paren matching
       (sp-show-pair-match-face (:foreground nil :background nil :inherit show-paren-match))

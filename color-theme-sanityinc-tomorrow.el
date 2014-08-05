@@ -246,17 +246,18 @@ names to which it refers are bound."
       (cursor (:background ,red))
       (fringe (:background ,contrast-bg))
       (linum (:background ,contrast-bg :foreground ,green :italic nil))
-      (border (:background ,contrast-bg))
+      (vertical-border (:foreground ,highlight))
+      (border (:background ,contrast-bg :foreground ,contrast-bg))
       (border-glyph (nil))
       (highlight (:inverse-video nil :background ,contrast-bg))
       (gui-element (:background ,contrast-bg :foreground ,foreground))
       (mode-line (:foreground nil :background ,contrast-bg :weight normal
-                              :box (:line-width 1 :color ,foreground)))
+                              :box (:line-width 1 :color ,highlight)))
       (mode-line-buffer-id (:foreground ,purple :background nil))
       (mode-line-inactive (:inherit mode-line
                                     :foreground ,comment
                                     :background ,contrast-bg :weight normal
-                                    :box (:line-width 1 :color ,foreground)))
+                                    :box (:line-width 1 :color ,highlight)))
       (mode-line-emphasis (:foreground ,foreground :slant italic))
       (mode-line-highlight (:foreground ,purple :box nil :weight bold))
       (minibuffer-prompt (:foreground ,blue))

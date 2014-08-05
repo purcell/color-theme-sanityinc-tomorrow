@@ -14,6 +14,11 @@ If you're all set up to use [Marmalade](http://marmalade-repo.org) or
 
     M-x package-install RET color-theme-sanityinc-tomorrow RET
 
+If you use [el-get](https://github.com/dimitri/el-get/), simply add
+this to your packages list:
+
+    color-theme-sanityinc-tomorrow
+
 Otherwise, ensure a directory containing these files is on your `load-path`.
 
 If you're using an Emacs version older than 23.x, you'll also need to

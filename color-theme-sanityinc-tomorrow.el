@@ -249,7 +249,7 @@ names to which it refers are bound."
       (vertical-border (:foreground ,highlight))
       (border (:background ,contrast-bg :foreground ,contrast-bg))
       (border-glyph (nil))
-      (highlight (:inverse-video nil :background ,contrast-bg))
+      (highlight (:inverse-video nil :background ,highlight))
       (gui-element (:background ,contrast-bg :foreground ,foreground))
       (mode-line (:foreground nil :background ,contrast-bg :weight normal
                               :box (:line-width 1 :color ,comment)))
@@ -261,8 +261,8 @@ names to which it refers are bound."
       (mode-line-emphasis (:foreground ,foreground :slant italic))
       (mode-line-highlight (:foreground ,purple :box nil :weight bold))
       (minibuffer-prompt (:foreground ,blue))
-      (region (:background ,highlight))
-      (secondary-selection (:background ,contrast-bg))
+      (region (:background ,contrast-bg :inverse-video nil))
+      (secondary-selection (:background ,highlight))
 
       (header-line (:inherit mode-line :foreground ,purple :background nil))
 

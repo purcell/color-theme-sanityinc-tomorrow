@@ -423,7 +423,7 @@ names to which it refers are bound."
       (helm-candidate-number (:foreground ,red))
       (helm-selection (:inherit highlight))
       (helm-separator (:foreground ,purple))
-      (helm-source-header (:inherit org-document-title))
+      (helm-source-header (:weight bold :foreground ,orange :height 1.44))
 
       (org-agenda-structure (:foreground ,purple))
       (org-agenda-date (:foreground ,blue :underline nil))

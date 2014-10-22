@@ -1,3 +1,6 @@
+[![Melpa Status](http://melpa.milkbox.net/packages/color-theme-sanityinc-tomorrow-badge.svg)](http://melpa.milkbox.net/#/color-theme-sanityinc-tomorrow)
+[![Melpa Stable Status](http://melpa-stable.milkbox.net/packages/color-theme-sanityinc-tomorrow-badge.svg)](http://melpa-stable.milkbox.net/#/color-theme-sanityinc-tomorrow)
+
 An Emacs version of
 [Chris Kempson's "Tomorrow" themes](https://github.com/ChrisKempson/Tomorrow-Theme),
 with much more extensive face definitions than the upstream Emacs

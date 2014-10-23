@@ -1,5 +1,5 @@
-[![Melpa Status](http://melpa.milkbox.net/packages/color-theme-sanityinc-tomorrow-badge.svg)](http://melpa.milkbox.net/#/color-theme-sanityinc-tomorrow)
-[![Melpa Stable Status](http://melpa-stable.milkbox.net/packages/color-theme-sanityinc-tomorrow-badge.svg)](http://melpa-stable.milkbox.net/#/color-theme-sanityinc-tomorrow)
+[![Melpa Status](http://melpa.org/packages/color-theme-sanityinc-tomorrow-badge.svg)](http://melpa.org/#/color-theme-sanityinc-tomorrow)
+[![Melpa Stable Status](http://stable.melpa.org/packages/color-theme-sanityinc-tomorrow-badge.svg)](http://stable.melpa.org/#/color-theme-sanityinc-tomorrow)
 
 An Emacs version of
 [Chris Kempson's "Tomorrow" themes](https://github.com/ChrisKempson/Tomorrow-Theme),
@@ -13,7 +13,7 @@ older versions, so use whichever you prefer.
 ## Installation ##
 
 If you're all set up to use [Marmalade](http://marmalade-repo.org) or
-[MELPA](http://melpa.milkbox.net/) (highly recommended!), simply
+[MELPA](http://melpa.org/) (highly recommended!), simply
 
     M-x package-install RET color-theme-sanityinc-tomorrow RET
 

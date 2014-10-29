@@ -3,7 +3,7 @@
 
 An Emacs version of
 [Chris Kempson's "Tomorrow" themes](https://github.com/ChrisKempson/Tomorrow-Theme),
-with much more extensive face definitions than the upstream Emacs
+with much more extensive face definitions than the "official" Emacs
 variant.
 
 The themes work with both the built-in theming support in recent

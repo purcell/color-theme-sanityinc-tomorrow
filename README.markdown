@@ -18,6 +18,8 @@ older versions, so use whichever you prefer.
 [![Blue](http://emacsthemes.caisah.info/wp-content/uploads/2014/01/sanityinc-tomorrow-blue-150x150.png)](http://emacsthemes.caisah.info/sanityinc-tomorrow-themes/)
 [![Day](http://emacsthemes.caisah.info/wp-content/uploads/2014/01/sanityinc-tomorrow-day-150x150.png)](http://emacsthemes.caisah.info/sanityinc-tomorrow-themes/)
 
+Courtesy of the wonderful [emacsthemes.caisah.info](http://emacsthemes.caisah.info).
+
 ## Installation ##
 
 If you're all set up to use [Marmalade](http://marmalade-repo.org) or

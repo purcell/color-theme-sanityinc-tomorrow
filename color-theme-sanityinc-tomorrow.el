@@ -457,7 +457,7 @@ names to which it refers are bound."
       (markdown-link-face (:foreground ,blue :underline t))
 
       ;; hl-line-mode
-      (hl-line (:background ,contrast-bg :weight bold))
+      (hl-line (:inherit highlight))
       (hl-sexp-face (:background ,contrast-bg))
       (highlight-symbol-face (:background ,contrast-bg :weight bold))
       (highlight-80+ (:background ,contrast-bg))

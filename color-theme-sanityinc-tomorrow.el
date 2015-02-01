@@ -431,6 +431,20 @@ names to which it refers are bound."
       (helm-separator (:foreground ,purple))
       (helm-source-header (:weight bold :foreground ,orange :height 1.44))
 
+      ;; company
+      (company-preview (:foreground ,comment))
+      (company-preview-common (:inherit company-preview :foreground ,red))
+      (company-preview-search (:inherit company-preview :foreground ,blue))
+      (company-tooltip (:background ,contrast-bg))
+      (company-tooltip-selection (:background ,highlight))
+      (company-tooltip-common (:inherit company-tooltip :foreground ,red))
+      (company-tooltip-common-selection (:inherit company-tooltip-selection :foreground ,red))
+      (company-tooltip-search (:inherit company-tooltip :foreground ,blue))
+      (company-tooltip-annotation (:inherit company-tooltip :foreground ,green))
+      (company-scrollbar-bg (:inherit 'company-tooltip :background ,highlight))
+      (company-scrollbar-fg (:background ,contrast-bg))
+      (company-echo-common (:inherit company-echo :foreground ,red))
+
       (org-agenda-structure (:foreground ,purple))
       (org-agenda-date (:foreground ,blue :underline nil))
       (org-agenda-done (:foreground ,green))

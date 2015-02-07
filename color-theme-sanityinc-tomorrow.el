@@ -477,7 +477,7 @@ names to which it refers are bound."
 
       ;; hl-line-mode
       (hl-sexp-face (:background ,contrast-bg))
-      (highlight-symbol-face (:background ,contrast-bg :weight bold))
+      (highlight-symbol-face (:inherit isearch-lazy-highlight-face))
       (highlight-80+ (:background ,contrast-bg))
 
       ;; Python-specific overrides

@@ -561,13 +561,13 @@ names to which it refers are bound."
       ;; Outline
       (outline-1 (:inherit nil :foreground ,blue))
       (outline-2 (:inherit nil :foreground ,purple))
-      (outline-3 (:inherit nil :foreground ,foreground))
-      (outline-4 (:inherit nil :foreground ,aqua))
+      (outline-3 (:inherit nil :foreground ,aqua))
+      (outline-4 (:inherit nil :foreground ,yellow))
       (outline-5 (:inherit nil :foreground ,orange))
       (outline-6 (:inherit nil :foreground ,blue))
       (outline-7 (:inherit nil :foreground ,purple))
-      (outline-8 (:inherit nil :foreground ,foreground))
-      (outline-9 (:inherit nil :foreground ,aqua))
+      (outline-8 (:inherit nil :foreground ,aqua))
+      (outline-9 (:inherit nil :foreground ,yellow))
 
       ;; Ledger-mode
       (ledger-font-comment-face (:inherit font-lock-comment-face))

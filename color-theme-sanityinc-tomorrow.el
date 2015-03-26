@@ -428,6 +428,7 @@ names to which it refers are bound."
       (helm-buffer-directory (:foreground ,blue))
       (helm-ff-directory (:foreground ,aqua))
       (helm-candidate-number (:foreground ,red))
+      (helm-match (:inherit match))
       (helm-selection (:inherit highlight))
       (helm-separator (:foreground ,purple))
       (helm-source-header (:weight bold :foreground ,orange :height 1.44))

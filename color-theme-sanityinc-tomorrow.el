@@ -338,6 +338,7 @@ names to which it refers are bound."
       (diredp-compressed-file-suffix (:foreground ,blue))
       (diredp-deletion (:inherit error :inverse-video t))
       (diredp-deletion-file-name (:inherit error))
+      (diredp-date-time (:foreground ,blue))
       (diredp-dir-heading (:foreground ,green :weight bold))
       (diredp-dir-priv (:foreground ,aqua :background nil))
       (diredp-exec-priv (:foreground ,blue :background nil))

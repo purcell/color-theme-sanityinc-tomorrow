@@ -36,11 +36,11 @@
 ;; Alternatively, or in older Emacs versions, use one of the provided
 ;; wrapper commands to activate a theme:
 
-;;     M-x color-theme-tomorrow-day
-;;     M-x color-theme-tomorrow-night
-;;     M-x color-theme-tomorrow-blue
-;;     M-x color-theme-tomorrow-bright
-;;     M-x color-theme-tomorrow-eighties
+;;     M-x color-theme-sanityinc-tomorrow-day
+;;     M-x color-theme-sanityinc-tomorrow-night
+;;     M-x color-theme-sanityinc-tomorrow-blue
+;;     M-x color-theme-sanityinc-tomorrow-bright
+;;     M-x color-theme-sanityinc-tomorrow-eighties
 ;;
 ;;; Credit:
 

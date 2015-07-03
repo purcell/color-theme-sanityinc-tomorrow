@@ -568,6 +568,16 @@ names to which it refers are bound."
       (powerline-active1 (:foreground ,foreground :background ,highlight))
       (powerline-active2 (:foreground ,foreground :background ,contrast-bg))
 
+      ;; Powerline-evil
+      (powerline-evil-base-face (:inherit mode-line :foreground ,background))
+      (powerline-evil-emacs-face (:inherit powerline-evil-base-face :background ,purple))
+      (powerline-evil-insert-face (:inherit powerline-evil-base-face :background ,blue))
+      (powerline-evil-motion-face (:inherit powerline-evil-base-face :background ,orange))
+      (powerline-evil-normal-face (:inherit powerline-evil-base-face :background ,green))
+      (powerline-evil-operator-face (:inherit powerline-evil-base-face :background ,aqua))
+      (powerline-evil-replace-face (:inherit powerline-evil-base-face :background ,red))
+      (powerline-evil-visual-face (:inherit powerline-evil-base-face :background ,yellow))
+
       ;; Outline
       (outline-1 (:inherit nil :foreground ,blue))
       (outline-2 (:inherit nil :foreground ,purple))

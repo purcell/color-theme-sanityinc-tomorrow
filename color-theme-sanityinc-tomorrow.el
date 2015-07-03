@@ -490,6 +490,15 @@ names to which it refers are bound."
       (highlight-symbol-face (:inherit isearch-lazy-highlight-face))
       (highlight-80+ (:background ,contrast-bg))
 
+      ;; Hydra
+      (hydra-face-blue (:foreground ,blue))
+      (hydra-face-teal (:foreground ,aqua))
+      (hydra-face-pink (:foreground ,purple))
+      (hydra-face-red (:foreground ,red))
+      ;; this is unfortunate, but we have no color close to amaranth in
+      ;; our palette
+      (hydra-face-amaranth (:foreground ,orange))
+
       ;; Python-specific overrides
       (py-builtins-face (:foreground ,orange :weight normal))
 

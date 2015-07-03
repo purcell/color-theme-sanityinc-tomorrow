@@ -239,6 +239,14 @@ names to which it refers are bound."
       ;; flx-ido
       (flx-highlight-face (:inherit nil :foreground ,yellow :weight bold :underline nil))
 
+      ;; Ivy
+      (ivy-confirm-face (:foreground ,green))
+      (ivy-current-match (:background ,contrast-bg))
+      (ivy-match-required-face (:foreground ,red))
+      (ivy-remote (:foreground ,blue))
+      (ivy-subdir (:foreground ,orange))
+      (ivy-virtual (:foreground ,purple))
+
       ;; which-function
       (which-func (:foreground ,blue :background nil :weight bold))
 

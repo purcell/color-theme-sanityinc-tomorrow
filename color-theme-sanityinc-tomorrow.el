@@ -367,7 +367,7 @@ names to which it refers are bound."
       (diredp-symlink (:foreground ,purple))
       (diredp-write-priv (:foreground ,yellow :background nil))
 
-      ;; Magit (a patch is pending in magit to make these standard upstream)
+      ;; Magit
       (magit-header-line (:inherit nil :weight bold))
       (magit-dimmed (:foreground ,comment))
       (magit-hash (:foreground ,comment))

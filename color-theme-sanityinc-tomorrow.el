@@ -276,7 +276,7 @@ names to which it refers are bound."
       (whitespace-space-after-tab (:background ,background :foreground ,yellow))
       (whitespace-space-before-tab (:background ,background :foreground ,red))
       (whitespace-tab (:background ,background :foreground ,comment))
-      (whitespace-trailing (:background ,bakground :foreground ,red))
+      (whitespace-trailing (:background ,background :foreground ,red))
 
       ;; Parenthesis matching (built-in)
       (show-paren-match (:background ,purple :foreground ,background))

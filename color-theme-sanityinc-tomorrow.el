@@ -252,7 +252,7 @@ names to which it refers are bound."
 
       ;; Emacs interface
       (cursor (:background ,red))
-      (fringe (:background ,contrast-bg))
+      (fringe (:background ,contrast-bg :foreground ,foreground))
       (linum (:background ,contrast-bg :foreground ,green :italic nil))
       (vertical-border (:foreground ,highlight))
       (border (:background ,contrast-bg :foreground ,highlight))

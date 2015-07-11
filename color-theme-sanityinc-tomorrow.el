@@ -255,7 +255,7 @@ names to which it refers are bound."
       (fringe (:background ,contrast-bg))
       (linum (:background ,contrast-bg :foreground ,green :italic nil))
       (vertical-border (:foreground ,highlight))
-      (border (:background ,contrast-bg :foreground ,contrast-bg))
+      (border (:background ,contrast-bg :foreground ,highlight))
       (border-glyph (nil))
       (highlight (:inverse-video nil :background ,highlight))
       (gui-element (:background ,contrast-bg :foreground ,foreground))

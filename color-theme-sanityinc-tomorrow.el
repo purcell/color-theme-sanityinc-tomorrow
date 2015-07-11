@@ -173,9 +173,9 @@ names to which it refers are bound."
       ;; Flycheck
       (flycheck-error (:underline (:style wave :color ,red)))
       (flycheck-warning (:underline (:style wave :color ,orange)))
-      (flycheck-fringe-error (:foreground ,background :background ,red))
-      (flycheck-fringe-info (:foreground ,background :background ,yellow))
-      (flycheck-fringe-warning (:foreground ,background :background ,orange))
+      (flycheck-fringe-error (:foreground ,red :background ,red))
+      (flycheck-fringe-info (:foreground ,yellow :background ,yellow))
+      (flycheck-fringe-warning (:foreground ,orange :background ,orange))
 
       ;; Flymake
       (flymake-warnline (:underline (:style wave :color ,orange) :background ,background))
@@ -321,10 +321,10 @@ names to which it refers are bound."
       (diff-refine-added (:inherit diff-added :inverse-video t))
       (diff-refine-removed (:inherit diff-removed :inverse-video t))
 
-      (diff-hl-insert (:background ,green))
-      (diff-hl-change (:background ,blue))
-      (diff-hl-delete (:background ,orange))
-      (diff-hl-unknown :background ,purple)
+      (diff-hl-insert (:foreground ,green :background ,green))
+      (diff-hl-change (:foreground ,blue :background ,blue))
+      (diff-hl-delete (:foreground ,orange :background ,orange))
+      (diff-hl-unknown (:foreground ,purple :background ,purple))
 
       (ediff-even-diff-A (:foreground nil :background nil :inverse-video t))
       (ediff-even-diff-B (:foreground nil :background nil :inverse-video t))

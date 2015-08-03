@@ -172,6 +172,7 @@ names to which it refers are bound."
 
       ;; Flycheck
       (flycheck-error (:underline (:style wave :color ,red)))
+      (flycheck-info (:underline (:style wave :color ,blue)))
       (flycheck-warning (:underline (:style wave :color ,orange)))
       (flycheck-fringe-error (:foreground ,red :background ,red))
       (flycheck-fringe-info (:foreground ,yellow :background ,yellow))

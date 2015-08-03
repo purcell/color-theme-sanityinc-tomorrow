@@ -172,10 +172,10 @@ names to which it refers are bound."
 
       ;; Flycheck
       (flycheck-error (:underline (:style wave :color ,red)))
-      (flycheck-info (:underline (:style wave :color ,blue)))
+      (flycheck-info (:underline (:style wave :color ,aqua)))
       (flycheck-warning (:underline (:style wave :color ,orange)))
       (flycheck-fringe-error (:foreground ,red :background ,red))
-      (flycheck-fringe-info (:foreground ,yellow :background ,yellow))
+      (flycheck-fringe-info (:foreground ,aqua :background ,aqua))
       (flycheck-fringe-warning (:foreground ,orange :background ,orange))
 
       ;; Flymake

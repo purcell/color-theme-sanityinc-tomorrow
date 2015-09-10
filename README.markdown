@@ -12,13 +12,13 @@ older versions, so use whichever you prefer.
 
 ## Screenshots ##
 
-[![Bright](http://emacsthemes.caisah.info/wp-content/uploads/2014/01/sanityinc-tomorrow-black-150x150.png)](http://emacsthemes.caisah.info/sanityinc-tomorrow-themes/)
-[![Night](http://emacsthemes.caisah.info/wp-content/uploads/2014/01/sanityinc-tomorrow-night-150x150.png)](http://emacsthemes.caisah.info/sanityinc-tomorrow-themes/)
-[![Eighties](http://emacsthemes.caisah.info/wp-content/uploads/2014/01/sanityinc-tomorrow-eighties-150x150.png)](http://emacsthemes.caisah.info/sanityinc-tomorrow-themes/)
-[![Blue](http://emacsthemes.caisah.info/wp-content/uploads/2014/01/sanityinc-tomorrow-blue-150x150.png)](http://emacsthemes.caisah.info/sanityinc-tomorrow-themes/)
-[![Day](http://emacsthemes.caisah.info/wp-content/uploads/2014/01/sanityinc-tomorrow-day-150x150.png)](http://emacsthemes.caisah.info/sanityinc-tomorrow-themes/)
+[![Bright](http://emacsthemes.caisah.info/wp-content/uploads/2014/01/sanityinc-tomorrow-black-150x150.png)](http://emacsthemes.com/themes/sanityinc-tomorrow-themes.html)
+[![Night](http://emacsthemes.caisah.info/wp-content/uploads/2014/01/sanityinc-tomorrow-night-150x150.png)](http://emacsthemes.com/themes/sanityinc-tomorrow-themes.html)
+[![Eighties](http://emacsthemes.caisah.info/wp-content/uploads/2014/01/sanityinc-tomorrow-eighties-150x150.png)](http://emacsthemes.com/themes/sanityinc-tomorrow-themes.html)
+[![Blue](http://emacsthemes.caisah.info/wp-content/uploads/2014/01/sanityinc-tomorrow-blue-150x150.png)](http://emacsthemes.com/themes/sanityinc-tomorrow-themes.html)
+[![Day](http://emacsthemes.caisah.info/wp-content/uploads/2014/01/sanityinc-tomorrow-day-150x150.png)](http://emacsthemes.com/themes/sanityinc-tomorrow-themes.html)
 
-Courtesy of the wonderful [emacsthemes.caisah.info](http://emacsthemes.caisah.info).
+Courtesy of the wonderful [emacsthemes.com](http://emacsthemes.com).
 
 ## Installation ##
 

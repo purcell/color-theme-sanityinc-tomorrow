@@ -275,7 +275,7 @@ names to which it refers are bound."
 
       (header-line (:inherit mode-line :foreground ,purple :background nil))
 
-      (trailing-whitespace (:background ,red :foreground ,yellow))
+      (trailing-whitespace (:background ,selection :foreground ,yellow))
       (whitespace-empty (:foreground ,red :background ,yellow))
       (whitespace-hspace (:background ,contrast-bg :foreground ,comment))
       (whitespace-indentation (:background ,contrast-bg :foreground ,comment))

@@ -275,17 +275,17 @@ names to which it refers are bound."
 
       (header-line (:inherit mode-line :foreground ,purple :background nil))
 
-      (trailing-whitespace (:background ,red :foreground ,yellow))
-      (whitespace-empty (:foreground ,red :background ,yellow))
+      (trailing-whitespace (:background ,orange :foreground ,yellow))
+      (whitespace-empty (:foreground ,orange :background ,yellow))
       (whitespace-hspace (:background ,contrast-bg :foreground ,comment))
       (whitespace-indentation (:background ,contrast-bg :foreground ,comment))
-      (whitespace-line (:background ,contrast-bg :foreground ,red))
+      (whitespace-line (:background ,contrast-bg :foreground ,orange))
       (whitespace-newline (:background ,contrast-bg :foreground ,comment))
       (whitespace-space (:background ,contrast-bg :foreground ,comment))
       (whitespace-space-after-tab (:background ,contrast-bg :foreground ,yellow))
-      (whitespace-space-before-tab (:background ,contrast-bg :foreground ,red))
+      (whitespace-space-before-tab (:background ,contrast-bg :foreground ,orange))
       (whitespace-tab (:background ,contrast-bg :foreground ,comment))
-      (whitespace-trailing (:background ,contrast-bg :foreground ,red))
+      (whitespace-trailing (:background ,contrast-bg :foreground ,orange))
 
       ;; Parenthesis matching (built-in)
       (show-paren-match (:background ,purple :foreground ,background))

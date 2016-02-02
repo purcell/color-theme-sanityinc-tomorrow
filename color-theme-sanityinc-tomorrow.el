@@ -743,6 +743,11 @@ names to which it refers are bound."
       (term-color-magenta (:foreground ,purple :background ,purple))
       (term-color-cyan    (:foreground ,aqua :background ,aqua))
       (term-color-white   (:foreground ,background :background ,background))
+
+      ;; e2wm
+      (e2wm:face-history-list-normal (:foreground ,foreground :background ,background))
+      (e2wm:face-history-list-select1 (:foreground ,aqua :background ,background))
+      (e2wm:face-history-list-select2 (:foreground ,yellow :background ,background))
       ))))
 
 (defmacro color-theme-sanityinc-tomorrow--frame-parameter-specs ()

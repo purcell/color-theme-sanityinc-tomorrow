@@ -748,6 +748,17 @@ names to which it refers are bound."
       (e2wm:face-history-list-normal (:foreground ,foreground :background ,background))
       (e2wm:face-history-list-select1 (:foreground ,aqua :background ,background))
       (e2wm:face-history-list-select2 (:foreground ,yellow :background ,background))
+
+      ;; rpm-spec-mode
+      (rpm-spec-dir-face (:foreground ,green))
+      (rpm-spec-doc-face (:foreground ,green))
+      (rpm-spec-ghost-face (:foreground ,red))
+      (rpm-spec-macro-face (:foreground ,yellow))
+      (rpm-spec-obsolete-tag-face (:foreground ,red))
+      (rpm-spec-package-face (:foreground ,red))
+      (rpm-spec-section-face (:foreground ,yellow))
+      (rpm-spec-tag-face (:foreground ,blue))
+      (rpm-spec-var-face (:foreground ,red))
       ))))
 
 (defmacro color-theme-sanityinc-tomorrow--frame-parameter-specs ()

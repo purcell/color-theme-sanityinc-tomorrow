@@ -451,7 +451,7 @@ names to which it refers are bound."
       (helm-source-header (:weight bold :foreground ,orange :height 1.44))
 
       ;; company
-      (company-preview (:foreground ,comment))
+      (company-preview (:foreground ,comment :background ,contrast-bg))
       (company-preview-common (:inherit company-preview :foreground ,red))
       (company-preview-search (:inherit company-preview :foreground ,blue))
       (company-tooltip (:background ,contrast-bg))

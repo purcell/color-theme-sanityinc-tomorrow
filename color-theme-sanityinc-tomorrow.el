@@ -518,6 +518,15 @@ names to which it refers are bound."
       (js2-function-param (:foreground ,blue))
       (js2-instance-member (:foreground ,blue))
       (js2-private-function-call (:foreground ,red))
+      ;; js2-mode additional attributes for better syntax highlight in javascript
+      (js2-jsdoc-tag (:foreground ,red))
+      (js2-jsdoc-type (:foreground ,red))
+      (js2-jsdoc-value (:foreground ,red))
+      (js2-function-call (:foreground ,green))
+      (js2-object-property (:foreground ,red))
+      (js2-private-member (:foreground ,red))
+      (js2-jsdoc-html-tag-name (:foreground ,red))
+      (js2-jsdoc-html-tag-delimiter (:foreground ,red))
 
       ;; js3-mode
       (js3-warning-face (:underline ,orange))

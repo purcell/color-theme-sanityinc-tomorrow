@@ -253,20 +253,18 @@ names to which it refers are bound."
 
       ;; Emacs interface
       (cursor (:background ,red))
-      (fringe (:background ,contrast-bg :foreground ,foreground))
-      (linum (:background ,contrast-bg :foreground ,green :italic nil))
-      (vertical-border (:foreground ,highlight))
+      (fringe (:background nil :foreground ,comment))
+      (linum (:background nil :foreground ,comment :italic nil))
+      (vertical-border (:foreground ,contrast-bg))
       (border (:background ,contrast-bg :foreground ,highlight))
       (border-glyph (nil))
       (highlight (:inverse-video nil :background ,highlight))
       (gui-element (:background ,contrast-bg :foreground ,foreground))
-      (mode-line (:foreground nil :background ,contrast-bg :weight normal
-                              :box (:line-width 1 :color ,comment)))
+      (mode-line (:foreground ,foreground :background ,contrast-bg :weight normal))
       (mode-line-buffer-id (:foreground ,purple :background nil))
       (mode-line-inactive (:inherit mode-line
                                     :foreground ,comment
-                                    :background ,contrast-bg :weight normal
-                                    :box (:line-width 1 :color ,contrast-bg)))
+                                    :background ,highlight :weight normal))
       (mode-line-emphasis (:foreground ,foreground :slant italic))
       (mode-line-highlight (:foreground ,purple :box nil :weight bold))
       (minibuffer-prompt (:foreground ,blue))

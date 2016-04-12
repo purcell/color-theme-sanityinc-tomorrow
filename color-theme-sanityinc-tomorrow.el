@@ -770,6 +770,9 @@ names to which it refers are bound."
 
       ;; sx
       (sx-question-mode-content-face (:background ,highlight))
+      (sx-question-list-answers (:height 1.0 :inherit sx-question-list-parent :foreground ,green))
+      (sx-question-mode-accepted (:height 1.5 :inherit sx-question-mode-title :foreground ,green))
+      (sx-question-mode-kbd-tag (:height 0.9 :weight semi-bold :box (:line-width 3 :style released-button :color ,contrast-bg)))
       ))))
 
 (defmacro color-theme-sanityinc-tomorrow--frame-parameter-specs ()

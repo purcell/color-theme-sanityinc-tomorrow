@@ -767,6 +767,9 @@ names to which it refers are bound."
       (rpm-spec-section-face (:foreground ,yellow))
       (rpm-spec-tag-face (:foreground ,blue))
       (rpm-spec-var-face (:foreground ,red))
+
+      ;; sx
+      (sx-question-mode-content-face (:background ,highlight))
       ))))
 
 (defmacro color-theme-sanityinc-tomorrow--frame-parameter-specs ()

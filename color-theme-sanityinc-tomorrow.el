@@ -828,7 +828,7 @@ are bound."
              (360 . ,green)))
          `(vc-annotate-very-old-color nil)
          `(vc-annotate-background nil)
-         `(ansi-color-names-vector (vector ,foreground ,red ,green ,yellow ,blue ,purple ,aqua ,background))
+         `(ansi-color-names-vector (vector ,foreground ,red ,green ,yellow ,blue ,purple ,aqua ,contrast-bg))
          '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
          ))
        (provide-theme ',name))))
@@ -852,7 +852,7 @@ are bound."
           ,@(color-theme-sanityinc-tomorrow--frame-parameter-specs)
           ,@(color-theme-sanityinc-tomorrow--face-specs)))
        ;; ansi-color - comint and other modes that handle terminal color escape sequences
-       (setq ansi-color-names-vector (vector foreground red green yellow blue purple aqua background))
+       (setq ansi-color-names-vector (vector foreground red green yellow blue purple aqua contrast-bg))
        (setq ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))))
 
 ;;;###autoload

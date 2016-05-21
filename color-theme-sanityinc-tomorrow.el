@@ -174,9 +174,9 @@ names to which it refers are bound."
       (flycheck-error (:underline (:style wave :color ,red)))
       (flycheck-info (:underline (:style wave :color ,aqua)))
       (flycheck-warning (:underline (:style wave :color ,orange)))
-      (flycheck-fringe-error (:foreground ,background :background ,red))
-      (flycheck-fringe-info (:foreground ,background :background ,aqua))
-      (flycheck-fringe-warning (:foreground ,background :background ,orange))
+      (flycheck-fringe-error (:foreground ,red))
+      (flycheck-fringe-info (:foreground ,aqua))
+      (flycheck-fringe-warning (:foreground ,orange))
 
       ;; Flymake
       (flymake-warnline (:underline (:style wave :color ,orange) :background ,background))

@@ -271,7 +271,7 @@ names to which it refers are bound."
       (region (:background ,contrast-bg :inverse-video nil))
       (secondary-selection (:background ,highlight))
 
-      (header-line (:inherit mode-line :foreground ,purple :background nil))
+      (header-line (:inherit mode-line-inactive :foreground ,aqua :background nil))
 
       (trailing-whitespace (:background ,orange :foreground ,yellow))
       (whitespace-empty (:foreground ,orange :background ,yellow))

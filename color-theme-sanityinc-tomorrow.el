@@ -367,6 +367,8 @@ names to which it refers are bound."
       (diredp-write-priv (:foreground ,yellow :background nil))
 
       ;; Magit
+      (magit-blame-heading (:background ,highlight :foreground ,orange))
+      (magit-blame-date (:foreground ,red))
       (magit-header-line (:inherit nil :weight bold))
       (magit-dimmed (:foreground ,comment))
       (magit-hash (:foreground ,comment))

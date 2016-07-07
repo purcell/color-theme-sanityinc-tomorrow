@@ -444,6 +444,8 @@ names to which it refers are bound."
       (helm-buffer-not-saved (:foreground ,orange))
       (helm-buffer-process (:foreground ,aqua))
       (helm-buffer-directory (:foreground ,blue))
+      (helm-ff-dotted-directory (:foreground ,comment))
+      (helm-ff-dotted-symlink-directory (:foreground ,comment))
       (helm-ff-directory (:foreground ,aqua))
       (helm-candidate-number (:foreground ,red))
       (helm-match (:inherit match))

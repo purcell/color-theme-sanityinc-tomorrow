@@ -182,6 +182,9 @@ names to which it refers are bound."
       (flymake-warnline (:underline (:style wave :color ,orange) :background ,background))
       (flymake-errline (:underline (:style wave :color ,red) :background ,background))
 
+      ;; Flyspell
+      (flyspell-incorrect (:underline (:style wave :color ,red)))
+
       ;; Clojure errors
       (clojure-test-failure-face (:background nil :inherit flymake-warnline))
       (clojure-test-error-face (:background nil :inherit flymake-errline))

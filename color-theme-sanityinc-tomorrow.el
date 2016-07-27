@@ -308,6 +308,7 @@ names to which it refers are bound."
       (slime-repl-prompt-face (:underline nil :weight bold :foreground ,purple))
       (slime-repl-result-face (:foreground ,green))
       (slime-repl-output-face (:foreground ,blue :background ,background))
+      (slime-repl-inputed-output-face (:foreground ,comment))
 
       (csv-separator-face (:foreground ,orange))
 

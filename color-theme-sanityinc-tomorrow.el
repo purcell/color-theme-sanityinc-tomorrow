@@ -244,12 +244,17 @@ names to which it refers are bound."
       (flx-highlight-face (:inherit nil :foreground ,yellow :weight bold :underline nil))
 
       ;; Ivy
+      (ivy-action (:foreground ,purple))
       (ivy-confirm-face (:foreground ,green))
-      (ivy-current-match (:background ,contrast-bg))
-      (ivy-match-required-face (:foreground ,red))
-      (ivy-remote (:foreground ,blue))
-      (ivy-subdir (:foreground ,orange))
-      (ivy-virtual (:foreground ,purple))
+      (ivy-current-match (:foreground ,green :inherit highlight))
+      (ivy-match-required-face (:inherit ido-indicator))
+      (ivy-remote (:foreground ,orange))
+      (ivy-subdir (:inherit ido-subdir))
+      (ivy-virtual (:inherit ido-virtual))
+      (ivy-minibuffer-match-face-1 (:foreground ,blue))
+      (ivy-minibuffer-match-face-2 (:foreground ,yellow))
+      (ivy-minibuffer-match-face-3 (:foreground ,aqua))
+      (ivy-minibuffer-match-face-4 (:foreground ,orange))
 
       ;; which-function
       (which-func (:foreground ,blue :background nil :weight bold))

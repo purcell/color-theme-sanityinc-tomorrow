@@ -251,9 +251,9 @@ names to which it refers are bound."
       (ivy-remote (:foreground ,orange))
       (ivy-subdir (:inherit ido-subdir))
       (ivy-virtual (:inherit ido-virtual))
-      (ivy-minibuffer-match-face-1 (:foreground ,blue))
+      (ivy-minibuffer-match-face-1 (:foreground ,aqua))
       (ivy-minibuffer-match-face-2 (:foreground ,yellow))
-      (ivy-minibuffer-match-face-3 (:foreground ,aqua))
+      (ivy-minibuffer-match-face-3 (:foreground ,blue))
       (ivy-minibuffer-match-face-4 (:foreground ,orange))
 
       ;; which-function

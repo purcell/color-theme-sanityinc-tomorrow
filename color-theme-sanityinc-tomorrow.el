@@ -508,7 +508,7 @@ names to which it refers are bound."
 
       ;; hl-line-mode
       (hl-sexp-face (:background ,contrast-bg))
-      (highlight-symbol-face (:foreground ,aqua :background ,background :inverse-video t))
+      (highlight-symbol-face (:inherit highlight))
       (highlight-80+ (:background ,contrast-bg))
 
       ;; Hydra

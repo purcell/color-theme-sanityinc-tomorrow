@@ -472,6 +472,7 @@ names to which it refers are bound."
       (company-tooltip-common-selection (:inherit company-tooltip-selection :foreground ,red))
       (company-tooltip-search (:inherit company-tooltip :foreground ,blue))
       (company-tooltip-annotation (:inherit company-tooltip :foreground ,green))
+      (company-tooltip-annotation-selection (:inherit company-tooltip-selection :foreground ,green))
       (company-scrollbar-bg (:inherit 'company-tooltip :background ,highlight))
       (company-scrollbar-fg (:background ,contrast-bg))
       (company-echo-common (:inherit company-echo :foreground ,red))

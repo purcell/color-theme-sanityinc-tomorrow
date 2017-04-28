@@ -230,8 +230,12 @@ names to which it refers are bound."
 
       ;; Anzu
       (anzu-mode-line (:foreground ,orange))
+      (anzu-mode-line-no-match (:foreground ,red))
       (anzu-replace-highlight (:inherit isearch-lazy-highlight-face))
       (anzu-replace-to (:inherit isearch))
+      (anzu-match-1 (:foreground ,red ))
+      (anzu-match-2 (:foreground ,green))
+      (anzu-match-3 (:foreground ,blue))
 
       ;; IDO
       (ido-subdir (:foreground ,purple))

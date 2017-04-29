@@ -233,8 +233,8 @@ names to which it refers are bound."
       (anzu-mode-line-no-match (:foreground ,red))
       (anzu-replace-highlight (:inherit isearch-lazy-highlight-face))
       (anzu-replace-to (:inherit isearch))
-      (anzu-match-1 (:foreground ,red ))
-      (anzu-match-2 (:foreground ,green))
+      (anzu-match-1 (:foreground ,yellow ))
+      (anzu-match-2 (:foreground ,orange))
       (anzu-match-3 (:foreground ,blue))
 
       ;; IDO

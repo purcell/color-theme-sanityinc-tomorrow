@@ -169,6 +169,7 @@ names to which it refers are bound."
       (success (:foreground ,green))
       (error (:foreground ,red))
       (warning (:foreground ,orange))
+      (tooltip (:background ,contrast-bg))
 
       ;; Flycheck
       (flycheck-error (:underline (:style wave :color ,red)))

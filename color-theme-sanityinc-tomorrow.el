@@ -171,6 +171,17 @@ names to which it refers are bound."
       (warning (:foreground ,orange))
       (tooltip (:background ,highlight))
 
+      ;; ace-window
+      (aw-background-face (:foreground ,contrast-bg))
+      (aw-leading-char-face (:foreground ,background :background ,yellow))
+
+      ;; avy
+      (avy-background-face (:foreground ,contrast-bg))
+      (avy-lead-face (:foreground ,background :background ,yellow))
+      (avy-lead-face-0 (:foreground ,background :background ,blue))
+      (avy-lead-face-1 (:foreground ,background :background ,aqua))
+      (avy-lead-face-2 (:foreground ,background :background ,orange))
+
       ;; Flycheck
       (flycheck-error (:underline (:style wave :color ,red)))
       (flycheck-info (:underline (:style wave :color ,aqua)))

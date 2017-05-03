@@ -759,6 +759,7 @@ names to which it refers are bound."
       (gnus-group-news-5-empty (:inherit gnus-group-news-5 :foreground ,comment))
       (gnus-group-news-6-empty (:inherit gnus-group-news-6 :foreground ,comment))
 
+      ;; ERC
       (erc-direct-msg-face (:foreground ,orange))
       (erc-error-face (:foreground ,red))
       (erc-header-face (:foreground ,foreground :background ,highlight))
@@ -773,6 +774,18 @@ names to which it refers are bound."
       (erc-prompt-face (:foreground ,blue))
       (erc-timestamp-face (:foreground ,aqua))
       (erc-keyword-face (:foreground ,green))
+
+      ;; rcirc
+      (rcirc-bright-nick (:foreground ,yellow))
+      (rcirc-dim-nick (:foreground ,comment))
+      (rcirc-keyword (:foreground ,green))
+      (rcirc-my-nick (:foreground ,green))
+      (rcirc-nick-in-message (:foreground ,yellow))
+      (rcirc-nick-in-message-full-line (:foreground ,orange))
+      (rcirc-other-nick (:foreground ,purple))
+      (rcirc-prompt (:foreground ,blue))
+      (rcirc-server (:foreground ,green))
+      (rcirc-timestamp (:foreground ,aqua))
 
       ;; twittering-mode
       (twittering-username-face (:inherit erc-pal-face))

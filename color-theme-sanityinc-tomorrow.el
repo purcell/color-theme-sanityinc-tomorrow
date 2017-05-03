@@ -661,6 +661,18 @@ names to which it refers are bound."
       (ledger-occur-narrowed-face (:inherit font-lock-comment-face :invisible t))
       (ledger-occur-xact-face (:inherit highlight))
 
+      ;; Elfeed
+      (elfeed-log-debug-level-face (:foreground ,comment))
+      (elfeed-log-error-level-face (:inherit error))
+      (elfeed-log-info-level-face (:inherit success))
+      (elfeed-log-warn-level-face (:inherit warning))
+      (elfeed-search-date-face (:foreground ,blue))
+      (elfeed-search-feed-face (:foreground ,yellow))
+      (elfeed-search-tag-face (:foreground ,comment))
+      (elfeed-search-title-face (:foreground ,comment))
+      (elfeed-search-unread-count-face (:foreground ,yellow))
+      (elfeed-search-unread-title-face (:foreground ,foreground :weight bold))
+
       ;; EMMS
       (emms-browser-artist-face (:inherit outline-2))
       (emms-browser-album-face (:inherit outline-3))

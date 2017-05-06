@@ -687,6 +687,14 @@ names to which it refers are bound."
       (emms-playlist-selected-face (:inverse-video t))
       (emms-playlist-track-face (:inherit outline-4))
 
+      ;; debbugs
+      (debbugs-gnu-done (:foreground ,comment))
+      (debbugs-gnu-handled (:foreground ,green))
+      (debbugs-gnu-new (:foreground ,yellow))
+      (debbugs-gnu-pending (:foreground ,orange))
+      (debbugs-gnu-stale (:foreground ,blue))
+      (debbugs-gnu-tagged (:foreground ,yellow))
+
       ;; mu4e
       (mu4e-header-highlight-face (:underline nil :inherit region))
       (mu4e-header-marks-face (:underline nil :foreground ,yellow))

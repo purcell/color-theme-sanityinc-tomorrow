@@ -459,6 +459,12 @@ names to which it refers are bound."
 
       (regex-tool-matched-face (:foreground nil :background nil :inherit match))
 
+      ;; re-builder
+      (reb-match-0 (:foreground ,background :background ,aqua))
+      (reb-match-1 (:foreground ,background :background ,yellow))
+      (reb-match-2 (:foreground ,background :background ,orange))
+      (reb-match-3 (:foreground ,background :background ,blue))
+
       ;; mark-multiple
       (mm/master-face (:inherit region :foreground nil :background nil))
       (mm/mirror-face (:inherit region :foreground nil :background nil))

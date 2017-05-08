@@ -392,6 +392,24 @@ names to which it refers are bound."
       (diredp-symlink (:foreground ,purple))
       (diredp-write-priv (:foreground ,yellow :background nil))
 
+      ;; neotree
+      (neo-banner-face (:foreground ,blue :weight bold))
+      (neo-button-face (:underline t))
+      (neo-dir-link-face (:foreground ,orange))
+      (neo-expand-btn-face (:foreground ,comment))
+      (neo-file-link-face (:foreground ,foreground))
+      (neo-header-face (:foreground ,foreground :background ,highlight))
+      (neo-root-dir-face (:foreground ,blue :weight bold))
+      (neo-vc-added-face (:foreground ,green))
+      (neo-vc-conflict-face (:foreground ,red))
+      (neo-vc-default-face (:foreground ,foreground))
+      (neo-vc-edited-face (:foreground ,purple))
+      (neo-vc-ignored-face (:foreground ,contrast-bg))
+      (neo-vc-missing-face (:foreground ,red))
+      (neo-vc-needs-merge-face (:foreground ,red))
+      (neo-vc-unlocked-changes-face (:foreground ,blue :slant italic))
+      (neo-vc-user-face (:foreground ,red :slant italic))
+
       ;; Magit
       (magit-blame-heading (:background ,highlight :foreground ,orange))
       (magit-blame-date (:foreground ,red))

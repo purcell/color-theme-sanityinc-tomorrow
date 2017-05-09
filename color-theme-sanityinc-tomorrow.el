@@ -547,6 +547,18 @@ names to which it refers are bound."
       (markdown-url-face (:inherit link))
       (markdown-link-face (:foreground ,blue :underline t))
 
+      ;; info
+      (Info-quoted (:inherit font-lock-constant-face))
+      (info-index-match (:inherit isearch))
+      (info-menu-header (:foreground ,green :weight bold :height 1.4))
+      (info-menu-star (:foreground ,yellow))
+      (info-node (:foreground ,green :weight bold :slant italic))
+      (info-title-1 (:weight bold :height 1.6))
+      (info-title-2 (:weight bold :height 1.4))
+      (info-title-3 (:weight bold :height 1.2))
+      (info-title-4 (:weight bold))
+      (info-xref-visited (:foreground ,comment :underline t))
+
       ;; hl-line-mode
       (hl-sexp-face (:background ,contrast-bg))
       (highlight-symbol-face (:inherit highlight))

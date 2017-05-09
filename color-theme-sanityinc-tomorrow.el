@@ -559,6 +559,23 @@ names to which it refers are bound."
       (info-title-4 (:weight bold))
       (info-xref-visited (:foreground ,comment :underline t))
 
+      ;; info+
+      (info-command-ref-item (:foreground ,green :background ,contrast-bg))
+      (info-constant-ref-item (:foreground ,purple :background ,contrast-bg))
+      (info-double-quoted-name (:inherit font-lock-comment-face))
+      (info-file (:foreground ,yellow :background ,contrast-bg))
+      (info-function-ref-item (:inherit font-lock-function-name-face :background ,contrast-bg))
+      (info-macro-ref-item (:foreground ,orange :background ,contrast-bg))
+      (info-menu (:foreground ,green))
+      (info-quoted-name (:inherit font-lock-constant-face))
+      (info-reference-item (:background ,contrast-bg))
+      (info-single-quote (:inherit font-lock-keyword-face))
+      (info-special-form-ref-item (:foreground ,orange :background ,contrast-bg))
+      (info-string (:inherit font-lock-string-face))
+      (info-syntax-class-item (:foreground ,blue :background ,contrast-bg))
+      (info-user-option-ref-item (:foreground ,red :background ,contrast-bg))
+      (info-variable-ref-item (:inherit font-lock-variable-name-face :background ,contrast-bg))
+
       ;; hl-line-mode
       (hl-sexp-face (:background ,contrast-bg))
       (highlight-symbol-face (:inherit highlight))

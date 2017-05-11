@@ -581,6 +581,18 @@ names to which it refers are bound."
       (highlight-symbol-face (:inherit highlight))
       (highlight-80+ (:background ,contrast-bg))
 
+      ;; ruler-mode
+      (ruler-mode-column-number (:foreground ,foreground :background ,highlight))
+      (ruler-mode-comment-column (:foreground ,comment :background ,contrast-bg))
+      (ruler-mode-current-column (:foreground ,yellow :background ,contrast-bg :weight bold))
+      (ruler-mode-default (:foreground ,comment :background ,highlight))
+      (ruler-mode-fill-column (:foreground ,red :background ,contrast-bg))
+      (ruler-mode-fringes (:foreground ,green :background ,contrast-bg))
+      (ruler-mode-goal-column (:foreground ,red :background ,contrast-bg))
+      (ruler-mode-margins (:foreground ,orange :background ,contrast-bg))
+      (ruler-mode-pad (:foreground ,background :background ,comment))
+      (ruler-mode-tab-stop (:foreground ,blue :background ,contrast-bg))
+
       ;; Hydra
       (hydra-face-blue (:foreground ,blue))
       (hydra-face-teal (:foreground ,aqua))

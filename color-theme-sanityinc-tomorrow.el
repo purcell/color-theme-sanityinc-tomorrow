@@ -590,7 +590,7 @@ names to which it refers are bound."
       (ruler-mode-fringes (:foreground ,green :background ,highlight))
       (ruler-mode-goal-column (:foreground ,red :background ,highlight))
       (ruler-mode-margins (:foreground ,orange :background ,highlight))
-      (ruler-mode-pad (:foreground ,foreground :background ,contrast-bg))
+      (ruler-mode-pad (:foreground ,background :background ,comment))
       (ruler-mode-tab-stop (:foreground ,blue :background ,highlight))
 
       ;; Hydra

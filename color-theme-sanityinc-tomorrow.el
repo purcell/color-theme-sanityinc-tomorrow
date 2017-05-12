@@ -576,6 +576,16 @@ names to which it refers are bound."
       (info-user-option-ref-item (:foreground ,red :background ,highlight))
       (info-variable-ref-item (:inherit font-lock-variable-name-face :background ,highlight))
 
+      ;; hi-lock
+      (hi-black-hb (:weight bold :height 1.4))
+      (hi-blue (:foreground ,background :background ,blue))
+      (hi-blue-b (:foreground ,blue :weight bold))
+      (hi-green (:foreground ,background :background ,green))
+      (hi-green-b (:foreground ,green :weight bold))
+      (hi-pink (:foreground ,background :background ,aqua))
+      (hi-red-b (:foreground ,red :weight bold))
+      (hi-yellow (:foreground ,background :background ,yellow))
+
       ;; hl-line-mode
       (hl-sexp-face (:background ,contrast-bg))
       (highlight-symbol-face (:inherit highlight))

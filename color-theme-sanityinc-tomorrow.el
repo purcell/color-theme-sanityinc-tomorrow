@@ -189,6 +189,9 @@ names to which it refers are bound."
       (flycheck-fringe-error (:foreground ,red))
       (flycheck-fringe-info (:foreground ,aqua))
       (flycheck-fringe-warning (:foreground ,orange))
+      (flycheck-color-mode-line-error-face (:foreground ,red))
+      (flycheck-color-mode-line-warning-face (:foreground ,orange))
+      (flycheck-color-mode-line-info-face (:foreground ,aqua))
 
       ;; Flymake
       (flymake-warnline (:underline (:style wave :color ,orange) :background ,background))
@@ -967,6 +970,7 @@ are bound."
              (360 . ,green)))
          `(vc-annotate-very-old-color nil)
          `(vc-annotate-background nil)
+         `(flycheck-color-mode-line-face-to-color 'mode-line-buffer-id)
          `(ansi-color-names-vector (vector ,foreground ,red ,green ,yellow ,blue ,purple ,aqua ,contrast-bg))
          '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
          ))

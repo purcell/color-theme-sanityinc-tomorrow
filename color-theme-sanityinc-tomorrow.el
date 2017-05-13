@@ -353,11 +353,25 @@ names to which it refers are bound."
       (diff-hl-delete (:background ,orange))
       (diff-hl-unknown (:background ,purple))
 
-      (ediff-even-diff-A (:foreground nil :background nil :inverse-video t))
-      (ediff-even-diff-B (:foreground nil :background nil :inverse-video t))
-      (ediff-odd-diff-A  (:foreground ,comment :background nil :inverse-video t))
-      (ediff-odd-diff-B  (:foreground ,comment :background nil :inverse-video t))
+      ;; ediff
+      (ediff-current-diff-A (:foreground ,background :background ,comment))
+      (ediff-current-diff-Ancestor (:foreground ,background :background ,aqua))
+      (ediff-current-diff-B (:foreground ,background :background ,comment))
+      (ediff-current-diff-C (:foreground ,background :background ,comment))
+      (ediff-even-diff-A (:foreground ,background :background ,blue))
+      (ediff-even-diff-Ancestor (:foreground ,background :background ,purple))
+      (ediff-even-diff-B (:foreground ,background :background ,blue))
+      (ediff-even-diff-C (:foreground ,background :background ,blue))
+      (ediff-fine-diff-A (:foreground ,background :background ,green))
+      (ediff-fine-diff-Ancestor (:foreground ,background :background ,yellow))
+      (ediff-fine-diff-B (:foreground ,background :background ,green))
+      (ediff-fine-diff-C (:foreground ,background :background ,green))
+      (ediff-odd-diff-A (:foreground ,background :background ,red))
+      (ediff-odd-diff-Ancestor (:foreground ,background :background ,orange))
+      (ediff-odd-diff-B (:foreground ,background :background ,red))
+      (ediff-odd-diff-C (:foreground ,background :background ,red))
 
+      ;; ElDoc
       (eldoc-highlight-function-argument (:foreground ,green :weight bold))
 
       ;; macrostep

@@ -527,8 +527,14 @@ names to which it refers are bound."
       (grep-hit-face (:foreground ,blue))
       (grep-match-face (:foreground nil :background nil :inherit match))
 
-     ;;; TODO: wgrep faces
+      ;; wgrep
+      (wgrep-delete-face (:foreground ,background :background ,red))
+      (wgrep-done-face (:foreground ,blue))
+      (wgrep-face (:foreground ,green :background ,contrast-bg))
+      (wgrep-file-face (:foreground ,comment :background ,contrast-bg))
+      (wgrep-reject-face (:foreground ,orange :weight bold))
 
+      ;; regex-tool
       (regex-tool-matched-face (:foreground nil :background nil :inherit match))
 
       ;; re-builder

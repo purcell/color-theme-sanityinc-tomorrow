@@ -409,6 +409,11 @@ names to which it refers are bound."
       (diredp-symlink (:foreground ,purple))
       (diredp-write-priv (:foreground ,yellow :background nil))
 
+      ;; dired-async
+      (dired-async-failures (:inherit error))
+      (dired-async-message (:inherit success))
+      (dired-async-mode-message (:inherit warning))
+
       ;; neotree
       (neo-banner-face (:foreground ,blue :weight bold))
       (neo-button-face (:underline t))

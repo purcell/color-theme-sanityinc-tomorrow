@@ -300,8 +300,9 @@ names to which it refers are bound."
 
       (header-line (:inherit mode-line-inactive :foreground ,aqua :background nil))
 
-      (trailing-whitespace (:background ,orange :foreground ,yellow))
-      (whitespace-empty (:foreground ,orange :background ,yellow))
+      ;; whitespace
+      (whitespace-big-indent (:background ,red :foreground ,contrast-bg))
+      (whitespace-empty (:background ,yellow :foreground ,orange))
       (whitespace-hspace (:background ,contrast-bg :foreground ,comment))
       (whitespace-indentation (:background ,contrast-bg :foreground ,comment))
       (whitespace-line (:background ,contrast-bg :foreground ,orange))
@@ -311,6 +312,7 @@ names to which it refers are bound."
       (whitespace-space-before-tab (:background ,contrast-bg :foreground ,orange))
       (whitespace-tab (:background ,contrast-bg :foreground ,comment))
       (whitespace-trailing (:background ,contrast-bg :foreground ,orange))
+      (trailing-whitespace (:background ,contrast-bg :foreground ,orange))
 
       ;; Parenthesis matching (built-in)
       (show-paren-match (:background ,purple :foreground ,background))
@@ -569,6 +571,11 @@ names to which it refers are bound."
       (company-scrollbar-fg (:background ,contrast-bg))
       (company-echo-common (:inherit company-echo :foreground ,red))
 
+      ;; calendar
+      (diary (:foreground ,yellow))
+      (holiday (:foreground ,background :background ,orange))
+
+      ;; org-mode
       (org-agenda-structure (:foreground ,purple))
       (org-agenda-date (:foreground ,blue :underline nil))
       (org-agenda-done (:foreground ,green))
@@ -596,6 +603,7 @@ names to which it refers are bound."
       (org-upcoming-deadline (:foreground ,orange))
       (org-warning (:weight bold :foreground ,red))
 
+      ;; markdown
       (markdown-url-face (:inherit link))
       (markdown-link-face (:foreground ,blue :underline t))
 

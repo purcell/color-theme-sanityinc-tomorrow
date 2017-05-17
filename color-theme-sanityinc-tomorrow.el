@@ -486,7 +486,7 @@ names to which it refers are bound."
       (magit-diff-added-highlight (:foreground ,green :background ,highlight :weight bold))
       (magit-diff-base (:foreground ,background :background ,orange))
       (magit-diff-base-highlight (:foreground ,orange :background ,highlight :weight bold))
-      (magit-diff-context (:foreground ,background :background ,comment))
+      (magit-diff-context (:foreground ,comment))
       (magit-diff-context-highlight (:foreground ,comment :background ,highlight :weight bold))
       (magit-diff-file-heading (:foreground ,foreground))
       (magit-diff-file-heading-selection (:foreground ,orange :background ,highlight :weight bold))

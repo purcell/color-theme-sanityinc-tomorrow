@@ -384,8 +384,8 @@ names to which it refers are bound."
       (diff-header (:foreground ,aqua :background nil))
       (diff-file-header (:foreground ,blue :background nil))
       (diff-hunk-header (:foreground ,purple))
-      (diff-refine-added (:inherit diff-added :inverse-video t))
-      (diff-refine-removed (:inherit diff-removed :inverse-video t))
+      (diff-refine-added (:foreground ,background :background ,blue))
+      (diff-refine-removed (:foreground ,background :background ,orange))
 
       (diff-hl-insert (:background ,green))
       (diff-hl-change (:background ,blue))

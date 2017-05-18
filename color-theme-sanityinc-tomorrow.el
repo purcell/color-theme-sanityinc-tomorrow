@@ -348,8 +348,8 @@ names to which it refers are bound."
       (whitespace-space-after-tab (:background ,contrast-bg :foreground ,yellow))
       (whitespace-space-before-tab (:background ,contrast-bg :foreground ,orange))
       (whitespace-tab (:background ,contrast-bg :foreground ,comment))
-      (whitespace-trailing (:background ,contrast-bg :foreground ,orange))
-      (trailing-whitespace (:background ,contrast-bg :foreground ,orange))
+      (whitespace-trailing (:background ,orange :foreground ,contrast-bg))
+      (trailing-whitespace (:inherit whitespace-trailing))
 
       ;; Parenthesis matching (built-in)
       (show-paren-match (:background ,purple :foreground ,background))

@@ -169,7 +169,7 @@ names to which it refers are bound."
       (success (:foreground ,green))
       (error (:foreground ,red))
       (warning (:foreground ,orange))
-      (tooltip (:background ,highlight))
+      (tooltip (:foreground ,yellow :background ,background :inverse-video t))
 
       ;; ace-window
       (aw-background-face (:foreground ,contrast-bg))

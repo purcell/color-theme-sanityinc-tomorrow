@@ -1007,7 +1007,7 @@ names to which it refers are bound."
       (eshell-ls-readonly (:foreground ,red))
       (eshell-ls-special (:foreground ,purple :weight bold))
       (eshell-ls-symlink (:foreground ,aqua :weight bold))
-      (eshell-ls-unreadable (:foreground ,contrast-bg))
+      (eshell-ls-unreadable (:foreground ,comment))
 
       ;; e2wm
       (e2wm:face-history-list-normal (:foreground ,foreground :background ,background))

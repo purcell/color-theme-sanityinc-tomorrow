@@ -995,6 +995,20 @@ names to which it refers are bound."
       (term-color-cyan    (:foreground ,aqua :background ,aqua))
       (term-color-white   (:foreground ,background :background ,background))
 
+      ;; eshell
+      (eshell-prompt (:foreground ,yellow :weight bold))
+      (eshell-ls-archive (:foreground ,blue))
+      (eshell-ls-backup (:foreground ,comment))
+      (eshell-ls-clutter (:foreground ,orange :weight bold))
+      (eshell-ls-directory :foreground ,blue :weight bold)
+      (eshell-ls-executable (:foreground ,yellow :weight bold))
+      (eshell-ls-missing (:foreground ,red :weight bold))
+      (eshell-ls-product (:foreground ,green))
+      (eshell-ls-readonly (:foreground ,red))
+      (eshell-ls-special (:foreground ,purple :weight bold))
+      (eshell-ls-symlink (:foreground ,aqua :weight bold))
+      (eshell-ls-unreadable (:foreground ,contrast-bg))
+
       ;; e2wm
       (e2wm:face-history-list-normal (:foreground ,foreground :background ,background))
       (e2wm:face-history-list-select1 (:foreground ,aqua :background ,background))

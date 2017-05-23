@@ -625,6 +625,7 @@ names to which it refers are bound."
       (org-agenda-done (:foreground ,green))
       (org-agenda-dimmed-todo-face (:foreground ,comment))
       (org-block (:foreground ,orange))
+      (org-checkbox (:background ,contrast-bg :box (:line-width 1 :style released-button)))
       (org-code (:foreground ,yellow))
       (org-column (:background ,contrast-bg))
       (org-column-title (:inherit org-column :weight bold :underline t))

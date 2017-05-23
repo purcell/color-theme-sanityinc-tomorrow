@@ -566,7 +566,7 @@ names to which it refers are bound."
       (grep-match-face (:foreground nil :background nil :inherit match))
 
       ;; wgrep
-      (wgrep-delete-face (:foreground ,background :background ,red))
+      (wgrep-delete-face (:foreground ,red))
       (wgrep-done-face (:foreground ,blue))
       (wgrep-face (:foreground ,green :background ,contrast-bg))
       (wgrep-file-face (:foreground ,comment :background ,contrast-bg))

@@ -324,7 +324,8 @@ names to which it refers are bound."
       (border-glyph (nil))
       (highlight (:inverse-video nil :background ,highlight))
       (gui-element (:background ,contrast-bg :foreground ,foreground))
-      (mode-line (:foreground ,foreground :background ,contrast-bg :weight normal))
+      (mode-line (:foreground ,foreground :background ,contrast-bg :weight normal
+                                          :box (:line-width 1 :color ,foreground)))
       (mode-line-buffer-id (:foreground ,purple :background nil))
       (mode-line-inactive (:inherit mode-line
                                     :foreground ,comment

@@ -471,6 +471,27 @@ names to which it refers are bound."
       (neo-vc-unlocked-changes-face (:foreground ,blue :slant italic))
       (neo-vc-user-face (:foreground ,red :slant italic))
 
+      ;; Speedbar
+      (speedbar-button-face (:foreground ,green))
+      (speedbar-directory-face (:foreground ,orange))
+      (speedbar-file-face (:foreground ,aqua))
+      (speedbar-highlight-face (:inherit highlight))
+      (speedbar-selected-face (:foreground ,red :underline t))
+      (speedbar-separator-face (:foreground ,background :background ,blue :overline ,background))
+      (speedbar-tag-face (:foreground ,yellow))
+      (vhdl-speedbar-architecture-face (:foreground ,blue))
+      (vhdl-speedbar-architecture-selected-face (:foreground ,blue :underline t))
+      (vhdl-speedbar-configuration-face (:foreground ,green))
+      (vhdl-speedbar-configuration-selected-face (:foreground ,green :underline t))
+      (vhdl-speedbar-entity-face (:foreground ,orange))
+      (vhdl-speedbar-entity-selected-face (:foreground ,orange :underline t))
+      (vhdl-speedbar-instantiation-face (:foreground ,yellow))
+      (vhdl-speedbar-instantiation-selected-face (:foreground ,yellow :underline t))
+      (vhdl-speedbar-library-face (:foreground ,purple))
+      (vhdl-speedbar-package-face (:foreground ,aqua))
+      (vhdl-speedbar-package-selected-face (:foreground ,aqua :underline t))
+      (vhdl-speedbar-subprogram-face (:foreground ,green))
+
       ;; Magit
       (magit-bisect-bad (:foreground ,red))
       (magit-bisect-good (:foreground ,green))

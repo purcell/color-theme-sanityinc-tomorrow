@@ -538,7 +538,7 @@ names to which it refers are bound."
       (magit-reflog-reset (:inherit error))
       (magit-refname (:foreground ,comment))
       (magit-section-heading (:foreground ,yellow :weight bold))
-      (magit-section-heading-selection (:foreground ,orange))
+      (magit-section-heading-selection (:foreground ,orange :weight bold))
       (magit-section-highlight (:background ,highlight :weight bold))
       (magit-sequence-drop (:foreground ,red))
       (magit-sequence-head (:foreground ,blue))

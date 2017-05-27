@@ -257,6 +257,9 @@ names to which it refers are bound."
       (clojure-special (:foreground ,blue))
       (clojure-java-call (:foreground ,purple))
 
+      ;; form-feed
+      (form-feed-line (:strike-through ,comment))
+
       ;; Rainbow-delimiters
       (rainbow-delimiters-depth-1-face (:foreground ,foreground))
       (rainbow-delimiters-depth-2-face (:foreground ,aqua))

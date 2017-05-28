@@ -967,6 +967,8 @@ names to which it refers are bound."
       (gnus-group-news-5-empty (:inherit gnus-group-news-5 :foreground ,comment))
       (gnus-group-news-6-empty (:inherit gnus-group-news-6 :foreground ,comment))
 
+      (mm-uu-extract (:foreground ,green :background ,highlight))
+
       ;; ERC
       (erc-direct-msg-face (:foreground ,orange))
       (erc-error-face (:foreground ,red))

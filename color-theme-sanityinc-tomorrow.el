@@ -711,10 +711,11 @@ names to which it refers are bound."
       (hi-red-b (:foreground ,red :weight bold))
       (hi-yellow (:foreground ,background :background ,yellow))
 
-      ;; hl-line-mode
+      ;; Various highlighting packages
       (hl-sexp-face (:background ,contrast-bg))
       (highlight-symbol-face (:inherit highlight))
       (highlight-80+ (:background ,contrast-bg))
+      (symbol-overlay-temp-face (:inherit highlight))
 
       ;; ruler-mode
       (ruler-mode-column-number (:foreground ,foreground :background ,highlight))

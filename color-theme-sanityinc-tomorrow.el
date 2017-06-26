@@ -303,6 +303,7 @@ names to which it refers are bound."
       (ivy-action (:foreground ,purple))
       (ivy-confirm-face (:foreground ,green))
       (ivy-current-match (:foreground ,green :inherit highlight :underline t))
+      (ivy-cursor (:background ,contrast-bg))
       (ivy-match-required-face (:inherit ido-indicator))
       (ivy-remote (:foreground ,orange))
       (ivy-subdir (:inherit ido-subdir))

@@ -701,6 +701,7 @@ names to which it refers are bound."
       (info-syntax-class-item (:foreground ,blue :background ,highlight))
       (info-user-option-ref-item (:foreground ,red :background ,highlight))
       (info-variable-ref-item (:inherit font-lock-variable-name-face :background ,highlight))
+      (info-xref-bookmarked (:foreground ,purple))
 
       ;; hi-lock
       (hi-black-hb (:weight bold :height 1.4))

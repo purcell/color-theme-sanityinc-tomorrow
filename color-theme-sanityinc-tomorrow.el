@@ -994,6 +994,15 @@ names to which it refers are bound."
       (gnus-summary-normal-undownloaded (:foreground ,foreground))
       (gnus-summary-normal-unread (:foreground ,blue :weight normal))
 
+      ;; Circe
+      (circe-fool-face (:foreground ,comment))
+      (circe-highlight-nick-face (:foreground ,orange))
+      (circe-my-message-face (:foreground ,green))
+      (circe-prompt-face (:foreground ,blue))
+      (circe-server-face (:foreground ,green))
+      (circe-topic-diff-new-face (:foreground ,blue))
+      (circe-topic-diff-removed-face (:foreground ,red))
+
       ;; ERC
       (erc-direct-msg-face (:foreground ,orange))
       (erc-error-face (:foreground ,red))

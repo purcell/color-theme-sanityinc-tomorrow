@@ -672,6 +672,7 @@ names to which it refers are bound."
       ;; markdown
       (markdown-url-face (:inherit link))
       (markdown-link-face (:foreground ,blue :underline t))
+      (markdown-inline-code-face (:inherit fixed-pitch :foreground ,purple))
 
       ;; info
       (Info-quoted (:inherit font-lock-constant-face))

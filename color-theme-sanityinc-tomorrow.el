@@ -417,6 +417,10 @@ names to which it refers are bound."
       ;; macrostep
       (macrostep-expansion-highlight-face (:inherit highlight :foreground nil))
 
+      ;; ERT
+      (ert-test-result-unexpected (:inherit error))
+      (ert-test-result-expected (:inherit success))
+
       ;; undo-tree
       (undo-tree-visualizer-default-face (:foreground ,foreground))
       (undo-tree-visualizer-current-face (:foreground ,green :weight bold))

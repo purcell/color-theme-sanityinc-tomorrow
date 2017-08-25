@@ -171,6 +171,11 @@ names to which it refers are bound."
       (warning (:foreground ,orange))
       (tooltip (:foreground ,yellow :background ,background :inverse-video t))
 
+      ;; window-divider
+      (window-divider (:foreground ,comment))
+      (window-divider-first-pixel (:foreground ,contrast-bg))
+      (window-divider-last-pixel (:foreground ,contrast-bg))
+
       ;; ace-window
       (aw-background-face (:foreground ,contrast-bg))
       (aw-leading-char-face (:foreground ,background :background ,yellow))

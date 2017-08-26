@@ -434,6 +434,7 @@ names to which it refers are bound."
 
       ;; dired+
       (diredp-compressed-file-suffix (:foreground ,blue))
+      (diredp-compressed-file-name (:foreground ,blue))
       (diredp-deletion (:inherit error :inverse-video t))
       (diredp-deletion-file-name (:inherit error))
       (diredp-date-time (:foreground ,blue))
@@ -652,6 +653,7 @@ names to which it refers are bound."
 
       ;; org-mode
       (org-agenda-structure (:foreground ,purple))
+      (org-agenda-current-time (:foreground ,yellow))
       (org-agenda-date (:foreground ,blue :underline nil))
       (org-agenda-done (:foreground ,green))
       (org-agenda-dimmed-todo-face (:foreground ,comment))
@@ -674,6 +676,7 @@ names to which it refers are bound."
       (org-scheduled-today (:foreground ,green))
       (org-special-keyword (:foreground ,orange))
       (org-table (:foreground ,purple))
+      (org-time-grid (:foreground ,yellow))
       (org-todo (:foreground ,red))
       (org-upcoming-deadline (:foreground ,orange))
       (org-warning (:weight bold :foreground ,red))

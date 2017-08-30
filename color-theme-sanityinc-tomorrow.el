@@ -1084,6 +1084,12 @@ names to which it refers are bound."
       (e2wm:face-history-list-select1 (:foreground ,aqua :background ,background))
       (e2wm:face-history-list-select2 (:foreground ,yellow :background ,background))
 
+      ;; eyebrowse
+      (eyebrowse-mode-line-active (:foreground ,orange :weight bold))
+      (eyebrowse-mode-line-delimiters (:foreground ,blue))
+      (eyebrowse-mode-line-inactive (:foreground ,comment))
+      (eyebrowse-mode-line-separator (:foreground ,blue))
+
       ;; rpm-spec-mode
       (rpm-spec-dir-face (:foreground ,green))
       (rpm-spec-doc-face (:foreground ,green))

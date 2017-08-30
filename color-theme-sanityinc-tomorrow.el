@@ -1086,9 +1086,9 @@ names to which it refers are bound."
 
       ;; eyebrowse
       (eyebrowse-mode-line-active (:foreground ,orange :weight bold))
-      (eyebrowse-mode-line-delimiters (:foreground ,blue))
+      (eyebrowse-mode-line-delimiters (:foreground ,purple))
       (eyebrowse-mode-line-inactive (:foreground ,comment))
-      (eyebrowse-mode-line-separator (:foreground ,blue))
+      (eyebrowse-mode-line-separator (:foreground ,purple))
 
       ;; rpm-spec-mode
       (rpm-spec-dir-face (:foreground ,green))

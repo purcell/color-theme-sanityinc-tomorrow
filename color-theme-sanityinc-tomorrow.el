@@ -49,6 +49,14 @@
 
 ;;; Code:
 
+(require 'color)
+
+(defun sanityinc-tomorrow-interpolate (hex1 hex2 gradations which)
+  (let ((c1 (color-name-to-rgb hex1))
+        (c2 (color-name-to-rgb hex2)))
+    (apply 'color-rgb-to-hex (nth which (color-gradient c1 c2 gradations)))))
+
+
 (defconst color-theme-sanityinc-tomorrow-colors
   '((night . ((background . "#1d1f21")
               (current-line . "#282a2e")
@@ -122,6 +130,7 @@
           (background   (cdr (assoc 'background colors)))
           (contrast-bg  (cdr (assoc 'selection colors)))
           (highlight    (cdr (assoc 'current-line colors)))
+          (low-contrast-bg (sanityinc-tomorrow-interpolate background highlight 5 2))
           (foreground   (cdr (assoc 'foreground colors)))
           (comment      (cdr (assoc 'comment colors)))
           (red          (cdr (assoc 'red colors)))
@@ -323,8 +332,8 @@ names to which it refers are bound."
 
       ;; Emacs interface
       (cursor (:background ,red))
-      (fringe (:background ,background :foreground ,comment))
-      (linum (:background ,background :foreground ,comment :italic nil :underline nil))
+      (fringe (:background ,low-contrast-bg :foreground ,comment))
+      (linum (:background ,low-contrast-bg :foreground ,comment :italic nil :underline nil))
       (line-number (:inherit linum))
       (line-number-current-line (:inherit line-number :foreground ,foreground))
       (vertical-border (:foreground ,contrast-bg))

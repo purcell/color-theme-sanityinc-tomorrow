@@ -1,12 +1,12 @@
 ;;; color-theme-sanityinc-tomorrow.el --- A version of Chris Kempson's "tomorrow" themes
 
-;; Copyright (C) 2012-2014 Steve Purcell
+;; Copyright (C) 2012-2017 Steve Purcell
 
 ;; Author: Steve Purcell <steve@sanityinc.com>
-;; Keywords: themes
+;; Keywords: faces themes
 ;; X-URL: http://github.com/purcell/color-theme-sanityinc-tomorrow
 ;; URL: http://github.com/purcell/color-theme-sanityinc-tomorrow
-;; Version: {{VERSION}}
+;; Version: 0
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by

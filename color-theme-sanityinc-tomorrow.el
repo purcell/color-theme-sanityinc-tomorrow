@@ -130,7 +130,7 @@
           (background   (cdr (assoc 'background colors)))
           (contrast-bg  (cdr (assoc 'selection colors)))
           (highlight    (cdr (assoc 'current-line colors)))
-          (low-contrast-bg (sanityinc-tomorrow-interpolate background highlight 5 2))
+          (low-contrast-bg (sanityinc-tomorrow-interpolate background highlight 7 3))
           (foreground   (cdr (assoc 'foreground colors)))
           (comment      (cdr (assoc 'comment colors)))
           (red          (cdr (assoc 'red colors)))

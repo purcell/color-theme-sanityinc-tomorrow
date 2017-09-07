@@ -291,7 +291,7 @@ names to which it refers are bound."
       ;; Search
       (match (:foreground ,blue :background ,background :inverse-video t))
       (isearch (:foreground ,yellow :background ,background :inverse-video t))
-      (isearch-lazy-highlight-face (:foreground ,aqua :background ,background :inverse-video t))
+      (lazy-highlight (:foreground ,aqua :background ,background :inverse-video t))
       (isearch-fail (:background ,background :inherit font-lock-warning-face :inverse-video t))
 
       ;; Anzu

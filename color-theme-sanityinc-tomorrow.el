@@ -334,7 +334,7 @@ names to which it refers are bound."
       (cursor (:background ,red))
       (fringe (:background ,low-contrast-bg :foreground ,comment))
       (linum (:background ,low-contrast-bg :foreground ,comment :italic nil :underline nil))
-      (line-number (:inherit linum))
+      (line-number (:background ,low-contrast-bg :foreground ,comment))
       (line-number-current-line (:inherit line-number :foreground ,foreground))
       (vertical-border (:foreground ,contrast-bg))
       (border (:background ,contrast-bg :foreground ,highlight))

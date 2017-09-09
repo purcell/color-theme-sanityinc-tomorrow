@@ -1,5 +1,6 @@
 [![Melpa Status](http://melpa.org/packages/color-theme-sanityinc-tomorrow-badge.svg)](http://melpa.org/#/color-theme-sanityinc-tomorrow)
 [![Melpa Stable Status](http://stable.melpa.org/packages/color-theme-sanityinc-tomorrow-badge.svg)](http://stable.melpa.org/#/color-theme-sanityinc-tomorrow)
+<a href="https://www.patreon.com/sanityinc"><img alt="Support me" src="https://img.shields.io/badge/Support%20Me-%F0%9F%92%97-ff69b4.svg"></a>
 
 An Emacs version of
 [Chris Kempson's "Tomorrow" themes](https://github.com/ChrisKempson/Tomorrow-Theme),

@@ -648,7 +648,7 @@ names to which it refers are bound."
       (company-preview-common (:inherit company-preview :foreground ,red))
       (company-preview-search (:inherit company-preview :foreground ,blue))
       (company-tooltip (:background ,contrast-bg))
-      (company-tooltip-selection (:inverse-video t))
+      (company-tooltip-selection (:foreground ,comment :inverse-video t))
       (company-tooltip-common (:inherit company-tooltip :foreground ,red))
       (company-tooltip-common-selection (:inherit company-tooltip-selection :foreground ,red))
       (company-tooltip-search (:inherit company-tooltip :foreground ,blue))

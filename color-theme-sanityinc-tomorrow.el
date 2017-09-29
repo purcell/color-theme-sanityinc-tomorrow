@@ -243,6 +243,8 @@ names to which it refers are bound."
       (flycheck-color-mode-line-error-face (:foreground ,red))
       (flycheck-color-mode-line-warning-face (:foreground ,orange))
       (flycheck-color-mode-line-info-face (:foreground ,aqua))
+      (flycheck-color-mode-line-running-face (:foreground ,comment))
+      (flycheck-color-mode-line-success-face (:foreground ,green))
 
       ;; Flymake
       (flymake-warnline (:underline (:style wave :color ,orange) :background ,background))

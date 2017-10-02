@@ -187,7 +187,7 @@ names to which it refers are bound."
 
       ;; ace-window
       (aw-background-face (:foreground ,contrast-bg))
-      (aw-leading-char-face (:foreground ,background :background ,yellow))
+      (aw-leading-char-face (:foreground ,yellow))
 
       ;; avy
       (avy-background-face (:foreground ,contrast-bg))

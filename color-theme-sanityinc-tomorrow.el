@@ -253,6 +253,11 @@ names to which it refers are bound."
       ;; Flyspell
       (flyspell-incorrect (:underline (:style wave :color ,red)))
 
+      ;; Lispy
+      (lispy-command-name-face (:inherit font-lock-function-name-face :background ,highlight))
+      (lispy-cursor-face (:foreground ,background :background ,foreground))
+      (lispy-face-hint (:foreground ,green :background ,contrast-bg))
+
       ;; Clojure errors
       (clojure-test-failure-face (:background nil :inherit flymake-warnline))
       (clojure-test-error-face (:background nil :inherit flymake-errline))

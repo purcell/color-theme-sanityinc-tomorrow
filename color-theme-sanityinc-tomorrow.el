@@ -1192,6 +1192,7 @@ are bound."
                (color-theme-sanityinc-tomorrow--face-specs))
         (custom-theme-set-variables
          ',name
+         `(beacon-color ,red)
          `(fci-rule-color ,contrast-bg)
          `(vc-annotate-color-map
            '((20  . ,red)

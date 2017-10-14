@@ -342,7 +342,7 @@ names to which it refers are bound."
       (fringe (:background ,low-contrast-bg :foreground ,comment))
       (linum (:background ,low-contrast-bg :foreground ,comment :italic nil :underline nil))
       (line-number (:background ,low-contrast-bg :foreground ,comment))
-      (line-number-current-line (:inherit highlight))
+      (line-number-current-line (:inherit line-number :foreground ,foreground :weight bold))
       (vertical-border (:foreground ,contrast-bg))
       (border (:background ,contrast-bg :foreground ,highlight))
       (border-glyph (nil))

@@ -733,6 +733,24 @@ names to which it refers are bound."
       (markdown-code-face (:inherit fixed-pitch :background ,background :foreground ,purple))
       (markdown-inline-code-face (:inherit markdown-code-face))
 
+      ;; auctex
+      (font-latex-bold-face (:foreground ,green :weight bold))
+      (font-latex-doctex-documentation-face (:inherit highlight))
+      (font-latex-italic-face (:foreground ,green :slant italic))
+      (font-latex-math-face (:foreground ,purple))
+      (font-latex-script-char-face (:foreground ,red))
+      (font-latex-sectioning-0-face (:foreground ,yellow :weight bold :height 1.1))
+      (font-latex-sectioning-1-face (:foreground ,yellow :weight bold :height 1.1))
+      (font-latex-sectioning-2-face (:foreground ,yellow :weight bold :height 1.1))
+      (font-latex-sectioning-3-face (:foreground ,yellow :weight bold :height 1.1))
+      (font-latex-sectioning-4-face (:foreground ,yellow :weight bold :height 1.1))
+      (font-latex-sectioning-5-face (:foreground ,yellow :weight bold))
+      (font-latex-sedate-face (:foreground ,orange))
+      (font-latex-slide-title-face (:foreground ,blue :weight bold :height 1.2))
+      (font-latex-string-face (:inherit font-lock-string-face))
+      (font-latex-verbatim-face (:inherit font-lock-string-face))
+      (font-latex-warning-face (:inherit warning))
+
       ;; info
       (Info-quoted (:inherit font-lock-constant-face))
       (info-index-match (:inherit isearch))

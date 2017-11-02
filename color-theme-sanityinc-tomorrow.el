@@ -751,6 +751,10 @@ names to which it refers are bound."
       (font-latex-verbatim-face (:inherit font-lock-string-face))
       (font-latex-warning-face (:inherit warning))
 
+      ;; TeX-fold
+      (TeX-fold-folded-face (:foreground ,purple))
+      (TeX-fold-unfolded-face (:inherit highlight))
+
       ;; info
       (Info-quoted (:inherit font-lock-constant-face))
       (info-index-match (:inherit isearch))

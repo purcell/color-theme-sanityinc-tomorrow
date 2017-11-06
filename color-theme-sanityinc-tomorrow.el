@@ -249,6 +249,9 @@ names to which it refers are bound."
       ;; Flymake
       (flymake-warnline (:underline (:style wave :color ,orange) :background ,background))
       (flymake-errline (:underline (:style wave :color ,red) :background ,background))
+      (flymake-error (:underline (:style wave :color ,red)))
+      (flymake-note (:underline (:style wave :color ,aqua)))
+      (flymake-warning (:underline (:style wave :color ,orange)))
 
       ;; Flyspell
       (flyspell-incorrect (:underline (:style wave :color ,red)))

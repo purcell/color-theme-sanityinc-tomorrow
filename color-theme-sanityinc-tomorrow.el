@@ -247,8 +247,8 @@ names to which it refers are bound."
       (flycheck-color-mode-line-success-face (:foreground ,green))
 
       ;; Flymake
-      (flymake-warnline (:underline (:style wave :color ,orange) :background ,background))
-      (flymake-errline (:underline (:style wave :color ,red) :background ,background))
+      (flymake-warnline (:underline (:style wave :color ,orange)))
+      (flymake-errline (:underline (:style wave :color ,red)))
       (flymake-error (:underline (:style wave :color ,red)))
       (flymake-note (:underline (:style wave :color ,aqua)))
       (flymake-warning (:underline (:style wave :color ,orange)))

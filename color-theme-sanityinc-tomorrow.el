@@ -678,6 +678,7 @@ names to which it refers are bound."
       (helm-selection (:inherit highlight))
       (helm-separator (:foreground ,purple))
       (helm-source-header (:weight bold :foreground ,orange :height 1.44))
+      (helm-visible-mark (:foreground ,blue))
 
       ;; company
       (company-preview (:foreground ,comment :background ,contrast-bg))

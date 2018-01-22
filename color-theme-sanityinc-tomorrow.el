@@ -583,6 +583,8 @@ names to which it refers are bound."
       (magit-log-author (:foreground ,orange))
       (magit-log-date (:foreground ,blue))
       (magit-log-graph (:foreground ,comment))
+      (magit-mode-line-process (:foreground ,orange))
+      (magit-mode-line-process-error (:foreground ,red))
       (magit-process-ng (:inherit error))
       (magit-process-ok (:inherit success))
       (magit-reflog-amend (:foreground ,purple))

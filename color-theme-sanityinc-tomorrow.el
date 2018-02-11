@@ -51,14 +51,21 @@
 
 (require 'color)
 
-(defun sanityinc-tomorrow-interpolate (hex1 hex2 gradations which)
+(defun sanityinc-tomorrow--interpolate (hex1 hex2 gradations which)
   (let ((c1 (color-name-to-rgb hex1))
         (c2 (color-name-to-rgb hex2)))
     (apply 'color-rgb-to-hex (nth which (color-gradient c1 c2 gradations)))))
 
+(defun sanityinc-tomorrow--alt-background (background highlight)
+  "Calculate the alt-background color by blending BACKGROUND and HIGHLIGHT.
+This cannot be done at runtime because its output is dependent
+upon the display characteristics of the frame in which it is
+executed."
+  (sanityinc-tomorrow--interpolate background highlight 7 3))
 
 (defconst color-theme-sanityinc-tomorrow-colors
   '((night . ((background . "#1d1f21")
+              (alt-background . "#22a224a427a7")
               (current-line . "#282a2e")
               (selection . "#373b41")
               (foreground . "#c5c8c6")
@@ -71,6 +78,7 @@
               (blue . "#81a2be")
               (purple . "#b294bb")))
     (day . ((background . "#ffffff")
+            (alt-background . "#f7f7f7f7f7f7")
             (current-line . "#efefef")
             (selection . "#d6d6d6")
             (foreground . "#4d4d4c")
@@ -83,6 +91,7 @@
             (blue . "#4271ae")
             (purple . "#8959a8")))
     (eighties . ((background . "#2d2d2d")
+                 (alt-background . "#333333333333")
                  (current-line . "#393939")
                  (selection . "#515151")
                  (foreground . "#cccccc")
@@ -95,6 +104,7 @@
                  (blue . "#6699cc")
                  (purple . "#cc99cc")))
     (blue . ((background . "#002451")
+             (alt-background . "#00002c2c5fdf")
              (current-line . "#00346e")
              (selection . "#003f8e")
              (foreground . "#ffffff")
@@ -107,6 +117,7 @@
              (blue . "#bbdaff")
              (purple . "#ebbbff")))
     (bright . ((background . "#000000")
+               (alt-background . "#151515151515")
                (current-line . "#2a2a2a")
                (selection . "#424242")
                (foreground . "#eaeaea")
@@ -130,7 +141,7 @@
           (background   (cdr (assoc 'background colors)))
           (contrast-bg  (cdr (assoc 'selection colors)))
           (highlight    (cdr (assoc 'current-line colors)))
-          (low-contrast-bg (sanityinc-tomorrow-interpolate background highlight 7 3))
+          (low-contrast-bg (cdr (assoc 'alt-background colors)))
           (foreground   (cdr (assoc 'foreground colors)))
           (comment      (cdr (assoc 'comment colors)))
           (red          (cdr (assoc 'red colors)))

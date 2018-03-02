@@ -135,6 +135,9 @@ executed."
 (defmacro color-theme-sanityinc-tomorrow--with-colors (mode &rest body)
   "Execute `BODY' in a scope with variables bound to the various tomorrow colors.
 
+Also sets background-mode to either 'light or 'dark, for use in
+setting `frame-background-mode'.
+
 `MODE' should be set to either 'day, 'night, 'eighties, 'blue or 'bright."
   `(let* ((colors (or (cdr (assoc ,mode color-theme-sanityinc-tomorrow-colors))
                       (error "no such theme flavor")))
@@ -151,7 +154,8 @@ executed."
           (aqua         (cdr (assoc 'aqua colors)))
           (blue         (cdr (assoc 'blue colors)))
           (purple       (cdr (assoc 'purple colors)))
-          (class '((class color) (min-colors 89))))
+          (class '((class color) (min-colors 89)))
+          (background-mode (if (eq ,mode 'day) 'light 'dark)))
      ,@body))
 
 (defmacro color-theme-sanityinc-tomorrow--face-specs ()
@@ -1229,6 +1233,7 @@ are bound."
                (color-theme-sanityinc-tomorrow--face-specs))
         (custom-theme-set-variables
          ',name
+         `(frame-background-mode ',background-mode)
          `(beacon-color ,red)
          `(fci-rule-color ,contrast-bg)
          `(vc-annotate-color-map

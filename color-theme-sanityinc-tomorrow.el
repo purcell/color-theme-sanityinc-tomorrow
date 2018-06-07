@@ -638,6 +638,10 @@ names to which it refers are bound."
       (git-gutter-fr:added (:foreground ,green :weight bold))
       (git-gutter-fr:deleted (:foreground ,red :weight bold))
 
+      ;; git-timemachine
+      (git-timemachine-minibuffer-author-face (:foreground ,purple))
+      (git-timemachine-minibuffer-detail-face (:foreground ,green))
+
       ;; guide-key
       (guide-key/prefix-command-face (:foreground ,blue))
       (guide-key/highlight-command-face (:foreground ,green))

@@ -593,6 +593,7 @@ names to which it refers are bound."
       (magit-diffstat-added (:foreground ,green))
       (magit-diffstat-removed (:foreground ,orange))
       (magit-dimmed (:foreground ,comment))
+      (magit-filename (:foreground ,purple))
       (magit-hash (:foreground ,comment))
       (magit-header-line (:inherit nil :weight bold))
       (magit-log-author (:foreground ,orange))

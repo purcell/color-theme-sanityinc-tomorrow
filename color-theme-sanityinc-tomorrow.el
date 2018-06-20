@@ -320,7 +320,7 @@ names to which it refers are bound."
       ;; Anzu
       (anzu-mode-line (:foreground ,orange))
       (anzu-mode-line-no-match (:foreground ,red))
-      (anzu-replace-highlight (:inherit isearch-lazy-highlight-face))
+      (anzu-replace-highlight (:inherit lazy-highlight))
       (anzu-replace-to (:inherit isearch))
       (anzu-match-1 (:foreground ,yellow ))
       (anzu-match-2 (:foreground ,orange))

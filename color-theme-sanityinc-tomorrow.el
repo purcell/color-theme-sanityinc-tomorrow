@@ -1205,6 +1205,13 @@ names to which it refers are bound."
       (cscope-function-face (:foreground ,blue))
       (cscope-line-number-face (:foreground ,red))
       (cscope-separator-face (:bold t :overline t :underline t :foreground ,purple))
+
+      ;; visual-regexp
+      (vr/match-0 (:foreground ,yellow :background ,background :inverse-video t))
+      (vr/match-1 (:foreground ,aqua :background ,background :inverse-video t))
+      (vr/group-0 (:foreground ,purple :background ,background :inverse-video t))
+      (vr/group-1 (:foreground ,green :background ,background :inverse-video t))
+      (vr/group-2 (:foreground ,orange :background ,background :inverse-video t))
       ))))
 
 (defmacro color-theme-sanityinc-tomorrow--frame-parameter-specs ()

@@ -200,6 +200,15 @@ names to which it refers are bound."
       (window-divider-first-pixel (:foreground ,contrast-bg))
       (window-divider-last-pixel (:foreground ,contrast-bg))
 
+      ;; antlr-mode
+      (antlr-keyword (:inherit font-lock-keyword-face))
+      (antlr-syntax (:inherit font-lock-constant-face))
+      (antlr-ruledef (:inherit font-lock-function-name-face))
+      (antlr-ruleref (:inherit font-lock-type-face))
+      (antlr-tokendef (:inherit font-lock-function-name-face))
+      (antlr-tokenref (:inherit font-lock-type-face))
+      (antlr-literal (:inherit font-lock-constant-face))
+
       ;; ace-window
       (aw-background-face (:foreground ,contrast-bg))
       (aw-leading-char-face (:foreground ,yellow))

@@ -1193,7 +1193,7 @@ names to which it refers are bound."
       (sp-show-pair-mismatch-face (:foreground nil :background nil :inherit show-paren-mismatch))
 
       ;; symbol-overlay
-      (symbol-overlay-temp-face (:inherit highlight))
+      (symbol-overlay-default-face (:inherit highlight :underline t))
 
       ;; sx
       (sx-question-mode-content-face (:background ,highlight))

@@ -804,6 +804,9 @@ names to which it refers are bound."
       (diredp-symlink (:inherit diredfl-symlink))
       (diredp-write-priv (:inherit diredfl-write-priv))
 
+      ;; dired-narrow
+      (dired-narrow-blink (:foreground ,background :background ,yellow))
+
       ;; e2wm
       (e2wm:face-history-list-normal (:foreground ,foreground :background ,background))
       (e2wm:face-history-list-select1 (:foreground ,aqua :background ,background))

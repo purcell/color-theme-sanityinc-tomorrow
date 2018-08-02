@@ -1223,6 +1223,11 @@ names to which it refers are bound."
       (vr/group-1 (:foreground ,green :background ,background :inverse-video t))
       (vr/group-2 (:foreground ,orange :background ,background :inverse-video t))
 
+      ;; weechat
+      (weechat-highlight-face (:foreground ,orange))
+      (weechat-nick-self-face (:foreground ,green))
+      (weechat-time-face (:foreground ,aqua))
+
       ;; wgrep
       (wgrep-delete-face (:foreground ,red))
       (wgrep-done-face (:foreground ,blue))

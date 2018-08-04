@@ -492,7 +492,6 @@ names to which it refers are bound."
       (org-agenda-date (:foreground ,blue :underline nil))
       (org-agenda-done (:foreground ,green))
       (org-agenda-dimmed-todo-face (:foreground ,comment))
-      (org-block (:foreground ,orange))
       (org-code (:foreground ,yellow))
       (org-column (:background ,contrast-bg))
       (org-column-title (:inherit org-column :weight bold :underline t))

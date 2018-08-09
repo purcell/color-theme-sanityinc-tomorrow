@@ -130,6 +130,9 @@ executed."
                (blue . "#7aa6da")
                (purple . "#c397d8")))))
 
+(defvar color-theme-sanityinc-tomorrow-current nil
+  "Variable to determine what the name of the last set theme was.")
+
 
 
 (defmacro color-theme-sanityinc-tomorrow--with-colors (mode &rest body)
@@ -1306,12 +1309,14 @@ are bound."
 (defun color-theme-sanityinc-tomorrow (mode)
   "Apply the tomorrow variant theme."
   (if (fboundp 'load-theme)
-      (let ((name (color-theme-sanityinc-tomorrow--theme-name mode)))
-        (if (boundp 'custom-enabled-themes)
-            (custom-set-variables `(custom-enabled-themes '(,name)))
-          (if (> emacs-major-version 23)
-              (load-theme name t)
-            (load-theme name))))
+      (progn
+        (setq color-theme-sanityinc-tomorrow-current mode)
+        (let ((name (color-theme-sanityinc-tomorrow--theme-name mode)))
+          (if (boundp 'custom-enabled-themes)
+              (custom-set-variables `(custom-enabled-themes '(,name)))
+            (if (> emacs-major-version 23)
+                (load-theme name t)
+              (load-theme name)))))
     (progn
       (require 'color-theme)
       (color-theme-sanityinc-tomorrow--with-colors

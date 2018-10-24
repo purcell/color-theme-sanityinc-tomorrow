@@ -1222,6 +1222,13 @@ names to which it refers are bound."
       (vr/group-1 (:foreground ,green :background ,background :inverse-video t))
       (vr/group-2 (:foreground ,orange :background ,background :inverse-video t))
 
+      ;; web-mode
+      (web-mode-doctype-face (:inherit font-lock-string-face))
+      (web-mode-html-attr-equal-face (:foreground nil :background nil :inherit default))
+      (web-mode-html-attr-name-face (:inherit font-lock-variable-name-face))
+      (web-mode-html-tag-face (:inherit font-lock-function-name-face))
+      (web-mode-symbol-face (:inherit font-lock-constant-face))
+
       ;; weechat
       (weechat-highlight-face (:foreground ,orange))
       (weechat-nick-self-face (:foreground ,green))

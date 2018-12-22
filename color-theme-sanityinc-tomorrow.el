@@ -526,6 +526,10 @@ names to which it refers are bound."
       (outline-8 (:inherit nil :foreground ,aqua))
       (outline-9 (:inherit nil :foreground ,yellow))
 
+      ;; outline-minor-faces
+      (outline-minor-0 (:weight bold :background ,low-contrast-bg))
+      (outline-minor-1 (:inherit (outline-minor-0 outline-1)))
+
       ;; Parenthesis matching (built-in)
       (show-paren-match (:background ,purple :foreground ,background))
       (show-paren-mismatch (:background ,red :foreground ,background))

@@ -1082,6 +1082,24 @@ names to which it refers are bound."
       (markdown-code-face (:inherit fixed-pitch :background ,background :foreground ,purple))
       (markdown-inline-code-face (:inherit markdown-code-face))
 
+      ;; markup
+      (markup-complex-replacement-face (:background ,background))
+      (markup-error-face (:foreground ,red :background ,background :weight bold))
+      (markup-gen-face (:foreground ,blue))
+      (markup-list-face (:foreground nil :background nil))
+      (markup-meta-face (:foreground ,comment))
+      (markup-meta-hide-face (:foreground ,comment))
+      (markup-reference-face (:inherit link))
+      (markup-secondary-text-face (:foreground ,comment))
+      (markup-title-0-face (:foreground ,blue :weight bold :underline t))
+      (markup-title-1-face (:foreground ,purple :weight bold :underline t))
+      (markup-title-2-face (:foreground ,orange :weight bold :underline t))
+      (markup-title-3-face (:foreground ,green :weight bold :underline t))
+      (markup-title-4-face (:foreground ,blue :weight bold :underline t))
+      (markup-title-5-face (:foreground ,purple :weight bold :underline t))
+      (markup-typewriter-face (:inherit shadow))
+      (markup-verbatim-face (:inherit shadow :background ,background))
+
       ;; mu4e
       (mu4e-header-highlight-face (:underline nil :inherit region))
       (mu4e-header-marks-face (:underline nil :foreground ,yellow))

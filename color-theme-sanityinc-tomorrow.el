@@ -1144,6 +1144,11 @@ names to which it refers are bound."
       (neo-vc-unlocked-changes-face (:foreground ,blue :slant italic))
       (neo-vc-user-face (:foreground ,red :slant italic))
 
+      ;; nswbuff
+      (nswbuff-default-face (:foreground, foreground :background ,background))
+      (nswbuff-current-buffer-face (:foreground ,blue :weight bold :underline nil))
+      (nswbuff-separator-face (:foreground ,comment))
+
       ;; Powerline
       (powerline-active1 (:foreground ,foreground :background ,highlight))
       (powerline-active2 (:foreground ,foreground :background ,contrast-bg))

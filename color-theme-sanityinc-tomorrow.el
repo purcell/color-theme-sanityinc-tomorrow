@@ -1305,6 +1305,14 @@ are bound."
         ',mode
         (apply 'custom-theme-set-faces ',name
                (color-theme-sanityinc-tomorrow--face-specs))
+        (custom-theme-set-faces
+         ',name
+         `(cperl-array-face ((((class color) (background light)) (:foreground ,blue   :background ,yellow      :weight bold))
+                             (((class color) (background dark )) (:foreground ,yellow :background ,blue        :weight bold))))
+         `(cperl-hash-face  ((((class color) (background light)) (:foreground ,red    :background ,contrast-bg :weight bold))
+                             (((class color) (background dark )) (:foreground ,red    :background ,contrast-bg :weight bold))))
+         `(cperl-nonoverridable-face  ((((class color) (background light)) (:foreground ,green))
+                                       (((class color) (background dark )) (:foreground ,purple)))))
         (custom-theme-set-variables
          ',name
          `(frame-background-mode ',background-mode)

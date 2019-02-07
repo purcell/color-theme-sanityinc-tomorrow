@@ -1307,15 +1307,11 @@ are bound."
                (color-theme-sanityinc-tomorrow--face-specs))
         (custom-theme-set-faces
          ',name
-	 ;; cperl default: underline
-	 ;; `(cperl-invalid-face ((t (:underline t))))
-	 ;; cperl default: light-bg: blue on lightyellow2, dark-bg: yellow on navy
+	 ;; cperl-mode (built-in)
          `(cperl-array-face ((((class color) (background light)) (:foreground ,blue   :background ,yellow      :weight bold))
                              (((class color) (background dark )) (:foreground ,yellow :background ,blue        :weight bold))))
-	 ;; cperl default: light-bg: red on lightyellow2, dark-bg: red on navy
          `(cperl-hash-face  ((((class color) (background light)) (:foreground ,red    :background ,contrast-bg :weight bold))
                              (((class color) (background dark )) (:foreground ,red    :background ,contrast-bg :weight bold))))
-	 ;; cperl default: light-bg: charteuse3, dark-bg: orchid1
          `(cperl-nonoverridable-face  ((((class color) (background light)) (:foreground ,green))
                                        (((class color) (background dark )) (:foreground ,purple)))))
         (custom-theme-set-variables

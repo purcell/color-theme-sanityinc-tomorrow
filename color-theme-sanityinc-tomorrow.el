@@ -4,8 +4,7 @@
 
 ;; Author: Steve Purcell <steve@sanityinc.com>
 ;; Keywords: faces themes
-;; X-URL: http://github.com/purcell/color-theme-sanityinc-tomorrow
-;; URL: http://github.com/purcell/color-theme-sanityinc-tomorrow
+;; Homepage: http://github.com/purcell/color-theme-sanityinc-tomorrow
 ;; Version: 0
 
 ;; This program is free software; you can redistribute it and/or modify

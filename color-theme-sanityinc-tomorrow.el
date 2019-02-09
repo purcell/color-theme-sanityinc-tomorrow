@@ -956,6 +956,11 @@ names to which it refers are bound."
       (jabber-activity-face (:foreground ,purple))
       (jabber-activity-personal-face (:foreground ,aqua))
 
+      ;; Cperl
+      (cperl-array-face (:foreground ,blue :weight bold))
+      (cperl-hash-face (:foreground ,red :slant italic))
+      (cperl-nonoverridable-face (:foreground ,purple))
+
       ;; js2-mode
       (js2-warning (:underline ,orange))
       (js2-error (:foreground nil :underline ,red))

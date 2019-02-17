@@ -1235,6 +1235,10 @@ names to which it refers are bound."
       (sx-question-mode-accepted (:height 1.5 :inherit sx-question-mode-title :foreground ,green))
       (sx-question-mode-kbd-tag (:height 0.9 :weight semi-bold :box (:line-width 3 :style released-button :color ,contrast-bg)))
 
+      ;; transient
+      (transient-enabled-suffix (:foreground ,low-contrast-bg :background ,green :weight bold))
+      (transient-disabled-suffix (:foreground ,foreground :background ,red :weight bold))
+
       ;; twittering-mode
       (twittering-username-face (:inherit erc-pal-face))
       (twittering-uri-face (:foreground ,blue :inherit link))

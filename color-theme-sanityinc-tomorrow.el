@@ -1282,6 +1282,19 @@ names to which it refers are bound."
       (cscope-function-face (:foreground ,blue))
       (cscope-line-number-face (:foreground ,red))
       (cscope-separator-face (:bold t :overline t :underline t :foreground ,purple))
+
+      ;; ztree
+      (ztreep-arrow-face (:foreground ,highlight))
+      (ztreep-diff-header-face (:foreground ,yellow :weight bold))
+      (ztreep-diff-header-small-face (:foregorund ,yellow))
+      (ztreep-diff-model-add-face (:foreground ,green))
+      (ztreep-diff-model-diff-face (:foreground ,red))
+      (ztreep-diff-model-ignored-face (:foreground ,orange))
+      (ztreep-diff-model-normal-face (:foreground ,foreground))
+      (ztreep-expand-sign-face (:foreground ,foreground))
+      (ztreep-header-face (:forground ,yellow :weight bold))
+      (ztreep-leaf-face (:foreground ,aqua))
+      (ztreep-node-face (:foreground ,foreground))
       ))))
 
 (defmacro color-theme-sanityinc-tomorrow--frame-parameter-specs ()

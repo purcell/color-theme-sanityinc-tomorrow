@@ -1226,6 +1226,9 @@ names to which it refers are bound."
       (sp-show-pair-match-face (:foreground nil :background nil :inherit show-paren-match))
       (sp-show-pair-mismatch-face (:foreground nil :background nil :inherit show-paren-mismatch))
 
+      ;; stripe-buffer
+      (stripe-highlight (:inherit highlight))
+
       ;; symbol-overlay
       (symbol-overlay-default-face (:inherit highlight :underline t))
 

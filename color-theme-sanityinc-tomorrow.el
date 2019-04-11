@@ -849,16 +849,12 @@ names to which it refers are bound."
       ;; flx-ido
       (flx-highlight-face (:inherit nil :foreground ,yellow :weight bold :underline nil))
 
-      ;; git-gutter
+      ;; git-gutter (git-gutter-fringe inherits from git-gutter)
+      (git-gutter:separator (:foreground ,aqua :weight bold))
       (git-gutter:modified (:foreground ,purple :weight bold))
       (git-gutter:added (:foreground ,green :weight bold))
       (git-gutter:deleted (:foreground ,red :weight bold))
       (git-gutter:unchanged (:background ,yellow))
-
-      ;; git-gutter-fringe
-      (git-gutter-fr:modified (:foreground ,purple :weight bold))
-      (git-gutter-fr:added (:foreground ,green :weight bold))
-      (git-gutter-fr:deleted (:foreground ,red :weight bold))
 
       ;; git-timemachine
       (git-timemachine-minibuffer-author-face (:foreground ,purple))

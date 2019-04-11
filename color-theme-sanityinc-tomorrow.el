@@ -856,6 +856,13 @@ names to which it refers are bound."
       (git-gutter:deleted (:foreground ,red :weight bold))
       (git-gutter:unchanged (:background ,yellow))
 
+      ;; git-gutter+ (git-gutter-fringe+ inherits from git-gutter+)
+      (git-gutter+-separator (:foreground ,aqua :weight bold))
+      (git-gutter+-modified (:foreground ,purple :weight bold))
+      (git-gutter+-added (:foreground ,green :weight bold))
+      (git-gutter+-deleted (:foreground ,red :weight bold))
+      (git-gutter+-unchanged (:background ,yellow))
+
       ;; git-timemachine
       (git-timemachine-minibuffer-author-face (:foreground ,purple))
       (git-timemachine-minibuffer-detail-face (:foreground ,green))

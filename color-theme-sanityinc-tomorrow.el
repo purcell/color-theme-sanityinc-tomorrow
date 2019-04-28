@@ -1233,7 +1233,7 @@ names to which it refers are bound."
       (sly-warning-face (:foreground ,orange))
       (sly-stickers-armed-face (:foreground ,background :background ,blue))
       (sly-stickers-empty-face (:foreground ,background :background ,comment))
-      (sly-stickers-placed-face (:foreground, background :background ,foreground))
+      (sly-stickers-placed-face (:foreground ,background :background ,foreground))
       (sly-stickers-recordings-face (:foreground ,background :background ,green))
 
       ;; Smartparens paren matching

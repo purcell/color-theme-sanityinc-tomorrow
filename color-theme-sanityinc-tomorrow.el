@@ -1225,6 +1225,17 @@ names to which it refers are bound."
       (slime-repl-output-face (:foreground ,blue :background ,background))
       (slime-repl-inputed-output-face (:foreground ,comment))
 
+      ;; SLY
+      (sly-error-face (:underline (:color ,red)))
+      (sly-mrepl-output-face (:foreground ,purple :background ,background))
+      (sly-note-face (:foreground ,green))
+      (sly-style-warning-face (:foreground ,yellow))
+      (sly-warning-face (:foreground ,orange))
+      (sly-stickers-armed-face (:foreground ,background :background ,blue))
+      (sly-stickers-empty-face (:foreground ,background :background ,comment))
+      (sly-stickers-placed-face (:foreground, background :background ,foreground))
+      (sly-stickers-recordings-face (:foreground ,background :background ,green))
+
       ;; Smartparens paren matching
       (sp-show-pair-match-face (:foreground nil :background nil :inherit show-paren-match))
       (sp-show-pair-mismatch-face (:foreground nil :background nil :inherit show-paren-mismatch))

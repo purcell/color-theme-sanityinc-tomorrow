@@ -50,6 +50,9 @@
 
 (require 'color)
 
+(eval-when-compile (require 'ansi-color))
+(declare-function color-theme-install "color-theme")
+
 (defun sanityinc-tomorrow--interpolate (hex1 hex2 gradations which)
   (let ((c1 (color-name-to-rgb hex1))
         (c2 (color-name-to-rgb hex2)))

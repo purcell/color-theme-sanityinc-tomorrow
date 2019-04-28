@@ -1,0 +1,27 @@
+language: ruby
+
+before_install:
+  - git clone https://github.com/rejeep/evm.git $HOME/.evm
+  - export PATH=$HOME/.evm/bin:$PATH
+
+  - evm config path /tmp
+  - evm install $EVM_EMACS --use --skip
+
+env:
+  - EVM_EMACS=emacs-24.1-travis
+  - EVM_EMACS=emacs-24.3-travis
+  - EVM_EMACS=emacs-25.1-travis
+  - EVM_EMACS=emacs-26.2-travis
+  - EVM_EMACS=emacs-git-snapshot-travis
+
+matrix:
+  allow_failures:
+    - env: EVM_EMACS=emacs-git-snapshot-travis
+
+script:
+  lsb_release -a && ./run-tests.sh
+
+# Local Variables:
+# indent-tabs-mode: nil
+# coding: utf-8
+# End:

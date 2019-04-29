@@ -1231,9 +1231,9 @@ names to which it refers are bound."
       ;; SLY
       (sly-error-face (:underline (:color ,red)))
       (sly-mrepl-output-face (:foreground ,purple :background ,background))
-      (sly-note-face (:foreground ,green))
-      (sly-style-warning-face (:foreground ,yellow))
-      (sly-warning-face (:foreground ,orange))
+      (sly-note-face (:underline (:color ,green)))
+      (sly-style-warning-face (:underline (color: ,yellow)))
+      (sly-warning-face (:underline (color: ,orange)))
       (sly-stickers-armed-face (:foreground ,background :background ,blue))
       (sly-stickers-empty-face (:foreground ,background :background ,comment))
       (sly-stickers-placed-face (:foreground ,background :background ,foreground))

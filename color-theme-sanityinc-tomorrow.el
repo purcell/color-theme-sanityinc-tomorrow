@@ -205,9 +205,7 @@ names to which it refers are bound."
       (line-number-current-line (:inherit line-number :foreground ,foreground :weight bold))
       (vertical-border (:foreground ,contrast-bg))
       (border (:background ,contrast-bg :foreground ,highlight))
-      (border-glyph (nil))
       (highlight (:inverse-video nil :background ,highlight))
-      (gui-element (:background ,contrast-bg :foreground ,foreground))
       (mode-line (:foreground ,foreground :background ,contrast-bg :weight normal
                               :box (:line-width 1 :color ,contrast-bg)))
       (mode-line-buffer-id (:foreground ,purple :background nil))

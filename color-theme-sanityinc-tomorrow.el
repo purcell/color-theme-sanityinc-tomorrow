@@ -211,7 +211,8 @@ names to which it refers are bound."
       (mode-line-buffer-id (:foreground ,purple :background nil))
       (mode-line-inactive (:inherit mode-line
                                     :foreground ,comment
-                                    :background ,highlight :weight normal))
+                                    :background ,highlight
+                                    :weight normal))
       (mode-line-emphasis (:foreground ,foreground :slant italic))
       (mode-line-highlight (:foreground ,purple :box nil :weight bold))
       (minibuffer-prompt (:foreground ,blue))
@@ -1373,6 +1374,7 @@ are bound."
          `(flycheck-color-mode-line-face-to-color 'mode-line-buffer-id)
          `(ansi-color-names-vector (vector ,contrast-bg ,red ,green ,yellow ,blue ,purple ,aqua ,foreground))
          '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
+         `(window-divider-mode nil)
          ))
        (provide-theme ',name))))
 

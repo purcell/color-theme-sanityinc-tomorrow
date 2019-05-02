@@ -1228,11 +1228,11 @@ names to which it refers are bound."
       (slime-repl-inputed-output-face (:foreground ,comment))
 
       ;; SLY
-      (sly-error-face (:underline (:color ,red)))
+      (sly-error-face (:underline (:style wave :color ,red)))
       (sly-mrepl-output-face (:foreground ,purple :background ,background))
-      (sly-note-face (:underline (:color ,green)))
-      (sly-style-warning-face (:underline (color: ,yellow)))
-      (sly-warning-face (:underline (color: ,orange)))
+      (sly-note-face (:underline (:style wave :color ,green)))
+      (sly-style-warning-face (:underline (:style wave :color ,yellow)))
+      (sly-warning-face (:underline (:style wave :color ,orange)))
       (sly-stickers-armed-face (:foreground ,background :background ,blue))
       (sly-stickers-empty-face (:foreground ,background :background ,comment))
       (sly-stickers-placed-face (:foreground ,background :background ,foreground))

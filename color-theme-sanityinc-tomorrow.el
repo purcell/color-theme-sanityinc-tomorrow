@@ -1245,14 +1245,17 @@ names to which it refers are bound."
       ;; stripe-buffer
       (stripe-highlight (:inherit highlight))
 
-      ;; symbol-overlay
-      (symbol-overlay-default-face (:inherit highlight :underline t))
+      ;; swiper
+      (swiper-isearch-current-match (:underline t))
 
       ;; sx
       (sx-question-mode-content-face (:background ,highlight))
       (sx-question-list-answers (:height 1.0 :inherit sx-question-list-parent :foreground ,green))
       (sx-question-mode-accepted (:height 1.5 :inherit sx-question-mode-title :foreground ,green))
       (sx-question-mode-kbd-tag (:height 0.9 :weight semi-bold :box (:line-width 3 :style released-button :color ,contrast-bg)))
+
+      ;; symbol-overlay
+      (symbol-overlay-default-face (:inherit highlight :underline t))
 
       ;; transient
       (transient-enabled-suffix (:foreground ,low-contrast-bg :background ,green :weight bold))

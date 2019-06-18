@@ -653,6 +653,10 @@ names to which it refers are bound."
       (avy-lead-face-1 (:foreground ,background :background ,aqua))
       (avy-lead-face-2 (:foreground ,background :background ,orange))
 
+      ;; bm
+      (bm-face (:background ,contrast-bg :foreground ,foreground))
+      (bm-persistent-face (:background ,blue :foreground ,background))
+
       ;; bookmark+
       (bmkp-*-mark (:foreground ,background :background ,yellow))
       (bmkp->-mark (:foreground ,yellow))
@@ -1092,6 +1096,7 @@ names to which it refers are bound."
       (markdown-inline-code-face (:inherit markdown-code-face))
 
       ;; markup
+      (markup-code-face (:inherit fixed-pitch :background ,background :foreground ,purple))
       (markup-complex-replacement-face (:background ,background))
       (markup-error-face (:foreground ,red :background ,background :weight bold))
       (markup-gen-face (:foreground ,blue))

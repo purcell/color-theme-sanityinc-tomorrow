@@ -1092,6 +1092,7 @@ names to which it refers are bound."
       (markdown-inline-code-face (:inherit markdown-code-face))
 
       ;; markup
+      (markup-code-face (:inherit fixed-pitch :background ,background :foreground ,purple))
       (markup-complex-replacement-face (:background ,background))
       (markup-error-face (:foreground ,red :background ,background :weight bold))
       (markup-gen-face (:foreground ,blue))

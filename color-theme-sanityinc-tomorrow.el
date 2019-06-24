@@ -855,6 +855,9 @@ names to which it refers are bound."
       ;; flx-ido
       (flx-highlight-face (:inherit nil :foreground ,yellow :weight bold :underline nil))
 
+      ;; fold-this
+      (fold-this-overlay (:foreground ,green))
+
       ;; git-gutter (git-gutter-fringe inherits from git-gutter)
       (git-gutter:separator (:foreground ,aqua :weight bold))
       (git-gutter:modified (:foreground ,purple :weight bold))

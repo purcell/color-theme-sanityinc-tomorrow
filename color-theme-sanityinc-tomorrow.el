@@ -1254,7 +1254,7 @@ names to which it refers are bound."
       (stripe-highlight (:inherit highlight))
 
       ;; swiper
-      (swiper-isearch-current-match (:underline t))
+      (swiper-line-face (:underline t))
 
       ;; sx
       (sx-question-mode-content-face (:background ,highlight))

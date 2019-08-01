@@ -761,10 +761,12 @@ names to which it refers are bound."
       (debbugs-gnu-tagged (:foreground ,yellow))
 
       ;; diff-hl
-      (diff-hl-insert (:background ,green :foreground ,background))
-      (diff-hl-change (:background ,blue :foreground ,background))
-      (diff-hl-delete (:background ,orange :foreground ,background))
-      (diff-hl-unknown (:background ,purple :foreground ,background))
+      (diff-hl-insert (:background ,green))
+      (diff-hl-change (:background ,blue))
+      (diff-hl-delete (:background ,red))
+      (diff-hl-margin-insert (:inherit diff-hl-insert :foreground ,background))
+      (diff-hl-margin-change (:inherit diff-hl-change :foreground ,background))
+      (diff-hl-margin-delete (:inherit diff-hl-delete :foreground ,background))
 
       ;; dired-async
       (dired-async-failures (:inherit error))

@@ -233,14 +233,14 @@ names to which it refers are bound."
 
       ;; ansi-term (built-in)
       (term (:foreground nil :background nil :inherit default))
-      (term-color-black (:foreground ,background :background ,contrast-bg))
+      (term-color-black (:foreground ,background :background ,background))
       (term-color-red (:foreground ,red :background ,red))
       (term-color-green (:foreground ,green :background ,green))
       (term-color-yellow (:foreground ,yellow :background ,yellow))
       (term-color-blue (:foreground ,blue :background ,blue))
       (term-color-magenta (:foreground ,purple :background ,purple))
       (term-color-cyan (:foreground ,aqua :background ,aqua))
-      (term-color-white (:foreground ,foreground :background ,comment))
+      (term-color-white (:foreground ,foreground :background ,foreground))
 
       ;; antlr-mode (built-in)
       (antlr-keyword (:inherit font-lock-keyword-face))
@@ -1395,7 +1395,7 @@ are bound."
          `(vc-annotate-very-old-color nil)
          `(vc-annotate-background nil)
          `(flycheck-color-mode-line-face-to-color 'mode-line-buffer-id)
-         `(ansi-color-names-vector (vector ,contrast-bg ,red ,green ,yellow ,blue ,purple ,aqua ,foreground))
+         `(ansi-color-names-vector (vector ,background ,red ,green ,yellow ,blue ,purple ,aqua ,foreground))
          '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
          `(window-divider-mode nil)
          ))
@@ -1420,7 +1420,7 @@ are bound."
           ,@(color-theme-sanityinc-tomorrow--frame-parameter-specs)
           ,@(color-theme-sanityinc-tomorrow--face-specs)))
        ;; ansi-color - comint and other modes that handle terminal color escape sequences
-       (setq ansi-color-names-vector (vector contrast-bg red green yellow blue purple aqua foreground))
+       (setq ansi-color-names-vector (vector background red green yellow blue purple aqua foreground))
        (setq ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))))
 
 ;;;###autoload

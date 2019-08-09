@@ -278,7 +278,11 @@ names to which it refers are bound."
       (diff-header (:foreground ,aqua :background nil))
       (diff-file-header (:foreground ,blue :background nil))
       (diff-hunk-header (:foreground ,purple))
+      (diff-indicator-added (:inherit diff-added))
+      (diff-indicator-changed (:inherit diff-changed))
+      (diff-indicator-removed (:inherit diff-removed))
       (diff-refine-added (:foreground ,aqua))
+      (diff-refine-changed (:foreground ,yellow))
       (diff-refine-removed (:foreground ,red))
 
       ;; ediff (built-in)

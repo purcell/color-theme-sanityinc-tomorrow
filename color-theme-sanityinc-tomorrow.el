@@ -203,6 +203,9 @@ names to which it refers are bound."
       (linum (:background ,low-contrast-bg :foreground ,comment :italic nil :underline nil))
       (line-number (:background ,low-contrast-bg :foreground ,comment))
       (line-number-current-line (:inherit line-number :foreground ,foreground :weight bold))
+      (fill-column-indicator (:foreground ,contrast-bg :weight normal :slant normal
+                                          :underline nil :overline nil :strike-through nil
+                                          :box nil :inverse-video nil :stipple nil))
       (vertical-border (:foreground ,contrast-bg))
       (border (:background ,contrast-bg :foreground ,highlight))
       (highlight (:inverse-video nil :background ,highlight))

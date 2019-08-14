@@ -31,7 +31,7 @@ this to your packages list:
 Otherwise, ensure a directory containing these files is on your `load-path`.
 
 If you're using an Emacs version older than 23.x, you'll also need to
-install `color-theme.el`.
+install `color-theme.el` and `color.el`.
 
 ## Usage ##
 

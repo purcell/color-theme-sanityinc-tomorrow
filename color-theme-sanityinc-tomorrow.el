@@ -41,6 +41,8 @@
 ;;     M-x color-theme-sanityinc-tomorrow-bright
 ;;     M-x color-theme-sanityinc-tomorrow-eighties
 ;;
+;; Note that older Emacs will also require color-theme.el and color.el
+;;
 ;;; Credit:
 
 ;; Colour selection by Chris Kempson:
@@ -51,6 +53,9 @@
 (require 'color)
 
 (eval-when-compile (require 'ansi-color))
+(unless (fboundp 'declare-function)
+  (defmacro declare-function (_fn _file &optional _arglist _fileonly)
+    nil))
 (declare-function color-theme-install "color-theme")
 
 (defun sanityinc-tomorrow--interpolate (hex1 hex2 gradations which)

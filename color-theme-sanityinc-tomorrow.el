@@ -53,8 +53,8 @@
 (require 'color)
 
 (eval-when-compile (require 'ansi-color))
-(when (fboundp 'declare-function)
-  (declare-function color-theme-install "color-theme"))
+(cond ((fboundp 'declare-function)
+       (declare-function color-theme-install "color-theme")))
 
 (defun sanityinc-tomorrow--interpolate (hex1 hex2 gradations which)
   (let ((c1 (color-name-to-rgb hex1))

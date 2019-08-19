@@ -477,6 +477,11 @@ names to which it refers are bound."
       (info-title-4 (:weight bold))
       (info-xref-visited (:foreground ,comment :underline t))
 
+      ;; kaocha-runner
+      (kaocha-runner-error-face (:foreground ,red))
+      (kaocha-runner-success-face (:foreground ,green))
+      (kaocha-runner-warning-face (:foreground ,yellow))
+
       ;; Message-mode (built-in)
       (message-header-other (:foreground nil :background nil :weight normal))
       (message-header-subject (:inherit message-header-other :weight bold :foreground ,yellow))

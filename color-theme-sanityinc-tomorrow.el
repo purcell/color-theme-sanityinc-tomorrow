@@ -1213,6 +1213,8 @@ names to which it refers are bound."
       ;; Parenthesis dimming (parenface)
       (paren-face (:foreground ,comment :background nil))
 
+      (pulse-highlight-start-face (:background ,red))
+
       ;; Python-specific overrides
       (py-builtins-face (:foreground ,orange :weight normal))
 

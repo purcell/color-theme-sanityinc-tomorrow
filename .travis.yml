@@ -5,7 +5,7 @@ install:
   - nix-env -iA $EMACS_VERSION -f https://github.com/purcell/nix-emacs-ci/archive/master.tar.gz
 
 env:
-  - EMACS_VERSION=emacs-24-1
+  - EMACS_VERSION=emacs-24-2
   - EMACS_VERSION=emacs-24-3
   - EMACS_VERSION=emacs-24-5
   - EMACS_VERSION=emacs-25-1

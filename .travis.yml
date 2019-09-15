@@ -2,7 +2,7 @@ language: nix
 
 install:
   - bash <(curl https://raw.githubusercontent.com/purcell/nix-emacs-ci/master/travis-install)
-  - nix-env -iA $EMACS_VER -f https://github.com/purcell/nix-emacs-ci/archive/master.tar.gz
+  - nix-env -iA $EMACS_VERSION -f https://github.com/purcell/nix-emacs-ci/archive/master.tar.gz
 
 env:
   - EMACS_VERSION=emacs-24-1

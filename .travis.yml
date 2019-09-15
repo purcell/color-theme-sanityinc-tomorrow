@@ -1,25 +1,26 @@
-language: ruby
+language: nix
 
-before_install:
-  - git clone https://github.com/rejeep/evm.git $HOME/.evm
-  - export PATH=$HOME/.evm/bin:$PATH
-
-  - evm config path /tmp
-  - evm install $EVM_EMACS --use --skip
+install:
+  - bash <(curl https://raw.githubusercontent.com/purcell/nix-emacs-ci/master/travis-install)
+  - nix-env -iA $EMACS_VER -f https://github.com/purcell/nix-emacs-ci/archive/master.tar.gz
 
 env:
-  - EVM_EMACS=emacs-24.1-travis
-  - EVM_EMACS=emacs-24.3-travis
-  - EVM_EMACS=emacs-25.1-travis
-  - EVM_EMACS=emacs-26.2-travis
-  - EVM_EMACS=emacs-git-snapshot-travis
+  - EMACS_VERSION=emacs-24-1
+  - EMACS_VERSION=emacs-24-3
+  - EMACS_VERSION=emacs-24-5
+  - EMACS_VERSION=emacs-25-1
+  - EMACS_VERSION=emacs-25-3
+  - EMACS_VERSION=emacs-26-1
+  - EMACS_VERSION=emacs-26-2
+  - EMACS_VERSION=emacs-26-3
+  - EMACS_VERSION=emacs-snapshot
 
 matrix:
   allow_failures:
-    - env: EVM_EMACS=emacs-git-snapshot-travis
+    - env: EMACS_VERSION=emacs-snapshot
 
 script:
-  lsb_release -a && ./run-tests.sh
+  ./run-tests.sh
 
 # Local Variables:
 # indent-tabs-mode: nil

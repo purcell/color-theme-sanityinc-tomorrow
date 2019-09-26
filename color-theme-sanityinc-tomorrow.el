@@ -1291,6 +1291,14 @@ names to which it refers are bound."
       ;; symbol-overlay
       (symbol-overlay-default-face (:inherit highlight :underline t))
 
+      ;; syslog-mode
+      (syslog-debug (:weight bold :foreground ,green))
+      (syslog-error (:weight bold :foreground ,red))
+      (syslog-hide (:foregound ,comment))
+      (syslog-info (:weight bold :foreground ,blue))
+      (syslog-su (:weight bold :foreground ,purple))
+      (syslog-warn (:weight bold :foreground ,orange))
+
       ;; transient
       (transient-enabled-suffix (:foreground ,low-contrast-bg :background ,green :weight bold))
       (transient-disabled-suffix (:foreground ,foreground :background ,red :weight bold))

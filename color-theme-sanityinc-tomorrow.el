@@ -615,6 +615,29 @@ names to which it refers are bound."
       (vhdl-speedbar-package-selected-face (:foreground ,aqua :underline t))
       (vhdl-speedbar-subprogram-face (:foreground ,green))
 
+      ;; tab-bar (built-in)
+      (tab-bar (:height 1.1 :foreground ,comment :background ,highlight))
+      (tab-bar-tab (:background ,contrast-bg
+                                 :foreground ,purple
+                                 :inverse-video nil
+                                 :box (:line-width 1 :style released-button)))
+      (tab-bar-tab-inactive (:inherit tab-bar-tab
+                                       :background ,comment
+                                       :foreground ,background
+                                       :inverse-video t))
+
+      ;; tab-line (built-in)
+      (tab-line (:foreground ,comment :background ,highlight))
+      (tab-line-close-highlight (:foreground ,red))
+      (tab-line-tab (:background ,contrast-bg
+                                 :foreground ,purple
+                                 :inverse-video nil
+                                 :box (:line-width 1 :style released-button)))
+      (tab-line-tab-inactive (:inherit tab-line-tab
+                                       :background ,comment
+                                       :foreground ,background
+                                       :inverse-video t))
+
       ;; which-function (built-in)
       (which-func (:foreground ,blue :background nil :weight bold))
 

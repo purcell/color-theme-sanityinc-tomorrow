@@ -623,7 +623,7 @@ names to which it refers are bound."
                                  :box (:line-width 1 :style released-button)))
       (tab-bar-tab-inactive (:inherit tab-bar-tab
                                        :background ,comment
-                                       :foreground ,background
+                                       :foreground ,highlight
                                        :inverse-video t))
 
       ;; tab-line (built-in)
@@ -635,7 +635,7 @@ names to which it refers are bound."
                                  :box (:line-width 1 :style released-button)))
       (tab-line-tab-inactive (:inherit tab-line-tab
                                        :background ,comment
-                                       :foreground ,background
+                                       :foreground ,highlight
                                        :inverse-video t))
 
       ;; which-function (built-in)

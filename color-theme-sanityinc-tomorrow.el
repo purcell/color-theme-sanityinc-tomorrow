@@ -789,11 +789,16 @@ names to which it refers are bound."
 
       ;; debbugs
       (debbugs-gnu-done (:foreground ,comment))
+      (debbugs-gnu-forwarded (:foreground ,yellow))
       (debbugs-gnu-handled (:foreground ,green))
-      (debbugs-gnu-new (:foreground ,yellow))
-      (debbugs-gnu-pending (:foreground ,orange))
-      (debbugs-gnu-stale (:foreground ,blue))
-      (debbugs-gnu-tagged (:foreground ,yellow))
+      (debbugs-gnu-new (:foreground ,red))
+      (debbugs-gnu-pending (:foreground ,blue))
+      (debbugs-gnu-stale-1 (:foreground ,orange))
+      (debbugs-gnu-stale-2 (:foreground ,green))
+      (debbugs-gnu-stale-3 (:foreground ,purple))
+      (debbugs-gnu-stale-4 (:foreground ,aqua))
+      (debbugs-gnu-stale-5 (:foreground ,foreground))
+      (debbugs-gnu-tagged (:foreground ,red))
 
       ;; diff-hl
       (diff-hl-insert (:foreground ,background :background ,green))

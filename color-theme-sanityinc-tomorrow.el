@@ -784,6 +784,14 @@ names to which it refers are bound."
       (company-scrollbar-fg (:background ,contrast-bg))
       (company-echo-common (:inherit company-echo :foreground ,red))
 
+      ;; counsel-css
+      (counsel-css-selector-depth-face-1 (:foreground ,yellow))
+      (counsel-css-selector-depth-face-2 (:foreground ,orange))
+      (counsel-css-selector-depth-face-3 (:foreground ,green))
+      (counsel-css-selector-depth-face-4 (:foreground ,aqua))
+      (counsel-css-selector-depth-face-5 (:foreground ,blue))
+      (counsel-css-selector-depth-face-6 (:foreground ,purple))
+
       ;; csv-mode
       (csv-separator-face (:foreground ,orange))
 

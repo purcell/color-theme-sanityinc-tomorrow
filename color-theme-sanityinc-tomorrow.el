@@ -219,7 +219,7 @@ names to which it refers are bound."
       (mode-line-emphasis (:foreground ,foreground :slant italic))
       (mode-line-highlight (:foreground ,purple :box nil :weight bold))
       (minibuffer-prompt (:foreground ,blue))
-      (region (:background ,contrast-bg :inverse-video nil))
+      (region (:background ,contrast-bg :inverse-video nil :extend t))
       (secondary-selection (:background ,highlight))
 
       (header-line (:inherit mode-line-inactive :foreground ,aqua :background nil))

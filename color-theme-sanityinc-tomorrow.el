@@ -702,8 +702,8 @@ names to which it refers are bound."
       (avy-lead-face-2 (:foreground ,background :background ,orange))
 
       ;; bm
-      (bm-face (:background ,contrast-bg :foreground ,foreground))
-      (bm-persistent-face (:background ,blue :foreground ,background))
+      (bm-face (:background ,contrast-bg :foreground ,foreground :extend t))
+      (bm-persistent-face (:background ,blue :foreground ,background :extend t))
 
       ;; bookmark+
       (bmkp-*-mark (:foreground ,background :background ,yellow))

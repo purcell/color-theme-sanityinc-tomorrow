@@ -471,10 +471,10 @@ names to which it refers are bound."
       (info-menu-header (:foreground ,green :weight bold :height 1.4))
       (info-menu-star (:foreground ,yellow))
       (info-node (:foreground ,green :weight bold :slant italic))
-      (info-title-1 (:weight bold :height 1.6))
-      (info-title-2 (:weight bold :height 1.4))
-      (info-title-3 (:weight bold :height 1.2))
-      (info-title-4 (:weight bold))
+      (info-title-1 (:weight bold :height 1.4))
+      (info-title-2 (:weight bold :height 1.2))
+      (info-title-3 (:weight bold :foreground ,orange))
+      (info-title-4 (:weight bold :foreground ,purple))
       (info-xref-visited (:foreground ,comment :underline t))
 
       ;; kaocha-runner
@@ -515,7 +515,7 @@ names to which it refers are bound."
       (org-date-selected (:foreground ,aqua :inverse-video t))
       (org-document-info (:foreground ,aqua))
       (org-document-info-keyword (:foreground ,green))
-      (org-document-title (:weight bold :foreground ,orange :height 1.44))
+      (org-document-title (:weight bold :foreground ,orange :height 1.4))
       (org-done (:foreground ,green))
       (org-ellipsis (:foreground ,comment))
       (org-footnote (:foreground ,aqua))
@@ -616,7 +616,7 @@ names to which it refers are bound."
       (vhdl-speedbar-subprogram-face (:foreground ,green))
 
       ;; tab-bar (built-in)
-      (tab-bar (:height 1.1 :foreground ,comment :background ,highlight))
+      (tab-bar (:height 1.2 :foreground ,comment :background ,highlight))
       (tab-bar-tab (:background ,contrast-bg
                                  :foreground ,purple
                                  :inverse-video nil
@@ -679,11 +679,11 @@ names to which it refers are bound."
       (font-latex-italic-face (:foreground ,green :slant italic))
       (font-latex-math-face (:foreground ,purple))
       (font-latex-script-char-face (:foreground ,red))
-      (font-latex-sectioning-0-face (:foreground ,yellow :weight bold :height 1.1))
-      (font-latex-sectioning-1-face (:foreground ,yellow :weight bold :height 1.1))
-      (font-latex-sectioning-2-face (:foreground ,yellow :weight bold :height 1.1))
-      (font-latex-sectioning-3-face (:foreground ,yellow :weight bold :height 1.1))
-      (font-latex-sectioning-4-face (:foreground ,yellow :weight bold :height 1.1))
+      (font-latex-sectioning-0-face (:foreground ,yellow :weight bold :height 1.2))
+      (font-latex-sectioning-1-face (:foreground ,yellow :weight bold :height 1.2))
+      (font-latex-sectioning-2-face (:foreground ,yellow :weight bold :height 1.2))
+      (font-latex-sectioning-3-face (:foreground ,yellow :weight bold :height 1.2))
+      (font-latex-sectioning-4-face (:foreground ,yellow :weight bold :height 1.2))
       (font-latex-sectioning-5-face (:foreground ,yellow :weight bold))
       (font-latex-sedate-face (:foreground ,orange))
       (font-latex-slide-title-face (:foreground ,blue :weight bold :height 1.2))
@@ -988,7 +988,7 @@ names to which it refers are bound."
       (helm-resume-need-update (:background ,red))
       (helm-selection (:inherit highlight :extend t))
       (helm-separator (:foreground ,purple))
-      (helm-source-header (:weight bold :foreground ,orange :height 1.3))
+      (helm-source-header (:weight bold :foreground ,orange :height 1.2))
       (helm-time-zone-current (:foreground ,green))
       (helm-time-zone-home (:foreground ,red))
       (helm-ucs-char (:foreground ,yellow))
@@ -1358,8 +1358,8 @@ names to which it refers are bound."
       ;; sx
       (sx-question-mode-content-face (:background ,highlight))
       (sx-question-list-answers (:height 1.0 :inherit sx-question-list-parent :foreground ,green))
-      (sx-question-mode-accepted (:height 1.5 :inherit sx-question-mode-title :foreground ,green))
-      (sx-question-mode-kbd-tag (:height 0.9 :weight semi-bold :box (:line-width 3 :style released-button :color ,contrast-bg)))
+      (sx-question-mode-accepted (:height 1.4 :inherit sx-question-mode-title :foreground ,green))
+      (sx-question-mode-kbd-tag (:weight semi-bold :box (:line-width 3 :style released-button :color ,contrast-bg)))
 
       ;; symbol-overlay
       (symbol-overlay-default-face (:inherit highlight :underline t))

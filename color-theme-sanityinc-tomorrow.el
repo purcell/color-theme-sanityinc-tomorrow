@@ -994,6 +994,17 @@ names to which it refers are bound."
       (helm-ucs-char (:foreground ,yellow))
       (helm-visible-mark (:foreground ,blue))
 
+      ;; helm-ls-git
+      (helm-ls-git-added-copied-face (:foreground ,green))
+      (helm-ls-git-added-modified-face (:foreground ,blue))
+      (helm-ls-git-conflict-face (:foreground ,red))
+      (helm-ls-git-deleted-and-staged-face (:foreground ,purple))
+      (helm-ls-git-deleted-not-staged-face (:foreground ,comment))
+      (helm-ls-git-modified-and-staged-face (:foreground ,orange))
+      (helm-ls-git-modified-not-staged-face (:foreground ,yellow))
+      (helm-ls-git-renamed-modified-face (:foreground ,orange))
+      (helm-ls-git-untracked-face (:foreground ,aqua))
+
       ;; hl-sexp
       (hl-sexp-face (:background ,contrast-bg))
 

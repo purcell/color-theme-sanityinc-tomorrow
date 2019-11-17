@@ -742,6 +742,21 @@ names to which it refers are bound."
       (bmkp-url (:foreground ,blue :underline t))
       (bmkp-variable-list (:foreground ,green))
 
+      ;; CIDER
+      (cider-debug-code-overlay-face (:background ,contrast-bg))
+      (cider-deprecated-face (:foreground ,contrast-bg :background ,yellow))
+      (cider-enlightened-face (:inherit cider-result-overlay-face :box (:color ,orange :line-width -1)))
+      (cider-enlightened-local-face (:weight bold :foreground ,orange))
+      (cider-error-highlight-face (:underline (:style wave :color ,red) :inherit unspecified))
+      (cider-fringe-good-face (:foreground ,green))
+      (cider-instrumented-face (:box (:color ,red :line-width -1)))
+      (cider-result-overlay-face (:background ,contrast-bg :box (:line-width -1 :color ,yellow)))
+      (cider-test-error-face (:foreground ,contrast-bg :background ,orange))
+      (cider-test-failure-face (:foreground ,contrast-bg :background ,red))
+      (cider-test-success-face (:foreground ,contrast-bg :background ,green))
+      (cider-traced-face (:box ,aqua :line-width -1))
+      (cider-warning-highlight-face (:underline (:style wave :color ,yellow) :inherit unspecified))
+
       ;; Circe
       (circe-fool-face (:foreground ,comment))
       (circe-highlight-nick-face (:foreground ,orange))

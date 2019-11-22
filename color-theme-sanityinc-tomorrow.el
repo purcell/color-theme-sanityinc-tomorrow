@@ -1003,7 +1003,7 @@ names to which it refers are bound."
       (helm-resume-need-update (:background ,red))
       (helm-selection (:inherit highlight :extend t))
       (helm-separator (:foreground ,purple))
-      (helm-source-header (:weight bold :foreground ,orange :height 1.2))
+      (helm-source-header (:weight bold :foreground ,orange))
       (helm-time-zone-current (:foreground ,green))
       (helm-time-zone-home (:foreground ,red))
       (helm-ucs-char (:foreground ,yellow))

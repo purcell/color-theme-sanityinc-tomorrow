@@ -449,7 +449,7 @@ names to which it refers are bound."
       (grep-match-face (:foreground nil :background nil :inherit match))
 
       ;; hi-lock (built-in)
-      (hi-black-hb (:weight bold :height 1.4))
+      (hi-black-hb (:weight bold))
       (hi-blue (:foreground ,background :background ,blue))
       (hi-blue-b (:foreground ,blue :weight bold))
       (hi-green (:foreground ,background :background ,green))
@@ -1231,12 +1231,12 @@ names to which it refers are bound."
       (markup-meta-hide-face (:foreground ,comment))
       (markup-reference-face (:inherit link))
       (markup-secondary-text-face (:foreground ,comment))
-      (markup-title-0-face (:foreground ,blue :weight bold :underline t))
-      (markup-title-1-face (:foreground ,purple :weight bold :underline t))
-      (markup-title-2-face (:foreground ,orange :weight bold :underline t))
-      (markup-title-3-face (:foreground ,green :weight bold :underline t))
-      (markup-title-4-face (:foreground ,blue :weight bold :underline t))
-      (markup-title-5-face (:foreground ,purple :weight bold :underline t))
+      (markup-title-0-face (:foreground ,blue :weight bold :height 1.4))
+      (markup-title-1-face (:foreground ,purple :weight bold :height 1.2))
+      (markup-title-2-face (:foreground ,orange :weight bold))
+      (markup-title-3-face (:foreground ,green :weight bold))
+      (markup-title-4-face (:foreground ,blue :weight bold))
+      (markup-title-5-face (:foreground ,purple :weight bold))
       (markup-typewriter-face (:inherit shadow))
       (markup-verbatim-face (:inherit shadow :background ,background))
 
@@ -1383,8 +1383,8 @@ names to which it refers are bound."
 
       ;; sx
       (sx-question-mode-content-face (:background ,highlight))
-      (sx-question-list-answers (:height 1.0 :inherit sx-question-list-parent :foreground ,green))
-      (sx-question-mode-accepted (:height 1.4 :inherit sx-question-mode-title :foreground ,green))
+      (sx-question-list-answers (:inherit sx-question-list-parent :foreground ,green))
+      (sx-question-mode-accepted (:inherit sx-question-mode-title :foreground ,green))
       (sx-question-mode-kbd-tag (:weight semi-bold :box (:line-width 3 :style released-button :color ,contrast-bg)))
 
       ;; symbol-overlay

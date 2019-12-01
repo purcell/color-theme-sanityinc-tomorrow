@@ -1020,6 +1020,9 @@ names to which it refers are bound."
       (helm-ls-git-renamed-modified-face (:foreground ,orange))
       (helm-ls-git-untracked-face (:foreground ,aqua))
 
+      ;; helm-switch-shell
+      (helm-switch-shell-new-shell-face (:foreground ,background :background ,purple))
+
       ;; hl-sexp
       (hl-sexp-face (:background ,contrast-bg))
 

@@ -1020,6 +1020,21 @@ names to which it refers are bound."
       (helm-ls-git-renamed-modified-face (:foreground ,orange))
       (helm-ls-git-untracked-face (:foreground ,aqua))
 
+      ;; helm-rg
+      (helm-rg-active-arg-face (:foreground ,green))
+      (helm-rg-base-rg-cmd-face (:foreground ,foreground))
+      (helm-rg-colon-separator-ripgrep-output-face (:foreground ,highlight))
+      (helm-rg-directory-cmd-face (:foreground ,orange))
+      (helm-rg-directory-header-face (:foreground ,foreground :extend t))
+      (helm-rg-error-message (:foreground ,red))
+      (helm-rg-extra-arg-face (:foreground ,yellow))
+      (helm-rg-file-match-face (:foreground ,aqua :underline t))
+      (helm-rg-inactive-arg-face (:foreground ,comment))
+      (helm-rg-line-number-match-face (:foreground ,orange :underline t))
+      (helm-rg-match-text-face (:foreground ,background :background ,blue))
+      (helm-rg-preview-line-highlight (:foreground ,green))
+      (helm-rg-title-face (:foreground ,purple))
+
       ;; helm-switch-shell
       (helm-switch-shell-new-shell-face (:foreground ,background :background ,purple))
 

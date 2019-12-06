@@ -1023,7 +1023,7 @@ names to which it refers are bound."
       ;; helm-rg
       (helm-rg-active-arg-face (:foreground ,green))
       (helm-rg-base-rg-cmd-face (:foreground ,foreground))
-      (helm-rg-colon-separator-ripgrep-output-face (:foreground ,highlight))
+      (helm-rg-colon-separator-ripgrep-output-face (:foreground ,foreground))
       (helm-rg-directory-cmd-face (:foreground ,orange))
       (helm-rg-directory-header-face (:foreground ,foreground :extend t))
       (helm-rg-error-message (:foreground ,red))

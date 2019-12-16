@@ -1011,13 +1011,13 @@ names to which it refers are bound."
 
       ;; helm-ls-git
       (helm-ls-git-added-copied-face (:foreground ,green))
-      (helm-ls-git-added-modified-face (:foreground ,blue))
+      (helm-ls-git-added-modified-face (:foreground ,yellow))
       (helm-ls-git-conflict-face (:foreground ,red))
       (helm-ls-git-deleted-and-staged-face (:foreground ,purple))
       (helm-ls-git-deleted-not-staged-face (:foreground ,comment))
-      (helm-ls-git-modified-and-staged-face (:foreground ,orange))
+      (helm-ls-git-modified-and-staged-face (:foreground ,green))
       (helm-ls-git-modified-not-staged-face (:foreground ,yellow))
-      (helm-ls-git-renamed-modified-face (:foreground ,orange))
+      (helm-ls-git-renamed-modified-face (:foreground ,blue))
       (helm-ls-git-untracked-face (:foreground ,aqua))
 
       ;; helm-rg

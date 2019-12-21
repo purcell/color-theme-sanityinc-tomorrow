@@ -618,13 +618,13 @@ names to which it refers are bound."
       ;; tab-bar (built-in)
       (tab-bar (:height 1.2 :foreground ,comment :background ,highlight))
       (tab-bar-tab (:background ,contrast-bg
-                                 :foreground ,purple
-                                 :inverse-video nil
-                                 :box (:line-width 1 :style released-button)))
+                                :foreground ,purple
+                                :inverse-video nil
+                                :box (:line-width 1 :style released-button)))
       (tab-bar-tab-inactive (:inherit tab-bar-tab
-                                       :background ,comment
-                                       :foreground ,highlight
-                                       :inverse-video t))
+                                      :background ,comment
+                                      :foreground ,highlight
+                                      :inverse-video t))
 
       ;; tab-line (built-in)
       (tab-line (:foreground ,comment :background ,highlight))
@@ -1438,6 +1438,17 @@ names to which it refers are bound."
       (vr/group-0 (:foreground ,purple :background ,background :inverse-video t))
       (vr/group-1 (:foreground ,green :background ,background :inverse-video t))
       (vr/group-2 (:foreground ,orange :background ,background :inverse-video t))
+
+      ;; vterm
+      (vterm-color-black (:background ,background :foreground ,background))
+      (vterm-color-blue (:background ,blue :foreground ,blue))
+      (vterm-color-cyan (:background ,aqua :foreground ,aqua))
+      (vterm-color-default (:foreground nil :background nil :inherit default))
+      (vterm-color-green (:background ,green :foreground ,green))
+      (vterm-color-magenta (:background ,purple :foreground ,purple))
+      (vterm-color-red (:background ,red :foreground ,red))
+      (vterm-color-white (:background ,foreground :foreground ,foreground))
+      (vterm-color-yellow (:background ,yellow :foreground ,yellow))
 
       ;; web-mode
       (web-mode-doctype-face (:inherit font-lock-string-face))

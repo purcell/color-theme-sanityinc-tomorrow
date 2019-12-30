@@ -12,10 +12,6 @@ The themes work with both the built-in theming support in recent
 Emacsen, *and* via the traditional `color-theme.el` add-on library in
 older versions, so use whichever you prefer.
 
-## Screenshots ##
-
-Check out all 5 theme variants on [emacsthemes.com](http://emacsthemes.com/themes/sanityinc-tomorrow-themes.html).
-
 ## Installation ##
 
 If you're all set up to use [Marmalade](http://marmalade-repo.org) or

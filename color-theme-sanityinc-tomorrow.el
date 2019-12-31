@@ -823,6 +823,13 @@ names to which it refers are bound."
       (debbugs-gnu-stale-5 (:foreground ,foreground))
       (debbugs-gnu-tagged (:foreground ,red))
 
+      ;; define-it
+      (define-it-headline-face (:foreground ,blue :bold t))
+      (define-it-pop-tip-color (:foreground ,comment :background ,contrast-bg))
+      (define-it-sense-number-face (:foreground ,purple :bold t))
+      (define-it-type-face (:foreground ,aqua))
+      (define-it-var-face (:foreground ,orange :bold t))
+
       ;; diff-hl
       (diff-hl-insert (:foreground ,background :background ,green))
       (diff-hl-change (:foreground ,background :background ,blue))

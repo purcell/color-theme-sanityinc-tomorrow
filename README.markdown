@@ -33,11 +33,11 @@ install `color-theme.el`.
 
     (require 'color-theme-sanityinc-tomorrow)
 
-    M-x color-theme-sanityinc-tomorrow-day
-    M-x color-theme-sanityinc-tomorrow-night
-    M-x color-theme-sanityinc-tomorrow-blue
-    M-x color-theme-sanityinc-tomorrow-bright
-    M-x color-theme-sanityinc-tomorrow-eighties
+    M-x sanityinc-tomorrow-day
+    M-x sanityinc-tomorrow-night
+    M-x sanityinc-tomorrow-blue
+    M-x sanityinc-tomorrow-bright
+    M-x sanityinc-tomorrow-eighties
 
 In newer Emacs versions, just require the library as above, then
 

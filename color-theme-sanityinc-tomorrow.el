@@ -266,6 +266,11 @@ names to which it refers are bound."
       (compilation-mode-line-fail (:foreground ,red))
       (compilation-mode-line-run (:foreground ,blue))
 
+      ;; completion display (built-in)
+      (completions-annotations (:foreground ,comment :slant italic))
+      (completions-common-part (:foreground ,blue))
+      (completions-first-difference (:foreground ,orange :weight bold))
+
       ;; custom (built-in)
       (custom-variable-tag (:foreground ,blue))
       (custom-group-tag (:foreground ,blue))
@@ -457,6 +462,9 @@ names to which it refers are bound."
       (hi-pink (:foreground ,background :background ,aqua))
       (hi-red-b (:foreground ,red :weight bold))
       (hi-yellow (:foreground ,background :background ,yellow))
+
+      ;; icomplete (built-in)
+      (icomplete-first-match (:foreground ,green :weight bold))
 
       ;; IDO (built-in)
       (ido-subdir (:foreground ,purple))

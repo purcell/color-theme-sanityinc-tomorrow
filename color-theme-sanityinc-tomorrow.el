@@ -1017,6 +1017,7 @@ names to which it refers are bound."
       (helm-prefarg (:foreground ,red))
       (helm-resume-need-update (:background ,red))
       (helm-selection (:inherit highlight :extend t))
+      (helm-selection-line (:inherit highlight :extend t))
       (helm-separator (:foreground ,purple))
       (helm-source-header (:weight bold :foreground ,orange))
       (helm-time-zone-current (:foreground ,green))

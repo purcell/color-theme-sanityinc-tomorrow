@@ -1324,6 +1324,14 @@ names to which it refers are bound."
       (nswbuff-separator-face (:foreground ,comment))
       (nswbuff-special-buffers-face (:foreground ,purple :bold nil :underline nil))
 
+      ;; Parenthesis matching (mic-paren)
+      (paren-face-match (:foreground nil :background nil :inherit show-paren-match))
+      (paren-face-mismatch (:foreground nil :background nil :inherit show-paren-mismatch))
+      (paren-face-no-match (:foreground nil :background nil :inherit show-paren-mismatch))
+
+      ;; Parenthesis dimming (parenface)
+      (paren-face (:foreground ,comment :background nil))
+
       ;; Powerline
       (powerline-active1 (:foreground ,foreground :background ,highlight))
       (powerline-active2 (:foreground ,foreground :background ,contrast-bg))
@@ -1337,14 +1345,6 @@ names to which it refers are bound."
       (powerline-evil-operator-face (:inherit powerline-evil-base-face :background ,aqua))
       (powerline-evil-replace-face (:inherit powerline-evil-base-face :background ,red))
       (powerline-evil-visual-face (:inherit powerline-evil-base-face :background ,yellow))
-
-      ;; Parenthesis matching (mic-paren)
-      (paren-face-match (:foreground nil :background nil :inherit show-paren-match))
-      (paren-face-mismatch (:foreground nil :background nil :inherit show-paren-mismatch))
-      (paren-face-no-match (:foreground nil :background nil :inherit show-paren-mismatch))
-
-      ;; Parenthesis dimming (parenface)
-      (paren-face (:foreground ,comment :background nil))
 
       (pulse-highlight-start-face (:background ,red))
 

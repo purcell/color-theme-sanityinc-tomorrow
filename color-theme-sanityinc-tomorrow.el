@@ -1093,7 +1093,7 @@ names to which it refers are bound."
       ;; Ivy
       (ivy-action (:foreground ,purple))
       (ivy-confirm-face (:foreground ,green))
-      (ivy-current-match (:foreground ,green :inherit highlight :underline t))
+      (ivy-current-match (:inherit isearch))
       (ivy-cursor (:background ,contrast-bg))
       (ivy-match-required-face (:foreground ,red :background ,background))
       (ivy-remote (:foreground ,orange))

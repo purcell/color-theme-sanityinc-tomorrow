@@ -1471,6 +1471,7 @@ names to which it refers are bound."
       (web-mode-html-attr-equal-face (:foreground nil :background nil :inherit default))
       (web-mode-html-attr-name-face (:inherit font-lock-variable-name-face))
       (web-mode-html-tag-face (:inherit font-lock-function-name-face))
+      (web-mode-html-tag-bracket-face (:inherit font-lock-function-name-face))
       (web-mode-symbol-face (:inherit font-lock-constant-face))
 
       ;; weechat

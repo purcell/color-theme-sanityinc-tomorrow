@@ -499,6 +499,12 @@ names to which it refers are bound."
       (message-header-newsgroups (:foreground ,aqua :background nil :slant normal))
       (message-separator (:foreground ,purple))
 
+      ;; nim-mode
+      (nim-font-lock-export-face (:inherit font-lock-function-name-face))
+      (nim-font-lock-number-face (:inherit default))
+      (nim-font-lock-pragma-face (:inherit font-lock-preprocessor-face))
+      (nim-non-overloadable-face (:inherit font-lock-builtin-face))
+
       ;; nxml (built-in)
       (nxml-name-face (:foreground unspecified :inherit font-lock-constant-face))
       (nxml-attribute-local-name-face (:foreground unspecified :inherit font-lock-variable-name-face))

@@ -1393,6 +1393,12 @@ names to which it refers are bound."
       (rpm-spec-tag-face (:foreground ,blue))
       (rpm-spec-var-face (:foreground ,red))
 
+      ;; Selectrum
+      (selectrum-current-candidate (:background ,contrast-bg))
+      (selectrum-primary-highlight (:foreground ,aqua))
+      (selectrum-secondary-highlight (:foreground ,yellow))
+      (selectrum-completion-docsig (:inherit completions-annotation :underline t))
+
       ;; SLIME
       (slime-highlight-edits-face (:weight bold))
       (slime-repl-input-face (:weight normal :underline nil))

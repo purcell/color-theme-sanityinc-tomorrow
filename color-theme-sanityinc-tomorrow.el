@@ -1307,6 +1307,9 @@ names to which it refers are bound."
       (mmm-comment-submode-face (:inherit font-lock-comment-face))
       (mmm-output-submode-face (:background ,contrast-bg))
 
+      ;; mini-modeline
+      (mini-modeline-mode-line (:inherit mode-line :height 0.1 :box nil))
+
       ;; neotree
       (neo-banner-face (:foreground ,blue :weight bold))
       (neo-button-face (:underline t))
@@ -1338,6 +1341,9 @@ names to which it refers are bound."
 
       ;; Parenthesis dimming (parenface)
       (paren-face (:foreground ,comment :background nil))
+
+      ;; Perspective
+      (persp-selected-face (:foreground ,yellow :weight bold))
 
       ;; Powerline
       (powerline-active1 (:foreground ,foreground :background ,highlight))

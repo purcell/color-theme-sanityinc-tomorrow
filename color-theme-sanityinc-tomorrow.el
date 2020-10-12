@@ -1455,6 +1455,17 @@ names to which it refers are bound."
       (transient-enabled-suffix (:foreground ,low-contrast-bg :background ,green :weight bold))
       (transient-disabled-suffix (:foreground ,foreground :background ,red :weight bold))
 
+      ;; tuareg-mode (ocaml)
+      (tuareg-font-lock-governing-face (:inherit font-lock-keyword-face :weight bold))
+      (tuareg-font-lock-multistage-face (:inherit font-lock-preprocessor-face))
+      (tuareg-font-lock-line-number-face (:foreground ,comment))
+      (tuareg-font-lock-operator-face (:inherit font-lock-preprocessor-face))
+      (tuareg-font-lock-interactive-error-face (:inherit error))
+      (tuareg-font-double-semicolon-face (:inherit warning :slant italic))
+      (tuareg-font-lock-error-face (:inherit error :slant italic))
+      (tuareg-font-lock-interactive-output-face)
+      (tuareg-font-lock-interactive-directive-face)
+
       ;; twittering-mode
       (twittering-username-face (:inherit erc-pal-face))
       (twittering-uri-face (:foreground ,blue :inherit link))

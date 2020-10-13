@@ -757,6 +757,13 @@ names to which it refers are bound."
       (bmkp-url (:foreground ,blue :underline t))
       (bmkp-variable-list (:foreground ,green))
 
+      ;; Caml
+      (caml-types-def-face (:inherit highlight :box (:color ,blue :line-width -1)))
+      (caml-types-occ-face (:inherit highlight :box (:color ,yellow :line-width -1)))
+      (caml-types-expr-face (:inherit highlight :box (:color ,aqua :line-width -1)))
+      (caml-types-scope-face (:inherit highlight :box (:color ,green :line-width -1)))
+      (caml-types-typed-face (:inherit highlight :box (:color ,purple :line-width -1)))
+
       ;; CIDER
       (cider-debug-code-overlay-face (:background ,contrast-bg))
       (cider-deprecated-face (:foreground ,contrast-bg :background ,yellow))
@@ -1281,6 +1288,10 @@ names to which it refers are bound."
       (markup-typewriter-face (:inherit shadow))
       (markup-verbatim-face (:inherit shadow :background ,background))
 
+      ;; Merlin (ocaml)
+      (merlin-compilation-error-face (:inherit flycheck-error))
+      (merlin-compilation-warning-face (:inherit flycheck-warning))
+
       ;; mu4e
       (mu4e-header-highlight-face (:underline nil :inherit region))
       (mu4e-header-marks-face (:underline nil :foreground ,yellow))
@@ -1456,6 +1467,7 @@ names to which it refers are bound."
       (transient-disabled-suffix (:foreground ,foreground :background ,red :weight bold))
 
       ;; tuareg-mode (ocaml)
+      (tuareg-font-lock-constructor-face (:inherit default :weight bold))
       (tuareg-font-lock-governing-face (:inherit font-lock-keyword-face :weight bold))
       (tuareg-font-lock-multistage-face (:inherit font-lock-preprocessor-face))
       (tuareg-font-lock-line-number-face (:foreground ,comment))

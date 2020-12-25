@@ -486,6 +486,12 @@ names to which it refers are bound."
       (info-title-4 (:weight bold :foreground ,purple))
       (info-xref-visited (:foreground ,comment :underline t))
 
+      ;; j-mode
+      (j-verb-face (:inherit font-lock-constant-face))
+      (j-adverb-face (:inherit font-lock-function-name-face))
+      (j-conjunction-face (:inherit font-lock-keyword-face))
+      (j-other-face (:inherit font-lock-preprocessor-face))
+
       ;; kaocha-runner
       (kaocha-runner-error-face (:foreground ,red))
       (kaocha-runner-success-face (:foreground ,green))

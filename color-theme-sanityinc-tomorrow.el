@@ -192,7 +192,7 @@ names to which it refers are bound."
       (font-lock-variable-name-face (:foreground ,yellow))
       (font-lock-warning-face (:weight bold :foreground ,red))
       (shadow (:foreground ,comment))
-      (fill-column-indicator (:foreground ,low-contrast-bg))
+      (fill-column-indicator (:foreground ,contrast-bg))
       (success (:foreground ,green))
       (error (:foreground ,red))
       (warning (:foreground ,orange))

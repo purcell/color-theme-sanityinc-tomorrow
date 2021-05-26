@@ -1496,6 +1496,9 @@ names to which it refers are bound."
       (undo-tree-visualizer-active-branch-face (:foreground ,red))
       (undo-tree-visualizer-register-face (:foreground ,yellow))
 
+      ;; vertico
+      (vertico-current (:background ,contrast-bg :extend t))
+
       ;; visual-regexp
       (vr/match-0 (:foreground ,yellow :background ,background :inverse-video t))
       (vr/match-1 (:foreground ,aqua :background ,background :inverse-video t))

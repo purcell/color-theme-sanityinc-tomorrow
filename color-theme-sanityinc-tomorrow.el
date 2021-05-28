@@ -520,6 +520,12 @@ names to which it refers are bound."
       (nxml-delimited-data-face (:foreground unspecified :inherit font-lock-string-face))
       (rng-error-face (:underline ,red))
 
+      ;; orderless
+      (orderless-match-face-0 (:foreground ,aqua))
+      (orderless-match-face-1 (:foreground ,yellow))
+      (orderless-match-face-2 (:foreground ,orange))
+      (orderless-match-face-3 (:foreground ,blue))
+
       ;; org-mode (built-in)
       (org-agenda-structure (:foreground ,purple))
       (org-agenda-current-time (:foreground ,yellow))

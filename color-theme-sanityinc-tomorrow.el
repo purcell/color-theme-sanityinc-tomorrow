@@ -235,6 +235,24 @@ names to which it refers are bound."
       (widget-button (:underline t))
       (widget-field (:background ,contrast-bg :box (:line-width 1 :color ,foreground)))
 
+      ;; ansi-color (built-in, face scheme below from Emacs 28.1 onwards)
+      (ansi-color-black (:foreground ,background :background ,background))
+      (ansi-color-red (:foreground ,red :background ,red))
+      (ansi-color-green (:foreground ,green :background ,green))
+      (ansi-color-yellow (:foreground ,yellow :background ,yellow))
+      (ansi-color-blue (:foreground ,blue :background ,blue))
+      (ansi-color-magenta (:foreground ,purple :background ,purple))
+      (ansi-color-cyan (:foreground ,aqua :background ,aqua))
+      (ansi-color-white (:foreground ,foreground :background ,foreground))
+      (ansi-color-bright-black (:inherit ansi-color-bright-black :weight bold))
+      (ansi-color-bright-red (:inherit ansi-color-bright-red :weight bold))
+      (ansi-color-bright-green (:inherit ansi-color-bright-green :weight bold))
+      (ansi-color-bright-yellow (:inherit ansi-color-bright-yellow :weight bold))
+      (ansi-color-bright-blue (:inherit ansi-color-bright-blue :weight bold))
+      (ansi-color-bright-magenta (:inherit ansi-color-bright-magenta :weight bold))
+      (ansi-color-bright-cyan (:inherit ansi-color-bright-cyan :weight bold))
+      (ansi-color-bright-white (:inherit ansi-color-bright-white :weight bold))
+
       ;; ansi-term (built-in)
       (term (:foreground nil :background nil :inherit default))
       (term-color-black (:foreground ,background :background ,background))
@@ -1622,11 +1640,9 @@ are bound."
          `(vc-annotate-background nil)
          `(flycheck-color-mode-line-face-to-color 'mode-line-buffer-id)
          `(ansi-color-names-vector (vector ,background ,red ,green ,yellow ,blue ,purple ,aqua ,foreground))
-         '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
          `(window-divider-mode nil)
          ))
        (provide-theme ',name))))
-
 
 (defun color-theme-sanityinc-tomorrow (mode)
   "Apply the tomorrow variant theme."
@@ -1646,8 +1662,7 @@ are bound."
           ,@(color-theme-sanityinc-tomorrow--frame-parameter-specs)
           ,@(color-theme-sanityinc-tomorrow--face-specs)))
        ;; ansi-color - comint and other modes that handle terminal color escape sequences
-       (setq ansi-color-names-vector (vector background red green yellow blue purple aqua foreground))
-       (setq ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))))
+       (setq ansi-color-names-vector (vector background red green yellow blue purple aqua foreground))))))
 
 ;;;###autoload
 (when (boundp 'custom-theme-load-path)

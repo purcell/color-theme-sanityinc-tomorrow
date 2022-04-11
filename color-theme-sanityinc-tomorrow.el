@@ -1542,6 +1542,8 @@ names to which it refers are bound."
       (vterm-color-red (:background ,red :foreground ,red))
       (vterm-color-white (:background ,foreground :foreground ,foreground))
       (vterm-color-yellow (:background ,yellow :foreground ,yellow))
+      (vterm-color-underline (:foreground ,comment :underline t))
+      (vterm-color-inverse-video (:background ,background :inverse-video t))
 
       ;; web-mode
       (web-mode-doctype-face (:inherit font-lock-string-face))

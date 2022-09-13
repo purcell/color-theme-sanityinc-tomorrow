@@ -137,10 +137,10 @@ executed."
 (defmacro color-theme-sanityinc-tomorrow--with-colors (mode &rest body)
   "Execute `BODY' in a scope with variables bound to the various tomorrow colors.
 
-Also sets background-mode to either 'light or 'dark, for use in
+Also sets background-mode to either `light' or `dark', for use in
 setting `frame-background-mode'.
 
-`MODE' should be set to either 'day, 'night, 'eighties, 'blue or 'bright."
+`MODE' should be set to either `day', `night', `eighties', `blue' or `bright'."
   `(let* ((colors (or (cdr (assoc ,mode color-theme-sanityinc-tomorrow-colors))
                       (error "no such theme flavor")))
           (background   (cdr (assoc 'background colors)))

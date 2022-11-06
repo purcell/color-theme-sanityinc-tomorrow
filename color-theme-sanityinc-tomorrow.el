@@ -311,6 +311,9 @@ names to which it refers are bound."
       (diff-refine-changed (:foreground ,yellow))
       (diff-refine-removed (:foreground ,red))
 
+      ;; dired (built-in)
+      (dired-marked (:background ,contrast-bg))
+
       ;; ediff (built-in)
       (ediff-current-diff-A (:foreground ,comment :background ,highlight :extend t))
       (ediff-current-diff-Ancestor (:foreground ,aqua :background ,highlight))

@@ -1,4 +1,4 @@
-;;; color-theme-sanityinc-tomorrow.el --- A version of Chris Kempson's "tomorrow" themes
+;;; color-theme-sanityinc-tomorrow.el --- A version of Chris Kempson's "tomorrow" themes  -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2012-2017 Steve Purcell
 

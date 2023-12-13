@@ -1590,6 +1590,14 @@ names to which it refers are bound."
       (cscope-line-number-face (:foreground ,red))
       (cscope-separator-face (:bold t :overline t :underline t :foreground ,purple))
 
+      ;; uiua
+      (uiua-number (:foreground ,orange))
+      (uiua-noadic-or-constant (:foreground ,red))
+      (uiua-monadic-function (:foreground ,green))
+      (uiua-dyadic-function (:foreground ,blue))
+      (uiua-monadic-modifier (:foreground ,yellow))
+      (uiua-dyadic-modifier (:foreground ,purple))
+
       ;; ztree
       (ztreep-arrow-face (:foreground ,highlight))
       (ztreep-diff-header-face (:foreground ,yellow :weight bold))

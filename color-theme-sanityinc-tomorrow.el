@@ -5,6 +5,7 @@
 ;; Author: Steve Purcell <steve@sanityinc.com>
 ;; Keywords: faces themes
 ;; Homepage: https://github.com/purcell/color-theme-sanityinc-tomorrow
+;; Package-Requires: ((emacs "24.1"))
 ;; Version: 0
 
 ;; This program is free software; you can redistribute it and/or modify

@@ -909,6 +909,10 @@ names to which it refers are bound."
       (diff-hl-change (:foreground ,background :background ,blue))
       (diff-hl-delete (:foreground ,background :background ,red))
 
+      ;; dired
+      (dired-marked (:foreground ,green))
+      (dired-mark (:foreground ,green :inverse-video t))
+
       ;; dired-async
       (dired-async-failures (:inherit error))
       (dired-async-message (:inherit success))

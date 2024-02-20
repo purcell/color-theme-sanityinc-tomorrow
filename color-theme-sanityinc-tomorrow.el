@@ -219,7 +219,7 @@ names to which it refers are bound."
       (cursor (:background ,red))
       (fringe (:background ,low-contrast-bg :foreground ,comment))
       (linum (:background ,low-contrast-bg :foreground ,comment :italic nil :underline nil))
-      (line-number (:background ,low-contrast-bg :foreground ,comment))
+      (line-number (:inherit default :background ,low-contrast-bg :foreground ,comment))
       (line-number-current-line (:inherit line-number :foreground ,foreground :weight bold))
       (fill-column-indicator (:foreground ,contrast-bg :weight normal :slant normal
                                           :underline nil :overline nil :strike-through nil

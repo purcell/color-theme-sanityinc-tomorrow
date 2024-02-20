@@ -1672,12 +1672,6 @@ names to which it refers are bound."
   (let ((name (color-theme-sanityinc-tomorrow--theme-name variant)))
     (custom-set-variables `(custom-enabled-themes '(,name)))))
 
-(color-theme-sanityinc-tomorrow--define-theme night)
-(color-theme-sanityinc-tomorrow--define-theme day)
-(color-theme-sanityinc-tomorrow--define-theme eighties)
-(color-theme-sanityinc-tomorrow--define-theme blue)
-(color-theme-sanityinc-tomorrow--define-theme bright)
-
 ;;;###autoload
 (when (boundp 'custom-theme-load-path)
   (add-to-list 'custom-theme-load-path

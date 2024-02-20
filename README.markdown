@@ -8,30 +8,29 @@ An Emacs version of
 with much more extensive face definitions than the "official" Emacs
 variant.
 
-The themes work with both the built-in theming support in recent
-Emacsen, *and* via the traditional `color-theme.el` add-on library in
-older versions, so use whichever you prefer.
+These five color themes are designed for use with Emacs' built-in
+theme support in Emacs 24, and provide a variety of contrast levels
+with a broadly consistent colour assignment for each.
 
 ## Installation ##
 
-If you're all set up to use [Marmalade](http://marmalade-repo.org) or
+If you're all set up to use
 [MELPA](http://melpa.org/) (highly recommended!), simply
 
     M-x package-install RET color-theme-sanityinc-tomorrow RET
 
-If you use [el-get](https://github.com/dimitri/el-get/), simply add
-this to your packages list:
+Otherwise, ensure a directory containing these files is on your `load-path`, then
 
-    color-theme-sanityinc-tomorrow
-
-Otherwise, ensure a directory containing these files is on your `load-path`.
-
-If you're using an Emacs version older than 23.x, you'll also need to
-install `color-theme.el`.
+    (require 'color-theme-sanityinc-tomorrow)
 
 ## Usage ##
 
-    (require 'color-theme-sanityinc-tomorrow)
+Use the `load-theme` command, to activate one of these themes
+programatically, or use `customize-themes` to select a theme
+interactively.
+
+Aternatively, use one of the provided wrapper commands to activate a
+theme:
 
     M-x color-theme-sanityinc-tomorrow-day
     M-x color-theme-sanityinc-tomorrow-night

@@ -24,17 +24,17 @@
 ;;; Commentary:
 
 ;; These five color themes are designed for use with Emacs' built-in
-;; theme support in Emacs 24. However, they also work with older Emacs
-;; versions, in which case color-theme.el is required.
+;; theme support in Emacs 24, and provide a variety of contrast levels
+;; with a broadly consistent colour assignment for each.
 
 ;; Usage:
 
-;; If your Emacs has the `load-theme' command, you can use it to
-;; activate one of these themes programatically, or use
-;; `customize-themes' to select a theme interactively.
+;; Use the`load-theme' command, to activate one of these themes
+;; programatically, or use `customize-themes' to select a theme
+;; interactively.
 
-;; Alternatively, or in older Emacs versions, use one of the provided
-;; wrapper commands to activate a theme:
+;; Alternatively, use one of the provided wrapper commands to activate
+;; a theme:
 
 ;;     M-x color-theme-sanityinc-tomorrow-day
 ;;     M-x color-theme-sanityinc-tomorrow-night
@@ -52,7 +52,6 @@
 (require 'color)
 
 (eval-when-compile (require 'ansi-color))
-(declare-function color-theme-install "color-theme")
 
 (defun sanityinc-tomorrow--interpolate (hex1 hex2 gradations which)
   (let ((c1 (color-name-to-rgb hex1))
@@ -540,6 +539,10 @@ names to which it refers are bound."
       (message-header-name (:foreground ,blue :background unspecified))
       (message-header-newsgroups (:foreground ,aqua :background unspecified :slant normal))
       (message-separator (:foreground ,purple))
+
+      ;; Meow
+      (meow-beacon-fake-cursor (:foreground ,orange :inverse-video t))
+      (meow-search-highlight (:inherit lazy-highlight))
 
       ;; nim-mode
       (nim-font-lock-export-face (:inherit font-lock-function-name-face))
@@ -1617,23 +1620,9 @@ names to which it refers are bound."
       (ztreep-node-face (:foreground ,foreground))
       ))))
 
-(defmacro color-theme-sanityinc-tomorrow--frame-parameter-specs ()
-  "Return a backquote which defines a list of frame parameter specs.
-
-These are required by color-theme's `color-theme-install', but
-not by the new `deftheme' mechanism. It expects to be evaluated
-in a scope in which the various color names to which it refers
-are bound."
-  (quote
-   `(((background-color . ,background)
-      (background-mode . light)
-      (border-color . ,foreground)
-      (cursor-color . ,red)
-      (foreground-color . ,foreground)
-      (mouse-color . ,aqua)))))
-
-(defun color-theme-sanityinc-tomorrow--theme-name (mode)
-  (intern (format "sanityinc-tomorrow-%s" (symbol-name mode))))
+(eval-and-compile
+  (defun color-theme-sanityinc-tomorrow--theme-name (mode)
+    (intern (format "sanityinc-tomorrow-%s" (symbol-name mode)))))
 
 (defmacro color-theme-sanityinc-tomorrow--define-theme (mode)
   "Define a theme for the tomorrow variant `MODE'."
@@ -1655,7 +1644,7 @@ are bound."
            '((20  . ,red)
              (40  . ,orange)
              (60  . ,yellow)
-             (80  . ,green)
+             theme             (80  . ,green)
              (100 . ,aqua)
              (120 . ,blue)
              (140 . ,purple)
@@ -1678,25 +1667,16 @@ are bound."
          ))
        (provide-theme ',name))))
 
-(defun color-theme-sanityinc-tomorrow (mode)
-  "Apply the tomorrow variant theme."
-  (if (fboundp 'load-theme)
-      (let ((name (color-theme-sanityinc-tomorrow--theme-name mode)))
-        (if (boundp 'custom-enabled-themes)
-            (custom-set-variables `(custom-enabled-themes '(,name)))
-          (if (> emacs-major-version 23)
-              (load-theme name t)
-            (load-theme name))))
-    (progn
-      (require 'color-theme)
-      (color-theme-sanityinc-tomorrow--with-colors
-       mode
-       (color-theme-install
-        `(,(intern (concat "color-theme-sanityinc-tomorrow-" (symbol-name mode)))
-          ,@(color-theme-sanityinc-tomorrow--frame-parameter-specs)
-          ,@(color-theme-sanityinc-tomorrow--face-specs)))
-       ;; ansi-color - comint and other modes that handle terminal color escape sequences
-       (setq ansi-color-names-vector (vector background red green yellow blue purple aqua foreground))))))
+(defun color-theme-sanityinc-tomorrow (variant)
+  "Apply the given tomorrow theme VARIANT, e.g. `night'."
+  (let ((name (color-theme-sanityinc-tomorrow--theme-name variant)))
+    (custom-set-variables `(custom-enabled-themes '(,name)))))
+
+(color-theme-sanityinc-tomorrow--define-theme night)
+(color-theme-sanityinc-tomorrow--define-theme day)
+(color-theme-sanityinc-tomorrow--define-theme eighties)
+(color-theme-sanityinc-tomorrow--define-theme blue)
+(color-theme-sanityinc-tomorrow--define-theme bright)
 
 ;;;###autoload
 (when (boundp 'custom-theme-load-path)

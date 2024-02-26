@@ -1404,6 +1404,9 @@ names to which it refers are bound."
       (nswbuff-separator-face (:foreground ,comment))
       (nswbuff-special-buffers-face (:foreground ,purple :bold nil :underline nil))
 
+      (package-status-available (:foreground ,blue))
+      (package-name (:foreground ,aqua))
+
       ;; Parenthesis matching (mic-paren)
       (paren-face-match (:foreground unspecified :background unspecified :inherit show-paren-match))
       (paren-face-mismatch (:foreground unspecified :background unspecified :inherit show-paren-mismatch))

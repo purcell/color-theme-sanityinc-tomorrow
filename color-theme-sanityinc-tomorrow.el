@@ -248,6 +248,7 @@ names to which it refers are bound."
       (isearch-fail (:background ,background :inherit font-lock-warning-face :inverse-video t))
 
       (link (:foreground unspecified :underline t))
+      (button (:underline t :foreground ,aqua))
       (widget-button (:underline t))
       (widget-field (:background ,contrast-bg :box (:line-width 1 :color ,foreground)))
 

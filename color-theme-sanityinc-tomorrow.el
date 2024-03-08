@@ -395,9 +395,16 @@ names to which it refers are bound."
       (flycheck-color-mode-line-success-face (:foreground ,green))
 
       ;; Flymake (built-in)
+      (flymake-end-of-line-diagnostics-face (:inherit italic :height 0.85 :box (:line-width 1)))
       (flymake-error (:underline (:style wave :color ,red)))
+      (flymake-error-echo (:inherit error))
+      (flymake-error-echo-at-eol (:inherit flymake-end-of-line-diagnostics-face :foreground ,red))
       (flymake-note (:underline (:style wave :color ,aqua)))
+      (flymake-note-echo (:foreground ,aqua))
+      (flymake-note-echo-at-eol (:inherit flymake-end-of-line-diagnostics-face :foreground ,aqua))
       (flymake-warning (:underline (:style wave :color ,orange)))
+      (flymake-warning-echo (:foreground ,orange))
+      (flymake-warning-echo-at-eol (:inherit flymake-end-of-line-diagnostics-face :foreground ,orange))
 
       ;; Flyspell (built-in)
       (flyspell-incorrect (:underline (:style wave :color ,red)))

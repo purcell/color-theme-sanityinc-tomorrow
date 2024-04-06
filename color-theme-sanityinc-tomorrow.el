@@ -1657,7 +1657,7 @@ names to which it refers are bound."
            '((20  . ,red)
              (40  . ,orange)
              (60  . ,yellow)
-             theme             (80  . ,green)
+             (80  . ,green)
              (100 . ,aqua)
              (120 . ,blue)
              (140 . ,purple)

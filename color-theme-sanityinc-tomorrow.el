@@ -179,8 +179,8 @@ names to which it refers are bound."
       (italic (:slant italic))
       (font-lock-bracket-face (:foreground ,blue))
       (font-lock-builtin-face (:foreground ,purple))
-      (font-lock-comment-delimiter-face (:foreground ,comment :slant italic))
-      (font-lock-comment-face (:foreground ,comment :slant italic))
+      (font-lock-comment-delimiter-face (:foreground ,comment))
+      (font-lock-comment-face (:foreground ,comment))
       (font-lock-constant-face (:foreground ,blue))
       (font-lock-doc-face (:foreground ,purple))
       (font-lock-doc-string-face (:foreground ,yellow))
@@ -1468,7 +1468,7 @@ names to which it refers are bound."
       (erb-exec-delim-face (:background ,contrast-bg))
       (erb-out-face (:background ,contrast-bg :weight bold))
       (erb-out-delim-face (:background ,contrast-bg))
-      (erb-comment-face (:background ,contrast-bg :weight bold :slant italic))
+      (erb-comment-face (:background ,contrast-bg :weight bold))
       (erb-comment-delim-face (:background ,contrast-bg))
 
       ;; rpm-spec-mode

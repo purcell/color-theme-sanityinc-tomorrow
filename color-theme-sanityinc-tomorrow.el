@@ -735,6 +735,20 @@ names to which it refers are bound."
       (window-divider-first-pixel (:foreground ,contrast-bg))
       (window-divider-last-pixel (:foreground ,contrast-bg))
 
+      ;; window-tool-bar (built-in)
+      (window-tool-bar-button (:background ,contrast-bg
+					   :foreground ,purple
+					   :inverse-video nil
+					   :box (:line-width 1 :style released-button)))
+      (window-tool-bar-button-disabled (:inherit tab-line
+						 :foreground ,comment
+						 :inverse-video nil
+						 :box (:line-width 1 :style released-button)))
+      (window-tool-bar-button-hover (:background ,low-contrast-bg
+						 :foreground ,blue
+						 :inverse-video nil
+						 :box (:line-width 1 :style released-button)))
+
       ;; ace-window
       (aw-background-face (:foreground ,contrast-bg))
       (aw-leading-char-face (:foreground ,yellow))

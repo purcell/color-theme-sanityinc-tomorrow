@@ -1043,6 +1043,11 @@ names to which it refers are bound."
       ;; fold-this
       (fold-this-overlay (:foreground ,green))
 
+      ;; forge
+      (forge-pullreq-open (:foreground ,aqua))
+      (forge-pullreq-merged (:foreground ,green :strike-through t))
+      (forge-pullreq-rejected (:foreground ,red :strike-through t))
+
       ;; git-gutter (git-gutter-fringe inherits from git-gutter)
       (git-gutter:separator (:foreground ,aqua :weight bold))
       (git-gutter:modified (:foreground ,purple :weight bold))

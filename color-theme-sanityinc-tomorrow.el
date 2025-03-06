@@ -344,6 +344,8 @@ names to which it refers are bound."
       (ediff-odd-diff-B (:foreground ,orange :background ,contrast-bg :extend t))
       (ediff-odd-diff-C (:foreground ,orange :background ,contrast-bg :extend t))
 
+      ;; Eglot
+      (eglot-inlay-hint-face (:height 0.8 :inherit shadow :slant italic))
       ;; ElDoc (built-in)
       (eldoc-highlight-function-argument (:foreground ,green :weight bold))
 

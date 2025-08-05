@@ -23,6 +23,14 @@ Otherwise, ensure a directory containing these files is on your `load-path`, the
 
     (require 'color-theme-sanityinc-tomorrow)
 
+### Using `use-package` ##
+
+    (use-package color-theme-sanityinc-tomorrow
+      :ensure t
+      :config
+	  ;; here you can define the theme you want
+      (load-theme 'sanityinc-tomorrow-bright t))
+
 ## Usage ##
 
 Use the `load-theme` command, to activate one of these themes

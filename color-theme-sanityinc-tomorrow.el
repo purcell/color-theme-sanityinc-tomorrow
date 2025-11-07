@@ -346,6 +346,7 @@ names to which it refers are bound."
 
       ;; Eglot
       (eglot-inlay-hint-face (:height 0.8 :inherit shadow :slant italic))
+
       ;; ElDoc (built-in)
       (eldoc-highlight-function-argument (:foreground ,green :weight bold))
 

@@ -933,9 +933,9 @@ names to which it refers are bound."
       (define-it-var-face (:foreground ,orange :bold t))
 
       ;; diff-hl
-      (diff-hl-insert (:foreground ,background :background ,green))
-      (diff-hl-change (:foreground ,background :background ,blue))
-      (diff-hl-delete (:foreground ,background :background ,red))
+      (diff-hl-insert (:foreground ,green :background ,background))
+      (diff-hl-change (:foreground ,blue :background ,background))
+      (diff-hl-delete (:foreground ,red :background ,background))
 
       ;; dired
       (dired-marked (:foreground ,green))

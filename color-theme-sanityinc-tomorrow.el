@@ -740,17 +740,17 @@ names to which it refers are bound."
 
       ;; window-tool-bar (built-in)
       (window-tool-bar-button (:background ,contrast-bg
-					   :foreground ,purple
-					   :inverse-video nil
-					   :box (:line-width 1 :style released-button)))
+                                           :foreground ,purple
+                                           :inverse-video nil
+                                           :box (:line-width 1 :style released-button)))
       (window-tool-bar-button-disabled (:inherit tab-line
-						 :foreground ,comment
-						 :inverse-video nil
-						 :box (:line-width 1 :style released-button)))
+                                                 :foreground ,comment
+                                                 :inverse-video nil
+                                                 :box (:line-width 1 :style released-button)))
       (window-tool-bar-button-hover (:background ,low-contrast-bg
-						 :foreground ,blue
-						 :inverse-video nil
-						 :box (:line-width 1 :style released-button)))
+                                                 :foreground ,blue
+                                                 :inverse-video nil
+                                                 :box (:line-width 1 :style released-button)))
 
       ;; ace-window
       (aw-background-face (:foreground ,contrast-bg))
@@ -1754,6 +1754,7 @@ names to which it refers are bound."
 
 ;; Local Variables:
 ;; byte-compile-warnings: (not cl-functions)
+;; indent-tabs-mode: nil
 ;; End:
 
 ;;; color-theme-sanityinc-tomorrow.el ends here

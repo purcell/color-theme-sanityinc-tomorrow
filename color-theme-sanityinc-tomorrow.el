@@ -1464,7 +1464,14 @@ names to which it refers are bound."
       (powerline-evil-replace-face (:inherit powerline-evil-base-face :background ,red))
       (powerline-evil-visual-face (:inherit powerline-evil-base-face :background ,yellow))
 
-      (pulse-highlight-start-face (:background ,red))
+      ;; Pulse and Pulsar
+      (pulse-highlight-start-face (:background ,foreground))
+      (pulsar-red (:background ,red))
+      (pulsar-green (:background ,green))
+      (pulsar-yellow (:background ,yellow))
+      (pulsar-blue (:background ,blue))
+      (pulsar-magenta (:background ,purple))
+      (pulsar-cyan (:background ,aqua))
 
       ;; Python-specific overrides
       (py-builtins-face (:foreground ,orange :weight normal))

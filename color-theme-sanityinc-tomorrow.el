@@ -1,6 +1,6 @@
 ;;; color-theme-sanityinc-tomorrow.el --- A version of Chris Kempson's "tomorrow" themes  -*- lexical-binding: t -*-
 
-;; Copyright (C) 2012-2017 Steve Purcell
+;; Copyright (C) 2012-2026 Steve Purcell
 
 ;; Author: Steve Purcell <steve@sanityinc.com>
 ;; Keywords: faces themes

@@ -218,12 +218,14 @@ names to which it refers are bound."
       (cursor (:background ,red))
       (fringe (:background ,low-contrast-bg :foreground ,comment))
       (margin (:background ,low-contrast-bg :foreground ,comment))
+      (special-glyphs (:foreground ,comment))
       (linum (:background ,low-contrast-bg :foreground ,comment :italic nil :underline nil))
       (line-number (:inherit default :background ,low-contrast-bg :foreground ,comment))
       (line-number-current-line (:inherit line-number :foreground ,foreground :weight bold))
       (fill-column-indicator (:foreground ,contrast-bg :weight normal :slant normal
                                           :underline nil :overline nil :strike-through nil
                                           :box nil :inverse-video nil :stipple nil))
+      (display-fill-column-indicator-warning-face (:inherit fill-column-indicator :foreground ,red))
       (vertical-border (:foreground ,contrast-bg))
       (border (:background ,contrast-bg :foreground ,highlight))
       (highlight (:inverse-video nil :background ,highlight))
@@ -237,10 +239,14 @@ names to which it refers are bound."
       (mode-line-emphasis (:foreground ,foreground :slant italic))
       (mode-line-highlight (:foreground ,purple :box nil :weight bold))
       (minibuffer-prompt (:foreground ,blue))
+      (minibuffer-nonselected (:inherit minibuffer-prompt :foreground ,comment))
       (region (:background ,contrast-bg :inverse-video nil :extend t))
       (secondary-selection (:background ,highlight :extend t))
+      (delete-selection-replacement (:foreground ,foreground :background ,contrast-bg))
 
       (header-line (:inherit mode-line-inactive :foreground ,aqua :background unspecified))
+      (header-line-active (:inherit header-line :foreground ,foreground :background ,contrast-bg))
+      (header-line-inactive (:inherit header-line :foreground ,comment))
 
       ;; search
       (match (:foreground ,blue :background ,background :inverse-video t))
@@ -510,8 +516,16 @@ names to which it refers are bound."
       (hi-red-b (:foreground ,red :weight bold))
       (hi-yellow (:foreground ,background :background ,yellow))
 
+      ;; ibuffer (built-in)
+      (ibuffer-marked (:foreground ,green :weight bold))
+      (ibuffer-deletion (:foreground ,red :weight bold))
+      (ibuffer-title (:foreground ,orange :weight bold))
+      (ibuffer-filter-group-name (:foreground ,blue :weight bold))
+
       ;; icomplete (built-in)
       (icomplete-first-match (:foreground ,green :weight bold))
+      (icomplete-vertical-selected-prefix-indicator-face (:foreground ,blue :weight bold))
+      (icomplete-vertical-unselected-prefix-indicator-face (:foreground ,comment))
 
       ;; IDO (built-in)
       (ido-subdir (:foreground ,purple))
@@ -704,6 +718,7 @@ names to which it refers are bound."
                                       :background ,comment
                                       :foreground ,highlight
                                       :inverse-video t))
+      (tab-bar-tab-highlight (:inherit tab-bar-tab :background ,contrast-bg))
 
       ;; tab-line (built-in)
       (tab-line (:foreground ,comment :background ,highlight))
@@ -716,6 +731,8 @@ names to which it refers are bound."
                                        :background ,comment
                                        :foreground ,highlight
                                        :inverse-video t))
+      (tab-line-active (:inherit tab-line-tab))
+      (tab-line-inactive (:inherit tab-line-tab-inactive))
 
       ;; which-function (built-in)
       (which-func (:foreground ,blue :background unspecified :weight bold))

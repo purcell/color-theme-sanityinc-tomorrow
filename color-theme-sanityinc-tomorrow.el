@@ -357,6 +357,18 @@ names to which it refers are bound."
       ;; ElDoc (built-in)
       (eldoc-highlight-function-argument (:foreground ,green :weight bold))
 
+      ;; Elisp semantic faces
+      (elisp-symbol-at-mouse)
+      (elisp-condition (:foreground ,red))
+      (elisp-free-variable (:underline (:color ,comment)))
+      (elisp-major-mode-name (:inherit font-lock-constant-face))
+      (elisp-symbol-role)
+      (elisp-symbol-role-definition)
+      (elisp-unknown-call (:strike-through t))
+      (elisp-rx (:foreground ,yellow))
+      (elisp-non-local-exit (:inherit elisp-function :underline (:color ,green)))
+      (elisp-shorthand-font-lock-face (:foreground ,aqua))
+
       ;; ERC (built-in)
       (erc-direct-msg-face (:foreground ,orange))
       (erc-error-face (:foreground ,red))

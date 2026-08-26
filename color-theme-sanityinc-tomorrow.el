@@ -244,8 +244,8 @@ names to which it refers are bound."
       (secondary-selection (:background ,highlight :extend t))
       (delete-selection-replacement (:foreground ,foreground :background ,contrast-bg))
 
-      (header-line (:inherit mode-line-inactive :foreground ,aqua :background unspecified))
-      (header-line-active (:inherit header-line :foreground ,foreground :background ,contrast-bg))
+      (header-line (:foreground ,aqua :background ,low-contrast-bg :box (:line-width 1 :color ,contrast-bg)))
+      (header-line-active (:inherit header-line :foreground ,foreground))
       (header-line-inactive (:inherit header-line :foreground ,comment))
 
       ;; search

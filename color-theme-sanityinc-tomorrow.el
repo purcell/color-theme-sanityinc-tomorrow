@@ -6,7 +6,7 @@
 ;; Keywords: faces themes
 ;; Homepage: https://github.com/purcell/color-theme-sanityinc-tomorrow
 ;; Package-Requires: ((emacs "24.1"))
-;; Package-Version: 1.18
+;; Package-Version: 1.19
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
